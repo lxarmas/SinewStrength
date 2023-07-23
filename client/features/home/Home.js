@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import './Home.css';
-import logo from '../../assets/MyLogo.svg'
+import logo from '../../assets/MyLogo.png'
 import pictureOne from "../../assets/SinewStrengthAlbum/pictures/img_3608.jpg"
 import pictureTwo from "../../assets/SinewStrengthAlbum/pictures/IMG_3605.jpg"
 
