@@ -3,8 +3,8 @@
    bottom: 0;
    width: 100vw; */
    /* height:fit-content; */
-   background-color: black;
-   color: white;
+   background-color: rgb(231, 231, 231);
+   color: rgb(0, 0, 0);
 }
 
 .FTRlist {

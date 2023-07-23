@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import './Home.css';
-import logo from '../../assets/MyLogo.png'
+import logo from '../../assets/ColorHighres.png'
 import pictureOne from "../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg"
-import pictureTwo from "../../assets/SinewStrengthAlbum/pictures/IMG_3605.jpg"
+
 
 const Home = () => {
   const username = useSelector((state) => state.auth.me.username);
