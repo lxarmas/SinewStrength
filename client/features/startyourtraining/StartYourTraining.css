@@ -1,0 +1,174 @@
+/* Container styles */
+.STYT-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 1340px;
+   margin: 0 auto;
+   /* margin-top: 10px; */
+   padding: 20px;
+   background-color: #282c34;
+   
+}
+
+.main {
+   background-repeat: repeat-x;
+   background-size:contain;
+   background-position-x: -93px;
+}
+
+/* Heading styles */
+.STYT-heading {
+   text-align: center;
+   font-size: 45px;
+   color: #ffffff;
+   font-family: palatino bold;
+}
+
+.Program-Heading {
+   display: 'flex';
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   font-size: 50px;
+   color: white;
+   padding-top: 50px;
+}
+
+.disclaimer {
+   font-size: 26px;
+   color: rgb(204, 0, 0);
+   background-color: #000000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
+
+
+/* Instructions styles */
+.STYT-instructions strong {
+   margin-top: 15px;
+   display: block;
+   color: #fbf9f9;
+}
+
+.STYT-instructions {
+
+   color: #e6e6e6;
+}
+
+.instructions-container {
+   display: block;
+   width: 740px;
+   font-size: large;
+
+}
+
+/* Images */
+/* Images */
+/* Images */
+.STYT-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.STYimage {
+  width: 60%;
+  max-width: 400px;
+}
+
+/* Table styles */
+.STYT-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+   background-color: #333;
+   color: #f8f8f8;
+}
+
+.STYT-table th,
+.STYT-table td {
+   font-size: 18px;
+   padding: 8px;
+   text-align: center;
+   border: 1px solid #555;
+}
+
+/* Input styles */
+.STYT-input {
+   color: #000000;
+   font-weight: bold;
+   font-size: medium;
+   width: 80px;
+   padding: 6px;
+   border: 1px solid #555;
+   border-radius: 4px;
+   background-color: #f1f1f1;
+}
+
+/* Options styles */
+.STYT-options {
+   margin-bottom: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   color: #ececec;
+   font-size: 18px;
+}
+
+/* Button styles */
+.STYT-button {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   font-size: 24px;
+   background-color: black;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   font-weight: bold;
+}
+
+.STYT-button:hover {
+   color: black;
+   background-color: white;  
+}
+
+/* Animation styles */
+@keyframes fade-in {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+/* Apply animation to the container */
+.STYT-container {
+   animation: fade-in 0.5s ease;
+}
+
+/* fontSize: '22px', color: 'red', textAlign: 'center' */
+.loginToCreate {
+   font-size: 22px;
+   color: red;
+   text-align: center;
+}
+
+/* Add space between image and chart */
+.STYT-image {
+  margin-bottom: 70px;
+}
+
+form div {
+   margin: 1em;
+   display: inline-block;
+}

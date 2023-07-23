@@ -1,0 +1,73 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Container styles */
+.container {
+    padding: 40px;
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+}
+
+.heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Video Card styles */
+.videoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.videoCardLeft,
+.videoCardRight {
+  width: calc(50% - 20px); /* To add some spacing between the cards */
+
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.videoCardLeft:hover,
+.videoCardRight:hover {
+  transform: translateY(-5px);
+}
+
+.videoCardLeft {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.videoCardRight {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* ... Other existing styles ... */
+.videoPlayer {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  max-height: 180px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .videoCardLeft,
+  .videoCardRight {
+    width: calc(100% - 40px); /* To add some spacing between the cards */
+  }
+
+  .videoCardLeft:not(:last-child),
+  .videoCardRight:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

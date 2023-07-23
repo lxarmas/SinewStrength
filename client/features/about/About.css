@@ -1,0 +1,71 @@
+/* Main container */
+.about-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header section */
+.about-header {
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.about-text {
+  color: #333333;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutHeader {
+  color: #080808;
+  font-size: 38px;
+}
+
+/* Text content */
+.about-text p {
+  margin-bottom: 15px;
+}
+
+/* Image container */
+.about-image-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+/* Individual images */
+.AIfrontImage,
+.AIbackImage,
+.AIrowImage {
+  max-width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .about-image-container {
+    flex-wrap: wrap;
+  }
+
+  .AIfrontImage,
+  .AIbackImage,
+  .AIrowImage {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}

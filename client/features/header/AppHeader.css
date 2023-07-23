@@ -1,0 +1,45 @@
+.app-header {
+   display: flex;
+   align-items: center;
+   background-color: #000000;
+   justify-content: center;
+   color: white;
+   padding: 5px;
+   margin: 0;
+   font-family: sans-serif;
+}
+
+.AHlogo-container {
+   position: relative;
+   width: auto;
+   height: 100px;
+}
+
+.AHlogo {
+   width: auto;
+   height: 100%;
+}
+
+.header-text {
+   font-size: 50px;
+   font-family: palatino bold;
+   font-style: italic;
+}
+
+.header-text:hover {
+   color: rgb(170, 2, 2);
+   cursor: pointer;
+}
+
+/* body {
+   
+} */
+
+
+/* a {
+   text-decoration: none;
+}
+
+label {
+   display: block;
+} */

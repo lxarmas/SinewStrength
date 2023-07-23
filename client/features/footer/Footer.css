@@ -1,0 +1,24 @@
+.FTRcontainer {
+   /* position:absolute;
+   bottom: 0;
+   width: 100vw; */
+   /* height:fit-content; */
+   background-color: black;
+   color: white;
+}
+
+.FTRlist {
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   font-size: 20px;
+   padding: 5px;
+   margin: 0;
+}
+
+.FTRcenter {
+   text-align: center;
+   font-size: 5px;
+   margin-bottom: 20px;
+}
