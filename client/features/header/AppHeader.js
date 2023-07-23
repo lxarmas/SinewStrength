@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../../assets/SinewStrengthAlbum/Logos/IMG_1909.PNG'
+import logo from '../../assets/MyLogo.png'
+import logoText from '../../assets/TextBlackLogo.png'
 import './AppHeader.css';
 
 const AppHeader = () => {
@@ -8,7 +9,10 @@ const AppHeader = () => {
          <div className="AHlogo-container">
             <img src={logo} alt='logo' className="AHlogo" />
          </div>
-         <h1 className="header-text">TRAINING</h1>
+          <div className="AHlogo-container">
+            <img src={logoText} alt='logo' className="AHlogo" />
+         </div>
+     
       </header>
    );
 };

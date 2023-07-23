@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import './Home.css';
 import logo from '../../assets/MyLogo.png'
-import pictureOne from "../../assets/SinewStrengthAlbum/pictures/img_3608.jpg"
-import pictureTwo from "../../assets/SinewStrengthAlbum/pictures/IMG_3605.jpg"
+// import pictureOne from "../../assets/SinewStrengthAlbum/pictures/img_3608.jpg"
+// import pictureTwo from "../../assets/SinewStrengthAlbum/pictures/IMG_3605.jpg"
 
 const Home = () => {
   const username = useSelector((state) => state.auth.me.username);
@@ -52,7 +52,7 @@ const Home = () => {
   return (
     <div>
       <div className="HPcontainer">
-        <h3 style={{ textAlign: 'center',fontFamily: `palatino  bold `}}>
+        <h3 >
             Welcome to Sinew Strength Training, <span style={{ textTransform: 'uppercase' }}>{username}</span>!
          </h3>
       </div>
@@ -63,12 +63,12 @@ const Home = () => {
          </div>
 
          <div className="HPimageWrapper">
-            <img
+            {/* <img
                className="HPimage"
                ref={hpImageRef}
                src={pictureOne}
                alt="Image Description"
-            />
+            /> */}
          </div>
 
          <div className="HPlogoContainer">
@@ -76,12 +76,12 @@ const Home = () => {
          </div>
 
          <div className="HPimageWrapper">
-            <img
+            {/* <img
                className="HPimage"
                ref={hpImageRef}
                src={pictureTwo}
                alt="Image Description"
-            />
+            /> */}
          </div>
 
          <div className="sloganContainerRight">
