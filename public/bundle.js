@@ -7519,12 +7519,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _Home_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home.css */ "./client/features/home/Home.css");
 /* harmony import */ var _assets_MyLogo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/MyLogo.png */ "./client/assets/MyLogo.png");
+/* harmony import */ var _assets_SinewStrengthAlbum_pictures_WomanTraining_jpeg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg */ "./client/assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg");
+/* harmony import */ var _assets_SinewStrengthAlbum_pictures_IMG_3605_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/SinewStrengthAlbum/pictures/IMG_3605.jpg */ "./client/assets/SinewStrengthAlbum/pictures/IMG_3605.jpg");
 
 
 
 
-// import pictureOne from "../../assets/SinewStrengthAlbum/pictures/img_3608.jpg"
-// import pictureTwo from "../../assets/SinewStrengthAlbum/pictures/IMG_3605.jpg"
+
 
 var Home = function Home() {
   var username = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
@@ -7583,15 +7584,18 @@ var Home = function Home() {
     className: "HPsloganOne"
   }, "Train like a champion, become unstoppable....")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "HPimageWrapper"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: "HPimageOne",
+    ref: hpImageRef,
+    src: _assets_SinewStrengthAlbum_pictures_WomanTraining_jpeg__WEBPACK_IMPORTED_MODULE_4__["default"],
+    alt: "Image Description"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "HPlogoContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: _assets_MyLogo_png__WEBPACK_IMPORTED_MODULE_3__["default"],
     alt: "logo",
     className: "HPlogo"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "HPimageWrapper"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  })), "`", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "sloganContainerRight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "HPsloganTwo"
@@ -10426,18 +10430,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   justify-content: space-evenly;
   align-items: center;
   height: 700px;
-  /* margin: 10px 10; */
-  /* padding: .6px; */
+
 
 }
 
 .HPlogo {
-   width: 200px;
+   width: 580px;
    height: auto;
    background-color: transparent; /* Ensure it has a transparent background */
-  border-radius: 20%;
-  top:0;
-    transform: translateY(-120%)
+  transform: translateY(-20%);
+   transform: translateX(-20%);
 
 }
 
@@ -10450,14 +10452,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   padding: 5px;
   z-index: 1;
   display: block;
-  font-size: 15px;
+ 
 
 
 }
 
 .sloganContainerLeft {
-  left: 10px;
-  color: #7e7e7e;
+  left: 10%;
+  color: #ffffff;
   top: 40%;
   /* Cool Animation for sloganContainerLeft */
   animation-name: coolAnimationLeft;
@@ -10469,9 +10471,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 
 .sloganContainerRight {
   font-size: 33px;
-  color: #7e7e7e;
-  right: 10px;
-  top: 40%;
+  color: #a90000;
+  right: 40px;
+  top: 85%;
  
   /* Cool Animation for sloganContainerRight */
   animation-name: coolAnimationRight;
@@ -10487,16 +10489,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 }
 
 /* HPimage */
-.HPimage {
-  width: 100%;
-  width: 467px;
-  min-height: 410px;
-  /* height: auto; */
-  /* border-radius: 10px; */
+.HPimageOne {
+  width: 80%;
+  border-radius: 10px;
   margin-bottom: -5px;
   opacity: 1;
-  /* transition: opacity 0.5s ease-in; */
-  /* margin-left: 150px; */
+  transform: translateY(-10%);
+   transform: translateX(-8%);
+
+  transition: opacity 0.5s ease-in; 
+ 
 }
 
 .HPimage.show {
@@ -10615,7 +10617,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 
 /* Ticker Container */
 .tickerContainer {
-  background-color: rgb(141, 141, 141);
+  /* background-color: rgb(141, 141, 141); */
   padding: 10px 0px;
   margin-top: 20px;
   width: 100%;
@@ -10641,7 +10643,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   display: inline-block;
   margin-right: 20px;
   font-size: 24px;
-  color: white;
+  color: rgb(255, 230, 0);
   font-family: "Courier New", monospace;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -10662,7 +10664,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
     text-shadow: 0 0 5px rgb(255, 251, 1), 0 0 10px rgb(238, 255, 3), 0 0 20px rgb(251, 255, 4), 0 0 30px rgb(202, 255, 9);
   }
   100% {
-    text-shadow: 0 0 10px #b9b9b9, 0 0 20px #b9b9b9, 0 0 30px #b9b9b9, 0 0 40px #b9b9b9;
+    text-shadow: 0 0 10px #fff700, 0 0 20px #fff200, 0 0 30px #e5ff00, 0 0 40px #ffd900;
   }
 }
 
@@ -10716,7 +10718,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 .HPwomanDumbellQuote{
   font-style: oblique;
   color:rgb(170, 2, 2);
-}`, "",{"version":3,"sources":["webpack://./client/features/home/Home.css"],"names":[],"mappings":"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","sourcesContent":["/* HPcontainer */\n.HPcontainer {\n  text-align: center;\n  color: #000000;\n  padding: 10px;\n  font-size: 40px;\n\n}\n\n/* HPimageContainer */\n.HPimageContainer {\n  position: relative;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  height: 700px;\n  /* margin: 10px 10; */\n  /* padding: .6px; */\n\n}\n\n.HPlogo {\n   width: 200px;\n   height: auto;\n   background-color: transparent; /* Ensure it has a transparent background */\n  border-radius: 20%;\n  top:0;\n    transform: translateY(-120%)\n\n}\n\n/* Slogan Containers */\n.sloganContainerLeft,\n.sloganContainerRight {\n  font-style: oblique;\n  position: absolute;\n  text-align: center;\n  padding: 5px;\n  z-index: 1;\n  display: block;\n  font-size: 15px;\n\n\n}\n\n.sloganContainerLeft {\n  left: 10px;\n  color: #7e7e7e;\n  top: 40%;\n  /* Cool Animation for sloganContainerLeft */\n  animation-name: coolAnimationLeft;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n.sloganContainerRight {\n  font-size: 33px;\n  color: #7e7e7e;\n  right: 10px;\n  top: 40%;\n \n  /* Cool Animation for sloganContainerRight */\n  animation-name: coolAnimationRight;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n/* HPimageWrapper */\n.HPimageWrapper {\n  position: relative;\n}\n\n/* HPimage */\n.HPimage {\n  width: 100%;\n  width: 467px;\n  min-height: 410px;\n  /* height: auto; */\n  /* border-radius: 10px; */\n  margin-bottom: -5px;\n  opacity: 1;\n  /* transition: opacity 0.5s ease-in; */\n  /* margin-left: 150px; */\n}\n\n.HPimage.show {\n  opacity: 1;\n}\n\n/* DynamicImageContainer */\n.dynamicImageContainer {\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n/* DynamicImage */\n.dynamicImage {\n  width: 100%;\n}\n\n.dynamicImage.show {\n  opacity: 1;\n}\n\n/* DynamicImageTextContainer */\n.dynamicImageTextContainer {\n  position: absolute;\n  top: 40%;\n  left: 85%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n  color: #ffffff;\n  z-index: 2;\n}\n\n.dynamicImageTextContainer h2 {\n  font-size: 24px;\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.dynamicImageTextContainer h1 {\n  font-size: 36px;\n  font-weight: bold;\n}\n\n/* Animation for slogans */\n@keyframes slideInFromLeft {\n  0% {\n    transform: translateX(-50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n@keyframes slideInFromRight {\n  0% {\n    transform: translateX(50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerLeft */\n@keyframes coolAnimationLeft {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  50% {\n    transform: scale(1.2);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerRight */\n@keyframes coolAnimationRight {\n  0% {\n    transform: translateY(100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateY(-10%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n/* Apply animation to slogans */\n.HPsloganOne,\n.HPsloganTwo {\n  animation-duration: 1s;\n  animation-fill-mode: forwards;\n  opacity: 0;\n}\n\n.HPsloganOne {\n  animation-name: slideInFromLeft;\n}\n\n.HPsloganTwo {\n  animation-name: slideInFromRight;\n}\n\n/* Ticker Container */\n.tickerContainer {\n  background-color: rgb(141, 141, 141);\n  padding: 10px 0px;\n  margin-top: 20px;\n  width: 100%;\n  overflow: hidden;\n}\n\n.tickerContent {\n  display: flex;\n  align-items: center;\n}\n\n\n\n.tickerList {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  animation: ticker 20s linear infinite;\n}\n\n.tickerList li {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 24px;\n  color: white;\n  font-family: \"Courier New\", monospace;\n  letter-spacing: 2px;\n  text-transform: uppercase;\n  animation: glow 1s ease-in-out infinite alternate;\n}\n\n@keyframes ticker {\n  0% {\n    transform: translateX(90%);\n  }\n  100% {\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes glow {\n  0% {\n    text-shadow: 0 0 5px rgb(255, 251, 1), 0 0 10px rgb(238, 255, 3), 0 0 20px rgb(251, 255, 4), 0 0 30px rgb(202, 255, 9);\n  }\n  100% {\n    text-shadow: 0 0 10px #b9b9b9, 0 0 20px #b9b9b9, 0 0 30px #b9b9b9, 0 0 40px #b9b9b9;\n  }\n}\n\n\n/* HPwomanDumbBellImage */\n.HPwomanDumbBellImage {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n \n\n  height: 500px;\n \n  background-color: white;\n}\n\n.HPwomanDumbBellImage img {\n  max-width: 100%;\n  max-height: 500px;\n  margin-right: 120px;\n\n}\n\n\n\n/* HPvideo */\n.HPvideo {\n  max-width: 80%; /* Adjust the max-width to make the video smaller */\n  height: 500px;\n}\n\n.HPwomanDumbellText{\n  justify-content: left;\n  align-items: center;\n  margin-right: 120px;\n   margin-left: 18px;\n    font-style: oblique;\n    color:black;\n}\n\n.HPwomanDumbellTextRight{\n  justify-content: right;\n  align-items: center;\n  margin-left: 120px;\n  margin-right: 18px;\n  font-style: oblique;\n  color:black\n   \n}\n.HPwomanDumbellQuote{\n  font-style: oblique;\n  color:rgb(170, 2, 2);\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/home/Home.css"],"names":[],"mappings":"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","sourcesContent":["/* HPcontainer */\n.HPcontainer {\n  text-align: center;\n  color: #000000;\n  padding: 10px;\n  font-size: 40px;\n\n}\n\n/* HPimageContainer */\n.HPimageContainer {\n  position: relative;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  height: 700px;\n\n\n}\n\n.HPlogo {\n   width: 580px;\n   height: auto;\n   background-color: transparent; /* Ensure it has a transparent background */\n  transform: translateY(-20%);\n   transform: translateX(-20%);\n\n}\n\n/* Slogan Containers */\n.sloganContainerLeft,\n.sloganContainerRight {\n  font-style: oblique;\n  position: absolute;\n  text-align: center;\n  padding: 5px;\n  z-index: 1;\n  display: block;\n \n\n\n}\n\n.sloganContainerLeft {\n  left: 10%;\n  color: #ffffff;\n  top: 40%;\n  /* Cool Animation for sloganContainerLeft */\n  animation-name: coolAnimationLeft;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n.sloganContainerRight {\n  font-size: 33px;\n  color: #a90000;\n  right: 40px;\n  top: 85%;\n \n  /* Cool Animation for sloganContainerRight */\n  animation-name: coolAnimationRight;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n/* HPimageWrapper */\n.HPimageWrapper {\n  position: relative;\n}\n\n/* HPimage */\n.HPimageOne {\n  width: 80%;\n  border-radius: 10px;\n  margin-bottom: -5px;\n  opacity: 1;\n  transform: translateY(-10%);\n   transform: translateX(-8%);\n\n  transition: opacity 0.5s ease-in; \n \n}\n\n.HPimage.show {\n  opacity: 1;\n}\n\n/* DynamicImageContainer */\n.dynamicImageContainer {\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n/* DynamicImage */\n.dynamicImage {\n  width: 100%;\n}\n\n.dynamicImage.show {\n  opacity: 1;\n}\n\n/* DynamicImageTextContainer */\n.dynamicImageTextContainer {\n  position: absolute;\n  top: 40%;\n  left: 85%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n  color: #ffffff;\n  z-index: 2;\n}\n\n.dynamicImageTextContainer h2 {\n  font-size: 24px;\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.dynamicImageTextContainer h1 {\n  font-size: 36px;\n  font-weight: bold;\n}\n\n/* Animation for slogans */\n@keyframes slideInFromLeft {\n  0% {\n    transform: translateX(-50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n@keyframes slideInFromRight {\n  0% {\n    transform: translateX(50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerLeft */\n@keyframes coolAnimationLeft {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  50% {\n    transform: scale(1.2);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerRight */\n@keyframes coolAnimationRight {\n  0% {\n    transform: translateY(100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateY(-10%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n/* Apply animation to slogans */\n.HPsloganOne,\n.HPsloganTwo {\n  animation-duration: 1s;\n  animation-fill-mode: forwards;\n  opacity: 0;\n}\n\n.HPsloganOne {\n  animation-name: slideInFromLeft;\n}\n\n.HPsloganTwo {\n  animation-name: slideInFromRight;\n}\n\n/* Ticker Container */\n.tickerContainer {\n  /* background-color: rgb(141, 141, 141); */\n  padding: 10px 0px;\n  margin-top: 20px;\n  width: 100%;\n  overflow: hidden;\n}\n\n.tickerContent {\n  display: flex;\n  align-items: center;\n}\n\n\n\n.tickerList {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  animation: ticker 20s linear infinite;\n}\n\n.tickerList li {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 24px;\n  color: rgb(255, 230, 0);\n  font-family: \"Courier New\", monospace;\n  letter-spacing: 2px;\n  text-transform: uppercase;\n  animation: glow 1s ease-in-out infinite alternate;\n}\n\n@keyframes ticker {\n  0% {\n    transform: translateX(90%);\n  }\n  100% {\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes glow {\n  0% {\n    text-shadow: 0 0 5px rgb(255, 251, 1), 0 0 10px rgb(238, 255, 3), 0 0 20px rgb(251, 255, 4), 0 0 30px rgb(202, 255, 9);\n  }\n  100% {\n    text-shadow: 0 0 10px #fff700, 0 0 20px #fff200, 0 0 30px #e5ff00, 0 0 40px #ffd900;\n  }\n}\n\n\n/* HPwomanDumbBellImage */\n.HPwomanDumbBellImage {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n \n\n  height: 500px;\n \n  background-color: white;\n}\n\n.HPwomanDumbBellImage img {\n  max-width: 100%;\n  max-height: 500px;\n  margin-right: 120px;\n\n}\n\n\n\n/* HPvideo */\n.HPvideo {\n  max-width: 80%; /* Adjust the max-width to make the video smaller */\n  height: 500px;\n}\n\n.HPwomanDumbellText{\n  justify-content: left;\n  align-items: center;\n  margin-right: 120px;\n   margin-left: 18px;\n    font-style: oblique;\n    color:black;\n}\n\n.HPwomanDumbellTextRight{\n  justify-content: right;\n  align-items: center;\n  margin-left: 120px;\n  margin-right: 18px;\n  font-style: oblique;\n  color:black\n   \n}\n.HPwomanDumbellQuote{\n  font-style: oblique;\n  color:rgb(170, 2, 2);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -12378,6 +12380,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "3c766a7c7cbf9345be4cb826333abe5a.JPG");
+
+/***/ }),
+
+/***/ "./client/assets/SinewStrengthAlbum/pictures/IMG_3605.jpg":
+/*!****************************************************************!*\
+  !*** ./client/assets/SinewStrengthAlbum/pictures/IMG_3605.jpg ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "c6d9e7fe1c94a70529564b5caad4a888.jpg");
+
+/***/ }),
+
+/***/ "./client/assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg":
+/*!**********************************************************************!*\
+  !*** ./client/assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "19d8965e7b74762a351dc26d6e7ef057.jpeg");
 
 /***/ }),
 

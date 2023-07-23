@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import './Home.css';
 import logo from '../../assets/MyLogo.png'
-// import pictureOne from "../../assets/SinewStrengthAlbum/pictures/img_3608.jpg"
-// import pictureTwo from "../../assets/SinewStrengthAlbum/pictures/IMG_3605.jpg"
+import pictureOne from "../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg"
+import pictureTwo from "../../assets/SinewStrengthAlbum/pictures/IMG_3605.jpg"
 
 const Home = () => {
   const username = useSelector((state) => state.auth.me.username);
@@ -63,28 +63,19 @@ const Home = () => {
          </div>
 
          <div className="HPimageWrapper">
-            {/* <img
-               className="HPimage"
+            <img
+               className="HPimageOne"
                ref={hpImageRef}
                src={pictureOne}
                alt="Image Description"
-            /> */}
+            />
          </div>
 
          <div className="HPlogoContainer">
             <img src={logo} alt='logo' className="HPlogo" />
          </div>
 
-         <div className="HPimageWrapper">
-            {/* <img
-               className="HPimage"
-               ref={hpImageRef}
-               src={pictureTwo}
-               alt="Image Description"
-            /> */}
-         </div>
-
-         <div className="sloganContainerRight">
+          `<div className="sloganContainerRight">
             <h2 className="HPsloganTwo">Train with purpose, achieve with passion</h2>
          </div>
       </div>
