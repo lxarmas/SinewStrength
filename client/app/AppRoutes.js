@@ -6,7 +6,7 @@ import Home from '../features/home/Home';
 import About from '../features/about/About'; 
 import AdminCreateUser from '../features/auth/AdminCreateUser';
 import { me } from './store';
-import TrainingSessionsTracker from '../features/tracker/TrainingSessionsTracker';
+
 import UsersList from '../features/users/UsersList';
 import TrackYourProgress from '../features/tracker/TrackYourProgress';
 import DemonstrationVideos from '../assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos';
@@ -37,7 +37,7 @@ const AppRoutes = () => {
 
                   <Route path="/start-your-training" element={<StartYourTraining/>} />
                   <Route path="/" element={<StartYourTraining />} />
-                  <Route path="/training-sessions-tracker" element={<TrainingSessionsTracker />} />
+              
                   <Route path="/track-your-progress" element={<TrackYourProgress />} />
                   <Route path="/training-history" element={<TrainingHistory />} />
                   <Route path="/training-history/:programId" element={<HistorySingleProgramFullView />} />

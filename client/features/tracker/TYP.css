@@ -21,7 +21,7 @@
 
 .program-complete h1 {
    margin: 0;
-   color: #12b900;
+   color: #ffffff;
 }
 
 .week-selector {
@@ -52,7 +52,7 @@ label h2 {
 }
 
 .week-title {
-   color:#000;
+   color:#6b6b6b;
    font-size: 35px;
    font-weight: bold;
    text-align: center;
@@ -65,7 +65,7 @@ label h2 {
    font-weight: bold;
    text-align: center;
    text-decoration: line-through;
-   color: #47a23d;
+   color: #e20000;
    /* background-color: #000000; */
    padding: 50px;
 }
@@ -79,7 +79,7 @@ label h2 {
    font-weight: bold;
    margin-bottom: 30px;
    text-align: center;
-   color: #000000;
+   color: #bd0000;
 }
 
 .completedStatus-day-title {
@@ -104,7 +104,7 @@ label h2 {
    flex-wrap: wrap;
    gap: 0px;
    justify-content: center;
-   background-color: #686868;
+  
 }
 
 .exercise-container {
@@ -123,7 +123,7 @@ label h2 {
 
 .completedStatus-exercise-container {
    width: calc(20% - 10px);
-   background-color: #000;
+   background-color: #aaaaaa;
    padding: 16px;
    /* border: 4px solid rgb(48, 194, 63); */
    border: 4px solid #092309;
@@ -148,7 +148,7 @@ label h2 {
    font-weight: bold;
    margin-bottom: 8px;
    text-align: center;
-   color: rgb(48, 194, 63);
+   color: rgb(197, 0, 0);
    text-transform: uppercase;
    text-decoration: line-through;
 }
@@ -177,7 +177,7 @@ label h2 {
 .completedStatus-modification-mode-checkbox-label {
    font-size: 16px;
    vertical-align: middle;
-   color: #1ca800;
+   color: #000000;
 }
 
 .exercise-table {
@@ -194,7 +194,7 @@ label h2 {
    border-collapse: collapse;
    background-color: #333;
    text-decoration: line-through;
-   color: #000000;
+   color: #dddddd;
 }
 
 .exercise-table th,
@@ -220,7 +220,7 @@ label h2 {
 .button {
    margin-top: 8px;
    padding: 8px 16px;
-   background-color: #d3d3d3;
+   background-color: #eaeaea;
    color: #fff;
    border: none;
    border-radius: 4px;
@@ -231,8 +231,8 @@ label h2 {
 .completedStatus-button {
    margin-top: 8px;
    padding: 8px 16px;
-   background-color: #0e4011;
-   color: #fff;
+   background-color: #000000;
+   color: #d8d8d8;
    border: none;
    border-radius: 4px;
    cursor: pointer;
@@ -336,7 +336,7 @@ label h2 {
 
 .progress-bar {
    height: 100%;
-   background-color: #12b900;
+   background-color: #ec3300;
    transition: width 0.5s ease-in-out;
    background-image: linear-gradient(
       45deg,

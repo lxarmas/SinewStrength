@@ -6083,20 +6083,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _features_auth_AuthForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../features/auth/AuthForm */ "./client/features/auth/AuthForm.js");
 /* harmony import */ var _features_home_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../features/home/Home */ "./client/features/home/Home.js");
 /* harmony import */ var _features_about_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../features/about/About */ "./client/features/about/About.js");
 /* harmony import */ var _features_auth_AdminCreateUser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../features/auth/AdminCreateUser */ "./client/features/auth/AdminCreateUser.js");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./store */ "./client/app/store.js");
-/* harmony import */ var _features_tracker_TrainingSessionsTracker__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../features/tracker/TrainingSessionsTracker */ "./client/features/tracker/TrainingSessionsTracker.js");
-/* harmony import */ var _features_users_UsersList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../features/users/UsersList */ "./client/features/users/UsersList.js");
-/* harmony import */ var _features_tracker_TrackYourProgress__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../features/tracker/TrackYourProgress */ "./client/features/tracker/TrackYourProgress.js");
-/* harmony import */ var _assets_SinewStrengthAlbum_DemonstrationVideos_DemonstrationVideos__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos */ "./client/assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos.js");
-/* harmony import */ var _features_startyourtraining_StartYourTraining__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../features/startyourtraining/StartYourTraining */ "./client/features/startyourtraining/StartYourTraining.js");
-/* harmony import */ var _features_history_all_TrainingHistory__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../features/history/all/TrainingHistory */ "./client/features/history/all/TrainingHistory.js");
-/* harmony import */ var _features_history_single_HistorySingleProgramFullView__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../features/history/single/HistorySingleProgramFullView */ "./client/features/history/single/HistorySingleProgramFullView.js");
-
+/* harmony import */ var _features_users_UsersList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../features/users/UsersList */ "./client/features/users/UsersList.js");
+/* harmony import */ var _features_tracker_TrackYourProgress__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../features/tracker/TrackYourProgress */ "./client/features/tracker/TrackYourProgress.js");
+/* harmony import */ var _assets_SinewStrengthAlbum_DemonstrationVideos_DemonstrationVideos__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos */ "./client/assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos.js");
+/* harmony import */ var _features_startyourtraining_StartYourTraining__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../features/startyourtraining/StartYourTraining */ "./client/features/startyourtraining/StartYourTraining.js");
+/* harmony import */ var _features_history_all_TrainingHistory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../features/history/all/TrainingHistory */ "./client/features/history/all/TrainingHistory.js");
+/* harmony import */ var _features_history_single_HistorySingleProgramFullView__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../features/history/single/HistorySingleProgramFullView */ "./client/features/history/single/HistorySingleProgramFullView.js");
 
 
 
@@ -6119,75 +6117,72 @@ var AppRoutes = function AppRoutes() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     dispatch((0,_store__WEBPACK_IMPORTED_MODULE_6__.me)());
   }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Routes, null, isLoggedIn ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Routes, null, isLoggedIn ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/*",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_home_Home__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/home",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_home_Home__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/create-user",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_auth_AdminCreateUser__WEBPACK_IMPORTED_MODULE_5__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/users",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_users_UsersList__WEBPACK_IMPORTED_MODULE_8__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_users_UsersList__WEBPACK_IMPORTED_MODULE_7__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/about",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_about_About__WEBPACK_IMPORTED_MODULE_4__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_about_About__WEBPACK_IMPORTED_MODULE_4__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/demonstration-videos",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_assets_SinewStrengthAlbum_DemonstrationVideos_DemonstrationVideos__WEBPACK_IMPORTED_MODULE_10__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_assets_SinewStrengthAlbum_DemonstrationVideos_DemonstrationVideos__WEBPACK_IMPORTED_MODULE_9__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/start-your-training",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_startyourtraining_StartYourTraining__WEBPACK_IMPORTED_MODULE_11__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_startyourtraining_StartYourTraining__WEBPACK_IMPORTED_MODULE_10__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_startyourtraining_StartYourTraining__WEBPACK_IMPORTED_MODULE_11__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
-    path: "/training-sessions-tracker",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_tracker_TrainingSessionsTracker__WEBPACK_IMPORTED_MODULE_7__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_startyourtraining_StartYourTraining__WEBPACK_IMPORTED_MODULE_10__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/track-your-progress",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_tracker_TrackYourProgress__WEBPACK_IMPORTED_MODULE_9__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_tracker_TrackYourProgress__WEBPACK_IMPORTED_MODULE_8__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/training-history",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_history_all_TrainingHistory__WEBPACK_IMPORTED_MODULE_12__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_history_all_TrainingHistory__WEBPACK_IMPORTED_MODULE_11__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/training-history/:programId",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_history_single_HistorySingleProgramFullView__WEBPACK_IMPORTED_MODULE_13__["default"], null)
-  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_history_single_HistorySingleProgramFullView__WEBPACK_IMPORTED_MODULE_12__["default"], null)
+  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/*",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_auth_AuthForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
       name: "login",
       displayName: "Login"
     })
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/login",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_auth_AuthForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
       name: "login",
       displayName: "Login"
     })
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/signup",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_auth_AuthForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
       name: "signup",
       displayName: "Sign Up"
     })
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/about",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_about_About__WEBPACK_IMPORTED_MODULE_4__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/start-your-training",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_startyourtraining_StartYourTraining__WEBPACK_IMPORTED_MODULE_11__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_startyourtraining_StartYourTraining__WEBPACK_IMPORTED_MODULE_10__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/track-your-progress",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_tracker_TrackYourProgress__WEBPACK_IMPORTED_MODULE_9__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_tracker_TrackYourProgress__WEBPACK_IMPORTED_MODULE_8__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
     path: "/training-history",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_history_all_TrainingHistory__WEBPACK_IMPORTED_MODULE_12__["default"], null)
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_features_history_all_TrainingHistory__WEBPACK_IMPORTED_MODULE_11__["default"], null)
   }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AppRoutes);
@@ -8732,133 +8727,6 @@ var TrackYourProgress = function TrackYourProgress() {
 
 /***/ }),
 
-/***/ "./client/features/tracker/TrainingSessionsTracker.js":
-/*!************************************************************!*\
-  !*** ./client/features/tracker/TrainingSessionsTracker.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _trainingProgramSlice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./trainingProgramSlice */ "./client/features/tracker/trainingProgramSlice.js");
-/* harmony import */ var _TrainingSessionsTracker_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TrainingSessionsTracker.css */ "./client/features/tracker/TrainingSessionsTracker.css");
-/* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../training programs/Intermediate/IntermediateTrainingProgram */ "./client/features/training programs/Intermediate/IntermediateTrainingProgram.js");
-/* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_3__);
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-var TrainingSessionsTracker = function TrainingSessionsTracker() {
-  //   const [trainingProgram, setTrainingProgram] = useState(null);
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    modificationMode = _useState2[0],
-    setModificationMode = _useState2[1];
-  var testProgram = (_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_3___default());
-  var handleSetCompletion = function handleSetCompletion(exerciseName, setNumber, weight, repetitions) {
-    // Perform set completion logic
-    // Log the set progress
-    (0,_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_1__.logSetProgress)(exerciseName, setNumber, weight, repetitions);
-  };
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    // Fetch exercise data
-
-    // Provide actual values for exerciseName and totalSets
-    var exerciseName = 'Example Exercise';
-    var totalSets = 3;
-
-    // Log the exercise progress
-    (0,_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_1__.logExerciseProgress)(exerciseName, totalSets);
-  }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "training-sessions-tracker"
-  }, (_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_3___default()) === null || (_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_3___default()) === void 0 ? void 0 : _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_3___default().weeks.map(function (week, weekIndex) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      className: "week-container",
-      key: weekIndex
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h5", {
-      className: "week-title"
-    }, "Week ", weekIndex + 1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      className: "table-container"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("table", {
-      className: "training-table"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("th", null, "Day"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("tbody", null, week.days.map(function (day, dayIndex) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("tr", {
-        key: dayIndex
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", {
-        className: "day-cell"
-      }, day.day), day.exercises.map(function (exercise, exerciseIndex) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), {
-          key: exerciseIndex
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("th", null, "Exercise"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("th", null, "Sets"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("th", null, "Reps"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("th", null, "Weight"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", {
-          className: "exercise-cell"
-        }, exercise.name), exercise.sets.map(function (set, setIndex) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", {
-            key: setIndex,
-            className: "set-cell"
-          }, set.name);
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", null, exercise.sets.map(function (set, setIndex) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", {
-            key: setIndex,
-            className: "rep-cell"
-          }, set.reps);
-        })), _toConsumableArray(Array(12)).map(function (_, i) {
-          var set = exercise.sets.find(function (s) {
-            return s.name === "Set ".concat(i + 1);
-          });
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("td", {
-            key: i,
-            className: "set-cell"
-          }, set && modificationMode ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
-            className: "input-box",
-            defaultValue: "completed"
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-            value: "completed"
-          }, "Completed"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-            value: "failed"
-          }, "Failed")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-            className: "button",
-            onClick: function onClick() {
-              return (0,_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_1__.logSetProgress)(weekIndex, dayIndex, exerciseIndex, i);
-            }
-          }, "Log Set")) : set && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, set.weight));
-        })));
-      }));
-    })))));
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "modification-mode-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
-    className: "modification-mode-label"
-  }, "Modification Mode:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
-    className: "modification-mode-checkbox",
-    type: "checkbox",
-    checked: modificationMode,
-    onChange: function onChange() {
-      return setModificationMode(!modificationMode);
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    className: "modification-mode-checkbox-label"
-  }, "Enable Modification Mode"))));
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TrainingSessionsTracker);
-
-/***/ }),
-
 /***/ "./client/features/tracker/trainingProgramSlice.js":
 /*!*********************************************************!*\
   !*** ./client/features/tracker/trainingProgramSlice.js ***!
@@ -10867,7 +10735,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
    align-items: center;
    font-weight: bold;
    font-size: 50px;
-   color: rgb(0, 0, 0);
+   color: rgb(192, 0, 0);
    padding-top: 50px;
 }
 
@@ -10888,12 +10756,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
 .STYT-instructions strong {
    margin-top: 15px;
    display: block;
-   color: #c10000;
+   color: #8f0000;
 }
 
 .STYT-instructions {
 
-   color: #000000;
+   color: #a3a3a3;
 }
 
 .instructions-container {
@@ -10923,8 +10791,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
    width: 100%;
    border-collapse: collapse;
    margin-top: 20px;
-   background-color: #bfbfbf;
-   color: #000000;
+   background-color: #d9d9d9;
+   color: #4b0000;
 }
 
 .STYT-table th,
@@ -10937,7 +10805,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
 
 /* Input styles */
 .STYT-input {
-   color: #000000;
+   color: #6a6a6a;
    font-weight: bold;
    font-size: medium;
    width: 80px;
@@ -10963,7 +10831,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
    width: 100%;
    padding: 10px;
    font-size: 24px;
-   background-color:  rgb(200, 200, 200);  
+   background-color:  rgb(225, 225, 225);  
    color: rgb(55, 55, 55);
    border: none;
    border-radius: 10px;
@@ -10973,8 +10841,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
 }
 
 .STYT-button:hover {
-   color: rgb(255, 0, 0);
-   background-color: rgb(153, 152, 152);  
+   color: rgb(200, 200, 200);
+   background-color: rgb(162, 162, 162);  
 }
 
 /* Animation styles */
@@ -11007,7 +10875,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
 form div {
    margin: 1em;
    display: inline-block;
-}`, "",{"version":3,"sources":["webpack://./client/features/startyourtraining/StartYourTraining.css"],"names":[],"mappings":"AAAA,qBAAqB;AACrB;GACG,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,iBAAiB;GACjB,cAAc;GACd,sBAAsB;GACtB,aAAa;;;AAGhB;;AAEA;GACG,2BAA2B;GAC3B,uBAAuB;GACvB,4BAA4B;AAC/B;;AAEA,mBAAmB;AACnB;GACG,kBAAkB;GAClB,eAAe;;GAEf,0BAA0B;AAC7B;;AAEA;GACG,eAAe;GACf,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,eAAe;GACf,mBAAmB;GACnB,iBAAiB;AACpB;;AAEA;GACG,eAAe;GACf,mBAAmB;;GAEnB,aAAa;GACb,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,kBAAkB;AACrB;;;;AAIA,wBAAwB;AACxB;GACG,gBAAgB;GAChB,cAAc;GACd,cAAc;AACjB;;AAEA;;GAEG,cAAc;AACjB;;AAEA;GACG,cAAc;GACd,YAAY;GACZ,gBAAgB;;AAEnB;;AAEA,WAAW;AACX,WAAW;AACX,WAAW;AACX;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,gBAAgB;AAClB;;AAEA,iBAAiB;AACjB;GACG,WAAW;GACX,yBAAyB;GACzB,gBAAgB;GAChB,yBAAyB;GACzB,cAAc;AACjB;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,iBAAiB;AACjB;GACG,cAAc;GACd,iBAAiB;GACjB,iBAAiB;GACjB,WAAW;GACX,YAAY;GACZ,sBAAsB;GACtB,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,mBAAmB;AACnB;GACG,mBAAmB;GACnB,aAAa;GACb,eAAe;GACf,uBAAuB;GACvB,cAAc;GACd,eAAe;AAClB;;AAEA,kBAAkB;AAClB;GACG,cAAc;GACd,WAAW;GACX,aAAa;GACb,eAAe;GACf,qCAAqC;GACrC,sBAAsB;GACtB,YAAY;GACZ,mBAAmB;GACnB,eAAe;GACf,sCAAsC;GACtC,iBAAiB;AACpB;;AAEA;GACG,qBAAqB;GACrB,oCAAoC;AACvC;;AAEA,qBAAqB;AACrB;GACG;MACG,UAAU;GACb;GACA;MACG,UAAU;GACb;AACH;;AAEA,qCAAqC;AACrC;GACG,4BAA4B;AAC/B;;AAEA,wDAAwD;AACxD;GACG,eAAe;GACf,UAAU;GACV,kBAAkB;AACrB;;AAEA,sCAAsC;AACtC;EACE,mBAAmB;AACrB;;AAEA;GACG,WAAW;GACX,qBAAqB;AACxB","sourcesContent":["/* Container styles */\n.STYT-container {\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   max-width: 1340px;\n   margin: 0 auto;\n   /* margin-top: 10px; */\n   padding: 20px;\n  \n   \n}\n\n.main {\n   background-repeat: repeat-x;\n   background-size:contain;\n   background-position-x: -93px;\n}\n\n/* Heading styles */\n.STYT-heading {\n   text-align: center;\n   font-size: 45px;\n\n   font-family: palatino bold;\n}\n\n.Program-Heading {\n   display: 'flex';\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   font-size: 50px;\n   color: rgb(0, 0, 0);\n   padding-top: 50px;\n}\n\n.disclaimer {\n   font-size: 26px;\n   color: rgb(0, 0, 0);\n\n   display: flex;\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   border-radius: 5px;\n}\n\n\n\n/* Instructions styles */\n.STYT-instructions strong {\n   margin-top: 15px;\n   display: block;\n   color: #c10000;\n}\n\n.STYT-instructions {\n\n   color: #000000;\n}\n\n.instructions-container {\n   display: block;\n   width: 740px;\n   font-size: large;\n\n}\n\n/* Images */\n/* Images */\n/* Images */\n.STYT-image {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  margin-bottom: 20px;\n}\n\n.STYimage {\n  width: 60%;\n  max-width: 400px;\n}\n\n/* Table styles */\n.STYT-table {\n   width: 100%;\n   border-collapse: collapse;\n   margin-top: 20px;\n   background-color: #bfbfbf;\n   color: #000000;\n}\n\n.STYT-table th,\n.STYT-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #ffffff;\n}\n\n/* Input styles */\n.STYT-input {\n   color: #000000;\n   font-weight: bold;\n   font-size: medium;\n   width: 80px;\n   padding: 6px;\n   border: 1px solid #555;\n   border-radius: 4px;\n   background-color: #f1f1f1;\n}\n\n/* Options styles */\n.STYT-options {\n   margin-bottom: 10px;\n   display: flex;\n   flex-wrap: wrap;\n   justify-content: center;\n   color: #000000;\n   font-size: 18px;\n}\n\n/* Button styles */\n.STYT-button {\n   display: block;\n   width: 100%;\n   padding: 10px;\n   font-size: 24px;\n   background-color:  rgb(200, 200, 200);  \n   color: rgb(55, 55, 55);\n   border: none;\n   border-radius: 10px;\n   cursor: pointer;\n   transition: background-color 0.3s ease;\n   font-weight: bold;\n}\n\n.STYT-button:hover {\n   color: rgb(255, 0, 0);\n   background-color: rgb(153, 152, 152);  \n}\n\n/* Animation styles */\n@keyframes fade-in {\n   from {\n      opacity: 0;\n   }\n   to {\n      opacity: 1;\n   }\n}\n\n/* Apply animation to the container */\n.STYT-container {\n   animation: fade-in 0.5s ease;\n}\n\n/* fontSize: '22px', color: 'red', textAlign: 'center' */\n.loginToCreate {\n   font-size: 22px;\n   color: red;\n   text-align: center;\n}\n\n/* Add space between image and chart */\n.STYT-image {\n  margin-bottom: 70px;\n}\n\nform div {\n   margin: 1em;\n   display: inline-block;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/startyourtraining/StartYourTraining.css"],"names":[],"mappings":"AAAA,qBAAqB;AACrB;GACG,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,iBAAiB;GACjB,cAAc;GACd,sBAAsB;GACtB,aAAa;;;AAGhB;;AAEA;GACG,2BAA2B;GAC3B,uBAAuB;GACvB,4BAA4B;AAC/B;;AAEA,mBAAmB;AACnB;GACG,kBAAkB;GAClB,eAAe;;GAEf,0BAA0B;AAC7B;;AAEA;GACG,eAAe;GACf,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,eAAe;GACf,qBAAqB;GACrB,iBAAiB;AACpB;;AAEA;GACG,eAAe;GACf,mBAAmB;;GAEnB,aAAa;GACb,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,kBAAkB;AACrB;;;;AAIA,wBAAwB;AACxB;GACG,gBAAgB;GAChB,cAAc;GACd,cAAc;AACjB;;AAEA;;GAEG,cAAc;AACjB;;AAEA;GACG,cAAc;GACd,YAAY;GACZ,gBAAgB;;AAEnB;;AAEA,WAAW;AACX,WAAW;AACX,WAAW;AACX;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,gBAAgB;AAClB;;AAEA,iBAAiB;AACjB;GACG,WAAW;GACX,yBAAyB;GACzB,gBAAgB;GAChB,yBAAyB;GACzB,cAAc;AACjB;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,iBAAiB;AACjB;GACG,cAAc;GACd,iBAAiB;GACjB,iBAAiB;GACjB,WAAW;GACX,YAAY;GACZ,sBAAsB;GACtB,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,mBAAmB;AACnB;GACG,mBAAmB;GACnB,aAAa;GACb,eAAe;GACf,uBAAuB;GACvB,cAAc;GACd,eAAe;AAClB;;AAEA,kBAAkB;AAClB;GACG,cAAc;GACd,WAAW;GACX,aAAa;GACb,eAAe;GACf,qCAAqC;GACrC,sBAAsB;GACtB,YAAY;GACZ,mBAAmB;GACnB,eAAe;GACf,sCAAsC;GACtC,iBAAiB;AACpB;;AAEA;GACG,yBAAyB;GACzB,oCAAoC;AACvC;;AAEA,qBAAqB;AACrB;GACG;MACG,UAAU;GACb;GACA;MACG,UAAU;GACb;AACH;;AAEA,qCAAqC;AACrC;GACG,4BAA4B;AAC/B;;AAEA,wDAAwD;AACxD;GACG,eAAe;GACf,UAAU;GACV,kBAAkB;AACrB;;AAEA,sCAAsC;AACtC;EACE,mBAAmB;AACrB;;AAEA;GACG,WAAW;GACX,qBAAqB;AACxB","sourcesContent":["/* Container styles */\n.STYT-container {\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   max-width: 1340px;\n   margin: 0 auto;\n   /* margin-top: 10px; */\n   padding: 20px;\n  \n   \n}\n\n.main {\n   background-repeat: repeat-x;\n   background-size:contain;\n   background-position-x: -93px;\n}\n\n/* Heading styles */\n.STYT-heading {\n   text-align: center;\n   font-size: 45px;\n\n   font-family: palatino bold;\n}\n\n.Program-Heading {\n   display: 'flex';\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   font-size: 50px;\n   color: rgb(192, 0, 0);\n   padding-top: 50px;\n}\n\n.disclaimer {\n   font-size: 26px;\n   color: rgb(0, 0, 0);\n\n   display: flex;\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   border-radius: 5px;\n}\n\n\n\n/* Instructions styles */\n.STYT-instructions strong {\n   margin-top: 15px;\n   display: block;\n   color: #8f0000;\n}\n\n.STYT-instructions {\n\n   color: #a3a3a3;\n}\n\n.instructions-container {\n   display: block;\n   width: 740px;\n   font-size: large;\n\n}\n\n/* Images */\n/* Images */\n/* Images */\n.STYT-image {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  margin-bottom: 20px;\n}\n\n.STYimage {\n  width: 60%;\n  max-width: 400px;\n}\n\n/* Table styles */\n.STYT-table {\n   width: 100%;\n   border-collapse: collapse;\n   margin-top: 20px;\n   background-color: #d9d9d9;\n   color: #4b0000;\n}\n\n.STYT-table th,\n.STYT-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #ffffff;\n}\n\n/* Input styles */\n.STYT-input {\n   color: #6a6a6a;\n   font-weight: bold;\n   font-size: medium;\n   width: 80px;\n   padding: 6px;\n   border: 1px solid #555;\n   border-radius: 4px;\n   background-color: #f1f1f1;\n}\n\n/* Options styles */\n.STYT-options {\n   margin-bottom: 10px;\n   display: flex;\n   flex-wrap: wrap;\n   justify-content: center;\n   color: #000000;\n   font-size: 18px;\n}\n\n/* Button styles */\n.STYT-button {\n   display: block;\n   width: 100%;\n   padding: 10px;\n   font-size: 24px;\n   background-color:  rgb(225, 225, 225);  \n   color: rgb(55, 55, 55);\n   border: none;\n   border-radius: 10px;\n   cursor: pointer;\n   transition: background-color 0.3s ease;\n   font-weight: bold;\n}\n\n.STYT-button:hover {\n   color: rgb(200, 200, 200);\n   background-color: rgb(162, 162, 162);  \n}\n\n/* Animation styles */\n@keyframes fade-in {\n   from {\n      opacity: 0;\n   }\n   to {\n      opacity: 1;\n   }\n}\n\n/* Apply animation to the container */\n.STYT-container {\n   animation: fade-in 0.5s ease;\n}\n\n/* fontSize: '22px', color: 'red', textAlign: 'center' */\n.loginToCreate {\n   font-size: 22px;\n   color: red;\n   text-align: center;\n}\n\n/* Add space between image and chart */\n.STYT-image {\n  margin-bottom: 70px;\n}\n\nform div {\n   margin: 1em;\n   display: inline-block;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11057,7 +10925,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.training-sessions-tracker {
 
 .program-complete h1 {
    margin: 0;
-   color: #12b900;
+   color: #ffffff;
 }
 
 .week-selector {
@@ -11088,7 +10956,7 @@ label h2 {
 }
 
 .week-title {
-   color:#000;
+   color:#6b6b6b;
    font-size: 35px;
    font-weight: bold;
    text-align: center;
@@ -11101,7 +10969,7 @@ label h2 {
    font-weight: bold;
    text-align: center;
    text-decoration: line-through;
-   color: #47a23d;
+   color: #e20000;
    /* background-color: #000000; */
    padding: 50px;
 }
@@ -11115,7 +10983,7 @@ label h2 {
    font-weight: bold;
    margin-bottom: 30px;
    text-align: center;
-   color: #000000;
+   color: #bd0000;
 }
 
 .completedStatus-day-title {
@@ -11140,7 +11008,7 @@ label h2 {
    flex-wrap: wrap;
    gap: 0px;
    justify-content: center;
-   background-color: #686868;
+  
 }
 
 .exercise-container {
@@ -11159,7 +11027,7 @@ label h2 {
 
 .completedStatus-exercise-container {
    width: calc(20% - 10px);
-   background-color: #000;
+   background-color: #aaaaaa;
    padding: 16px;
    /* border: 4px solid rgb(48, 194, 63); */
    border: 4px solid #092309;
@@ -11184,7 +11052,7 @@ label h2 {
    font-weight: bold;
    margin-bottom: 8px;
    text-align: center;
-   color: rgb(48, 194, 63);
+   color: rgb(197, 0, 0);
    text-transform: uppercase;
    text-decoration: line-through;
 }
@@ -11213,7 +11081,7 @@ label h2 {
 .completedStatus-modification-mode-checkbox-label {
    font-size: 16px;
    vertical-align: middle;
-   color: #1ca800;
+   color: #000000;
 }
 
 .exercise-table {
@@ -11230,7 +11098,7 @@ label h2 {
    border-collapse: collapse;
    background-color: #333;
    text-decoration: line-through;
-   color: #000000;
+   color: #dddddd;
 }
 
 .exercise-table th,
@@ -11256,7 +11124,7 @@ label h2 {
 .button {
    margin-top: 8px;
    padding: 8px 16px;
-   background-color: #d3d3d3;
+   background-color: #eaeaea;
    color: #fff;
    border: none;
    border-radius: 4px;
@@ -11267,8 +11135,8 @@ label h2 {
 .completedStatus-button {
    margin-top: 8px;
    padding: 8px 16px;
-   background-color: #0e4011;
-   color: #fff;
+   background-color: #000000;
+   color: #d8d8d8;
    border: none;
    border-radius: 4px;
    cursor: pointer;
@@ -11372,7 +11240,7 @@ label h2 {
 
 .progress-bar {
    height: 100%;
-   background-color: #12b900;
+   background-color: #ec3300;
    transition: width 0.5s ease-in-out;
    background-image: linear-gradient(
       45deg,
@@ -11412,110 +11280,7 @@ label h2 {
    to {
       background-position-x: 0;
    }
-}`, "",{"version":3,"sources":["webpack://./client/features/tracker/TYP.css"],"names":[],"mappings":"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","sourcesContent":[".training-sessions-tracker {\n   background-color: #f5f5f5;\n   color: rgb(0, 0, 0);\n   padding-top: 50px;\n}\n\n.completedStatus-training-sessions-tracker {\n   /* background-color: #929292; */\n   color: rgb(0, 0, 0);\n}\n\n.program-complete {\n   /* background-color: #000000; */\n   padding: 10px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   \n   height:40px;\n}\n\n.program-complete h1 {\n   margin: 0;\n   color: #12b900;\n}\n\n.week-selector {\n   text-align: center;\n   height: 80px;\n}\n\nlabel h2 {\n   font-size: 28px;\n}\n\n.completedStatus-week-selector {\n   text-align: center;\n   height: 80px;\n}\n\n.week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n}\n\n.completedStatus-week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n   /* background-color: #12b900; */\n}\n\n.week-title {\n   color:#000;\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n\n   padding: 50px;\n}\n\n.completedStatus-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n   text-decoration: line-through;\n   color: #47a23d;\n   /* background-color: #000000; */\n   padding: 50px;\n}\n\n.day-container {\n   margin-bottom: 50px;\n}\n\n.day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #000000;\n}\n\n.completedStatus-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: line-through;\n}\n\n.exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   /* gap: 20px; */\n   justify-content: center;\n   /* background-color: #282c34; */\n}\n\n.completedStatus-exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   gap: 0px;\n   justify-content: center;\n   background-color: #686868;\n}\n\n.exercise-container {\n   width: calc(20% - 10px);\n   background-color: #e3e3e3;\n   padding: 16px;\n   /* border: 4px solid rgb(20, 21, 11); */\n   border-right: 4px solid black;\n   border-left: 4px solid black;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.completedStatus-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #000;\n   padding: 16px;\n   /* border: 4px solid rgb(48, 194, 63); */\n   border: 4px solid #092309;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(236, 0, 0);\n   text-transform: uppercase;\n}\n\n.completedStatus-exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(48, 194, 63);\n   text-transform: uppercase;\n   text-decoration: line-through;\n}\n\n.modification-mode-container {\n   margin-top: 16px;\n   margin-bottom: 8px;\n   text-align: center;\n}\n\n.modification-mode-label {\n   font-size: 14px;\n}\n\n.modification-mode-checkbox {\n   margin-right: 8px;\n   vertical-align: middle;\n}\n\n.modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #8f0c00;\n}\n\n.completedStatus-modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #1ca800;\n}\n\n.exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #e7e7e7;\n   color: #000000;\n}\n\n.completedStatus-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   text-decoration: line-through;\n   color: #000000;\n}\n\n.exercise-table th,\n.exercise-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #898989;\n}\n\n.exercise-table th {\n   background-color: #adadad;\n}\n\n.exercise-table td {\n   background-color: #cccccc;\n}\n\n.completedStatus-exercise-table td {\n   text-align: center;\n}\n\n.button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #d3d3d3;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.completedStatus-button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #0e4011;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.button:hover {\n   background-color: #b70000;\n}\n\n.completedStatus-button:hover {\n   background-color: #972718;\n}\n\n.bottom-buttons {\n   margin-top: 150px;\n   display: flex;\n   flex-wrap: wrap;\n   gap: 40px;\n   justify-content: center;\n   padding-bottom: 40px;\n}\n\n.complete-archive-button {\n   margin-top: 20px;\n   padding: 1px 16px;\n   background-color: #0e4011;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.complete-archive-button:hover {\n   background-color: rgb(169, 169, 169);\n   color: #0e4011;\n   font-weight: bold;\n}\n\n.archive-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(167, 167, 167);\n   color: #000000;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.archive-button:hover {\n   background-color: rgb(210, 205, 205);\n   color: rgb(235, 0, 0);\n   font-weight: bold;\n}\n\n.delete-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(159, 159, 159);\n   color: #000000;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.delete-button:hover {\n   color: rgb(206, 0, 0);\n   font-weight: bold;\n   background-color:rgb(210, 205, 205);\n}\n\n.progress-bar-container {\n   position: relative;\n   min-height: 100vh;\n   width: auto;\n}\n\n.sticky-footer {\n   position: sticky;\n   bottom: 0;\n   z-index: 100;\n}\n\n.custom-progress-bar {\n   height: 30px;\n   margin-top: 20px;\n   border-radius: 4px;\n   overflow: hidden;\n   box-shadow: 0 2px 4px rgba(152, 152, 152, 0.2);\n   position: relative;\n}\n\n.progress-bar {\n   height: 100%;\n   background-color: #12b900;\n   transition: width 0.5s ease-in-out;\n   background-image: linear-gradient(\n      45deg,\n      rgba(255, 255, 255, 0.15) 25%,\n      transparent 25%,\n      transparent 50%,\n      rgba(255, 255, 255, 0.15) 50%,\n      rgba(255, 255, 255, 0.15) 75%,\n      transparent 75%,\n      transparent\n   );\n   background-size: 1rem 1rem;\n   animation: progress-bar-stripes 1s linear infinite;\n   position: relative;\n}\n\n.progress-bar-percentage {\n   position: absolute;\n   top: 50%;\n   right: 0;\n   transform: translate(0, -50%);\n   display: flex;\n   align-items: center;\n   justify-content: center;\n   /* padding: 0 10px; */\n   font-size: 14px;\n   color: #000000;\n   white-space: nowrap;\n   font-weight: bold;\n   font-size: 20px;\n}\n\n@keyframes progress-bar-stripes {\n   from {\n      background-position-x: 1rem;\n   }\n   to {\n      background-position-x: 0;\n   }\n}"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./client/features/tracker/TrainingSessionsTracker.css":
-/*!***************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./client/features/tracker/TrainingSessionsTracker.css ***!
-  \***************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* .training-sessions-tracker {
-   background-color: #f5f5f5;
-   padding: 16px;
-}
- 
-.week-container {
-   margin-bottom: 24px;
-}
- 
-.week-title {
-   font-size: 24px;
-   font-weight: bold;
-   margin-bottom: 16px;
-}
- 
-.table-container {
-   overflow-x: auto;
-}
- 
-.training-table {
-   border-collapse: collapse;
-   width: 100%;
-}
- 
-.training-table th,
-.training-table td {
-   padding: 8px;
-   text-align: center;
-   white-space: nowrap;
-}
- 
-.training-table th:first-child,
-.training-table td:first-child {
-   text-align: left;
-}
- 
-.day-cell,
-.exercise-cell,
-.reps-cell {
-   font-weight: bold;
-   width: 120px;
-}
- 
-.set-cell {
-   display: flex;
-   align-items: center;
-   width: auto;
-}
-
-.rep-cell {
-   display: flex;
-   align-items: center;
-   width: auto;
-}
- 
-.input-box {
-   width: 50px;
-   margin-right: 8px;
-}
- 
-.button {
-   margin-left: 8px;
-}
- 
-.modification-mode-container {
-   margin-top: 16px;
-}
- 
-.modification-mode-label {
-   margin-bottom: 8px;
-}
- 
-.modification-mode-checkbox-label {
-   font-size: 14px;
-   color: #666;
-}
-  */`, "",{"version":3,"sources":["webpack://./client/features/tracker/TrainingSessionsTracker.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GA4EG","sourcesContent":["/* .training-sessions-tracker {\n   background-color: #f5f5f5;\n   padding: 16px;\n}\n \n.week-container {\n   margin-bottom: 24px;\n}\n \n.week-title {\n   font-size: 24px;\n   font-weight: bold;\n   margin-bottom: 16px;\n}\n \n.table-container {\n   overflow-x: auto;\n}\n \n.training-table {\n   border-collapse: collapse;\n   width: 100%;\n}\n \n.training-table th,\n.training-table td {\n   padding: 8px;\n   text-align: center;\n   white-space: nowrap;\n}\n \n.training-table th:first-child,\n.training-table td:first-child {\n   text-align: left;\n}\n \n.day-cell,\n.exercise-cell,\n.reps-cell {\n   font-weight: bold;\n   width: 120px;\n}\n \n.set-cell {\n   display: flex;\n   align-items: center;\n   width: auto;\n}\n\n.rep-cell {\n   display: flex;\n   align-items: center;\n   width: auto;\n}\n \n.input-box {\n   width: 50px;\n   margin-right: 8px;\n}\n \n.button {\n   margin-left: 8px;\n}\n \n.modification-mode-container {\n   margin-top: 16px;\n}\n \n.modification-mode-label {\n   margin-bottom: 8px;\n}\n \n.modification-mode-checkbox-label {\n   font-size: 14px;\n   color: #666;\n}\n  */"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/tracker/TYP.css"],"names":[],"mappings":"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","sourcesContent":[".training-sessions-tracker {\n   background-color: #f5f5f5;\n   color: rgb(0, 0, 0);\n   padding-top: 50px;\n}\n\n.completedStatus-training-sessions-tracker {\n   /* background-color: #929292; */\n   color: rgb(0, 0, 0);\n}\n\n.program-complete {\n   /* background-color: #000000; */\n   padding: 10px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   \n   height:40px;\n}\n\n.program-complete h1 {\n   margin: 0;\n   color: #ffffff;\n}\n\n.week-selector {\n   text-align: center;\n   height: 80px;\n}\n\nlabel h2 {\n   font-size: 28px;\n}\n\n.completedStatus-week-selector {\n   text-align: center;\n   height: 80px;\n}\n\n.week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n}\n\n.completedStatus-week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n   /* background-color: #12b900; */\n}\n\n.week-title {\n   color:#6b6b6b;\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n\n   padding: 50px;\n}\n\n.completedStatus-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n   text-decoration: line-through;\n   color: #e20000;\n   /* background-color: #000000; */\n   padding: 50px;\n}\n\n.day-container {\n   margin-bottom: 50px;\n}\n\n.day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #bd0000;\n}\n\n.completedStatus-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: line-through;\n}\n\n.exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   /* gap: 20px; */\n   justify-content: center;\n   /* background-color: #282c34; */\n}\n\n.completedStatus-exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   gap: 0px;\n   justify-content: center;\n  \n}\n\n.exercise-container {\n   width: calc(20% - 10px);\n   background-color: #e3e3e3;\n   padding: 16px;\n   /* border: 4px solid rgb(20, 21, 11); */\n   border-right: 4px solid black;\n   border-left: 4px solid black;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.completedStatus-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #aaaaaa;\n   padding: 16px;\n   /* border: 4px solid rgb(48, 194, 63); */\n   border: 4px solid #092309;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(236, 0, 0);\n   text-transform: uppercase;\n}\n\n.completedStatus-exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(197, 0, 0);\n   text-transform: uppercase;\n   text-decoration: line-through;\n}\n\n.modification-mode-container {\n   margin-top: 16px;\n   margin-bottom: 8px;\n   text-align: center;\n}\n\n.modification-mode-label {\n   font-size: 14px;\n}\n\n.modification-mode-checkbox {\n   margin-right: 8px;\n   vertical-align: middle;\n}\n\n.modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #8f0c00;\n}\n\n.completedStatus-modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #000000;\n}\n\n.exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #e7e7e7;\n   color: #000000;\n}\n\n.completedStatus-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   text-decoration: line-through;\n   color: #dddddd;\n}\n\n.exercise-table th,\n.exercise-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #898989;\n}\n\n.exercise-table th {\n   background-color: #adadad;\n}\n\n.exercise-table td {\n   background-color: #cccccc;\n}\n\n.completedStatus-exercise-table td {\n   text-align: center;\n}\n\n.button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #eaeaea;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.completedStatus-button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #000000;\n   color: #d8d8d8;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.button:hover {\n   background-color: #b70000;\n}\n\n.completedStatus-button:hover {\n   background-color: #972718;\n}\n\n.bottom-buttons {\n   margin-top: 150px;\n   display: flex;\n   flex-wrap: wrap;\n   gap: 40px;\n   justify-content: center;\n   padding-bottom: 40px;\n}\n\n.complete-archive-button {\n   margin-top: 20px;\n   padding: 1px 16px;\n   background-color: #0e4011;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.complete-archive-button:hover {\n   background-color: rgb(169, 169, 169);\n   color: #0e4011;\n   font-weight: bold;\n}\n\n.archive-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(167, 167, 167);\n   color: #000000;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.archive-button:hover {\n   background-color: rgb(210, 205, 205);\n   color: rgb(235, 0, 0);\n   font-weight: bold;\n}\n\n.delete-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(159, 159, 159);\n   color: #000000;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.delete-button:hover {\n   color: rgb(206, 0, 0);\n   font-weight: bold;\n   background-color:rgb(210, 205, 205);\n}\n\n.progress-bar-container {\n   position: relative;\n   min-height: 100vh;\n   width: auto;\n}\n\n.sticky-footer {\n   position: sticky;\n   bottom: 0;\n   z-index: 100;\n}\n\n.custom-progress-bar {\n   height: 30px;\n   margin-top: 20px;\n   border-radius: 4px;\n   overflow: hidden;\n   box-shadow: 0 2px 4px rgba(152, 152, 152, 0.2);\n   position: relative;\n}\n\n.progress-bar {\n   height: 100%;\n   background-color: #ec3300;\n   transition: width 0.5s ease-in-out;\n   background-image: linear-gradient(\n      45deg,\n      rgba(255, 255, 255, 0.15) 25%,\n      transparent 25%,\n      transparent 50%,\n      rgba(255, 255, 255, 0.15) 50%,\n      rgba(255, 255, 255, 0.15) 75%,\n      transparent 75%,\n      transparent\n   );\n   background-size: 1rem 1rem;\n   animation: progress-bar-stripes 1s linear infinite;\n   position: relative;\n}\n\n.progress-bar-percentage {\n   position: absolute;\n   top: 50%;\n   right: 0;\n   transform: translate(0, -50%);\n   display: flex;\n   align-items: center;\n   justify-content: center;\n   /* padding: 0 10px; */\n   font-size: 14px;\n   color: #000000;\n   white-space: nowrap;\n   font-weight: bold;\n   font-size: 20px;\n}\n\n@keyframes progress-bar-stripes {\n   from {\n      background-position-x: 1rem;\n   }\n   to {\n      background-position-x: 0;\n   }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -52408,61 +52173,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_TYP_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_TYP_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_TYP_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./client/features/tracker/TrainingSessionsTracker.css":
-/*!*************************************************************!*\
-  !*** ./client/features/tracker/TrainingSessionsTracker.css ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_TrainingSessionsTracker_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./TrainingSessionsTracker.css */ "./node_modules/css-loader/dist/cjs.js!./client/features/tracker/TrainingSessionsTracker.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-
-      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-    
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_TrainingSessionsTracker_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_TrainingSessionsTracker_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_TrainingSessionsTracker_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_TrainingSessionsTracker_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
