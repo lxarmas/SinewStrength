@@ -9814,7 +9814,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Main container */
 /* Header section */
 .about-header {
   position: relative;
-  background-color: #f8f8f8;
+ 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -9827,18 +9827,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Main container */
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: rgb(222, 222, 222);
   border-radius: 8px;
 }
 
 .about-text {
-  color: #333333;
+  color: #000000;
   position: relative;
   z-index: 1;
 }
 
 .aboutHeader {
-  color: #080808;
+  color: #b50000;
   font-size: 38px;
 }
 
@@ -9852,6 +9852,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Main container */
   display: flex;
   justify-content: space-between;
   max-width: 100%;
+  
 }
 
 /* Individual images */
@@ -9860,7 +9861,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Main container */
 .AIrowImage {
   max-width: 30%;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Media queries for responsive design */
@@ -9876,7 +9877,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Main container */
     margin-bottom: 20px;
   }
 }
-`, "",{"version":3,"sources":["webpack://./client/features/about/About.css"],"names":[],"mappings":"AAAA,mBAAmB;AACnB;EACE,aAAa;EACb,gCAAgC;AAClC;;AAEA,mBAAmB;AACnB;EACE,kBAAkB;EAClB,yBAAyB;EACzB,aAAa;EACb,kBAAkB;EAClB,wCAAwC;EACxC,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,OAAO;EACP,WAAW;EACX,YAAY;EACZ,uBAAuB;EACvB,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,cAAc;EACd,eAAe;AACjB;;AAEA,iBAAiB;AACjB;EACE,mBAAmB;AACrB;;AAEA,oBAAoB;AACpB;EACE,aAAa;EACb,8BAA8B;EAC9B,eAAe;AACjB;;AAEA,sBAAsB;AACtB;;;EAGE,cAAc;EACd,kBAAkB;EAClB,wCAAwC;AAC1C;;AAEA,wCAAwC;AACxC;EACE;IACE,eAAe;EACjB;;EAEA;;;IAGE,eAAe;IACf,mBAAmB;EACrB;AACF","sourcesContent":["/* Main container */\n.about-container {\n  padding: 20px;\n  font-family: 'Arial', sans-serif;\n}\n\n/* Header section */\n.about-header {\n  position: relative;\n  background-color: #f8f8f8;\n  padding: 20px;\n  border-radius: 8px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  margin-bottom: 20px;\n}\n\n.header-background {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: white;\n  border-radius: 8px;\n}\n\n.about-text {\n  color: #333333;\n  position: relative;\n  z-index: 1;\n}\n\n.aboutHeader {\n  color: #080808;\n  font-size: 38px;\n}\n\n/* Text content */\n.about-text p {\n  margin-bottom: 15px;\n}\n\n/* Image container */\n.about-image-container {\n  display: flex;\n  justify-content: space-between;\n  max-width: 100%;\n}\n\n/* Individual images */\n.AIfrontImage,\n.AIbackImage,\n.AIrowImage {\n  max-width: 30%;\n  border-radius: 8px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n\n/* Media queries for responsive design */\n@media (max-width: 768px) {\n  .about-image-container {\n    flex-wrap: wrap;\n  }\n\n  .AIfrontImage,\n  .AIbackImage,\n  .AIrowImage {\n    max-width: 100%;\n    margin-bottom: 20px;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./client/features/about/About.css"],"names":[],"mappings":"AAAA,mBAAmB;AACnB;EACE,aAAa;EACb,gCAAgC;AAClC;;AAEA,mBAAmB;AACnB;EACE,kBAAkB;;EAElB,aAAa;EACb,kBAAkB;EAClB,wCAAwC;EACxC,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,MAAM;EACN,OAAO;EACP,WAAW;EACX,YAAY;EACZ,oCAAoC;EACpC,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,kBAAkB;EAClB,UAAU;AACZ;;AAEA;EACE,cAAc;EACd,eAAe;AACjB;;AAEA,iBAAiB;AACjB;EACE,mBAAmB;AACrB;;AAEA,oBAAoB;AACpB;EACE,aAAa;EACb,8BAA8B;EAC9B,eAAe;;AAEjB;;AAEA,sBAAsB;AACtB;;;EAGE,cAAc;EACd,kBAAkB;EAClB,wCAAwC;AAC1C;;AAEA,wCAAwC;AACxC;EACE;IACE,eAAe;EACjB;;EAEA;;;IAGE,eAAe;IACf,mBAAmB;EACrB;AACF","sourcesContent":["/* Main container */\n.about-container {\n  padding: 20px;\n  font-family: 'Arial', sans-serif;\n}\n\n/* Header section */\n.about-header {\n  position: relative;\n \n  padding: 20px;\n  border-radius: 8px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n  margin-bottom: 20px;\n}\n\n.header-background {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgb(222, 222, 222);\n  border-radius: 8px;\n}\n\n.about-text {\n  color: #000000;\n  position: relative;\n  z-index: 1;\n}\n\n.aboutHeader {\n  color: #b50000;\n  font-size: 38px;\n}\n\n/* Text content */\n.about-text p {\n  margin-bottom: 15px;\n}\n\n/* Image container */\n.about-image-container {\n  display: flex;\n  justify-content: space-between;\n  max-width: 100%;\n  \n}\n\n/* Individual images */\n.AIfrontImage,\n.AIbackImage,\n.AIrowImage {\n  max-width: 30%;\n  border-radius: 8px;\n  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);\n}\n\n/* Media queries for responsive design */\n@media (max-width: 768px) {\n  .about-image-container {\n    flex-wrap: wrap;\n  }\n\n  .AIfrontImage,\n  .AIbackImage,\n  .AIrowImage {\n    max-width: 100%;\n    margin-bottom: 20px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10503,6 +10504,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 /* HPimageWrapper */
 .HPimageWrapper {
   position: relative;
+ 
 }
 
 /* HPimage */
@@ -10520,16 +10522,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 /* DynamicImageContainer */
 .dynamicImageContainer {
   position: relative;
+  padding:20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom:0px;
 }
 
 /* DynamicImage */
 .dynamicImage {
   width: 100%;
   border-radius: 10px;
-  left:10%;
+  
   
 }
 
@@ -10549,7 +10553,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 }
 
 .dynamicImageTextContainer h2 {
-  background-color: #e0e0e0;
+ 
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -10634,8 +10638,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 /* Ticker Container */
 .tickerContainer {
   background-color: rgb(0, 0, 0);
-  padding: 10px 0px;
-  margin-top: 5px;
+  padding: 30px 0px;
   width: 100%;
   overflow: hidden;
 }
@@ -10658,7 +10661,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 .tickerList li {
   display: inline-block;
   margin-right: 20px;
-  font-size: 24px;
+  font-size: 35px;
   color: rgb(255, 0, 0);
   font-family: "Courier New", monospace;
   letter-spacing: 2px;
@@ -10691,18 +10694,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   display: flex;
   justify-content: center;
   align-items: center;
- 
-
   height: 500px;
- 
-  background-color: white;
 }
 
 .HPwomanDumbBellImage img {
   max-width: 100%;
   max-height: 500px;
   margin-right: 120px;
-
 }
 
 
@@ -10719,7 +10717,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   margin-right: 120px;
    margin-left: 18px;
     font-style: oblique;
-    color:black;
+      color:rgb(157, 157, 157)
 }
 
 .HPwomanDumbellTextRight{
@@ -10728,13 +10726,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   margin-left: 120px;
   margin-right: 18px;
   font-style: oblique;
-  color:black
+  color:rgb(157, 157, 157)
    
 }
 .HPwomanDumbellQuote{
   font-style: oblique;
-  color:rgb(149, 149, 149);
-}`, "",{"version":3,"sources":["webpack://./client/features/home/Home.css"],"names":[],"mappings":"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","sourcesContent":["/* HPcontainer */\n.HPcontainer {\n  text-align: center;\n  background-color: #e0e0e0;\n  padding: 32px;\n  color:rgb(207, 0, 0);\n  font-size: 40px;\n\n}\n\n/* HPimageContainer */\n.HPimageContainer {\n  \n  background-color: #efeeee;\n  position: relative;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  height: 700px;\n}\n\n.HPlogo {\n  width: 700px;\n  height: auto;\n  transform: translateX(-2%);\n   transform: translateY(10%);\n}\n\n/* Slogan Containers */\n.sloganContainerLeft,\n.sloganContainerRight {\n  font-style: oblique;\n  position: absolute;\n  text-align: center;\n  padding: 5px;\n  z-index: 1;\n  display: block;\n }\n\n.sloganContainerLeft {\n  font-size: 22px;\n  left: 10%;\n  color: #ffffff;\n  top: 40%;\n  \n  animation-name: coolAnimationLeft;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n.sloganContainerRight {\n  font-size: 28px;\n  color: #d30000;\n  left:130px;\n  top: 85%;\n  animation-name: coolAnimationRight;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n/* HPimageWrapper */\n.HPimageWrapper {\n  position: relative;\n}\n\n/* HPimage */\n.HPimageOne {\n  width: 80%;\n  border-radius: 10px;\n  margin-bottom: -5px;\n  transform: translateX(10%);\n }\n\n.HPimage.show {\n  opacity: 1;\n}\n\n/* DynamicImageContainer */\n.dynamicImageContainer {\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n/* DynamicImage */\n.dynamicImage {\n  width: 100%;\n  border-radius: 10px;\n  left:10%;\n  \n}\n\n.dynamicImage.show {\n  opacity: 1;\n}\n\n/* DynamicImageTextContainer */\n.dynamicImageTextContainer {\n  position: absolute;\n  top: 40%;\n  left: 85%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n  color: #ffffff;\n  z-index: 2;\n}\n\n.dynamicImageTextContainer h2 {\n  background-color: #e0e0e0;\n  font-size: 24px;\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.dynamicImageTextContainer h1 {\n  font-size: 36px;\n  font-weight: bold;\n}\n\n/* Animation for slogans */\n@keyframes slideInFromLeft {\n  0% {\n    transform: translateX(-50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n@keyframes slideInFromRight {\n  0% {\n    transform: translateX(50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerLeft */\n@keyframes coolAnimationLeft {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  50% {\n    transform: scale(1.2);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerRight */\n@keyframes coolAnimationRight {\n  0% {\n    transform: translateY(100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateY(-10%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n/* Apply animation to slogans */\n.HPsloganOne,\n.HPsloganTwo {\n  animation-duration: 1s;\n  animation-fill-mode: forwards;\n  opacity: 0;\n}\n\n.HPsloganOne {\n  animation-name: slideInFromLeft;\n}\n\n.HPsloganTwo {\n  animation-name: slideInFromRight;\n}\n\n/* Ticker Container */\n.tickerContainer {\n  background-color: rgb(0, 0, 0);\n  padding: 10px 0px;\n  margin-top: 5px;\n  width: 100%;\n  overflow: hidden;\n}\n\n.tickerContent {\n  display: flex;\n  align-items: center;\n}\n\n\n\n.tickerList {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  animation: ticker 20s linear infinite;\n}\n\n.tickerList li {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 24px;\n  color: rgb(255, 0, 0);\n  font-family: \"Courier New\", monospace;\n  letter-spacing: 2px;\n  text-transform: uppercase;\n  animation: glow 1s ease-in-out infinite alternate;\n}\n\n@keyframes ticker {\n  0% {\n    transform: translateX(90%);\n  }\n  100% {\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes glow {\n  0% {\n    text-shadow: 0 0 5px rgb(255, 1, 1), 0 0 10px rgb(255, 3, 3), 0 0 20px rgb(255, 4, 4), 0 0 30px rgb(255, 9, 9)\n  }\n  100% {\n    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff1e00, 0 0 30px #ff0000, 0 0 40px #ff0000;\n  }\n}\n\n\n/* HPwomanDumbBellImage */\n.HPwomanDumbBellImage {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n \n\n  height: 500px;\n \n  background-color: white;\n}\n\n.HPwomanDumbBellImage img {\n  max-width: 100%;\n  max-height: 500px;\n  margin-right: 120px;\n\n}\n\n\n\n/* HPvideo */\n.HPvideo {\n  max-width: 80%; /* Adjust the max-width to make the video smaller */\n  height: 500px;\n}\n\n.HPwomanDumbellText{\n  justify-content: left;\n  align-items: center;\n  margin-right: 120px;\n   margin-left: 18px;\n    font-style: oblique;\n    color:black;\n}\n\n.HPwomanDumbellTextRight{\n  justify-content: right;\n  align-items: center;\n  margin-left: 120px;\n  margin-right: 18px;\n  font-style: oblique;\n  color:black\n   \n}\n.HPwomanDumbellQuote{\n  font-style: oblique;\n  color:rgb(149, 149, 149);\n}"],"sourceRoot":""}]);
+  color:rgb(0, 0, 0);
+}`, "",{"version":3,"sources":["webpack://./client/features/home/Home.css"],"names":[],"mappings":"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","sourcesContent":["/* HPcontainer */\n.HPcontainer {\n  text-align: center;\n  background-color: #e0e0e0;\n  padding: 32px;\n  color:rgb(207, 0, 0);\n  font-size: 40px;\n\n}\n\n/* HPimageContainer */\n.HPimageContainer {\n  \n  background-color: #efeeee;\n  position: relative;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  height: 700px;\n}\n\n.HPlogo {\n  width: 700px;\n  height: auto;\n  transform: translateX(-2%);\n   transform: translateY(10%);\n}\n\n/* Slogan Containers */\n.sloganContainerLeft,\n.sloganContainerRight {\n  font-style: oblique;\n  position: absolute;\n  text-align: center;\n  padding: 5px;\n  z-index: 1;\n  display: block;\n }\n\n.sloganContainerLeft {\n  font-size: 22px;\n  left: 10%;\n  color: #ffffff;\n  top: 40%;\n  \n  animation-name: coolAnimationLeft;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n.sloganContainerRight {\n  font-size: 28px;\n  color: #d30000;\n  left:130px;\n  top: 85%;\n  animation-name: coolAnimationRight;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n/* HPimageWrapper */\n.HPimageWrapper {\n  position: relative;\n \n}\n\n/* HPimage */\n.HPimageOne {\n  width: 80%;\n  border-radius: 10px;\n  margin-bottom: -5px;\n  transform: translateX(10%);\n }\n\n.HPimage.show {\n  opacity: 1;\n}\n\n/* DynamicImageContainer */\n.dynamicImageContainer {\n  position: relative;\n  padding:20px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  bottom:0px;\n}\n\n/* DynamicImage */\n.dynamicImage {\n  width: 100%;\n  border-radius: 10px;\n  \n  \n}\n\n.dynamicImage.show {\n  opacity: 1;\n}\n\n/* DynamicImageTextContainer */\n.dynamicImageTextContainer {\n  position: absolute;\n  top: 40%;\n  left: 85%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n  color: #ffffff;\n  z-index: 2;\n}\n\n.dynamicImageTextContainer h2 {\n \n  font-size: 24px;\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.dynamicImageTextContainer h1 {\n  font-size: 36px;\n  font-weight: bold;\n}\n\n/* Animation for slogans */\n@keyframes slideInFromLeft {\n  0% {\n    transform: translateX(-50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n@keyframes slideInFromRight {\n  0% {\n    transform: translateX(50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerLeft */\n@keyframes coolAnimationLeft {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  50% {\n    transform: scale(1.2);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerRight */\n@keyframes coolAnimationRight {\n  0% {\n    transform: translateY(100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateY(-10%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n/* Apply animation to slogans */\n.HPsloganOne,\n.HPsloganTwo {\n  animation-duration: 1s;\n  animation-fill-mode: forwards;\n  opacity: 0;\n}\n\n.HPsloganOne {\n  animation-name: slideInFromLeft;\n}\n\n.HPsloganTwo {\n  animation-name: slideInFromRight;\n}\n\n/* Ticker Container */\n.tickerContainer {\n  background-color: rgb(0, 0, 0);\n  padding: 30px 0px;\n  width: 100%;\n  overflow: hidden;\n}\n\n.tickerContent {\n  display: flex;\n  align-items: center;\n}\n\n\n\n.tickerList {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  animation: ticker 20s linear infinite;\n}\n\n.tickerList li {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 35px;\n  color: rgb(255, 0, 0);\n  font-family: \"Courier New\", monospace;\n  letter-spacing: 2px;\n  text-transform: uppercase;\n  animation: glow 1s ease-in-out infinite alternate;\n}\n\n@keyframes ticker {\n  0% {\n    transform: translateX(90%);\n  }\n  100% {\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes glow {\n  0% {\n    text-shadow: 0 0 5px rgb(255, 1, 1), 0 0 10px rgb(255, 3, 3), 0 0 20px rgb(255, 4, 4), 0 0 30px rgb(255, 9, 9)\n  }\n  100% {\n    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff1e00, 0 0 30px #ff0000, 0 0 40px #ff0000;\n  }\n}\n\n\n/* HPwomanDumbBellImage */\n.HPwomanDumbBellImage {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 500px;\n}\n\n.HPwomanDumbBellImage img {\n  max-width: 100%;\n  max-height: 500px;\n  margin-right: 120px;\n}\n\n\n\n/* HPvideo */\n.HPvideo {\n  max-width: 80%; /* Adjust the max-width to make the video smaller */\n  height: 500px;\n}\n\n.HPwomanDumbellText{\n  justify-content: left;\n  align-items: center;\n  margin-right: 120px;\n   margin-left: 18px;\n    font-style: oblique;\n      color:rgb(157, 157, 157)\n}\n\n.HPwomanDumbellTextRight{\n  justify-content: right;\n  align-items: center;\n  margin-left: 120px;\n  margin-right: 18px;\n  font-style: oblique;\n  color:rgb(157, 157, 157)\n   \n}\n.HPwomanDumbellQuote{\n  font-style: oblique;\n  color:rgb(0, 0, 0);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10778,7 +10776,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
 
 .navbar a {
    font-family: sans-serif;
-   color: rgb(37, 37, 37);
+   color: rgb(130, 124, 163);
    text-decoration: none;
    transition: color 0.3s ease;
    font-size: 28px;
@@ -10788,7 +10786,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
 }
 
 .navbar a:hover {
-   color: rgb(170, 2, 2);
+   color: rgb(242, 0, 0);
 }
 
 .navbar a.active {
@@ -10809,7 +10807,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
 .navbar-nav button:hover {
    background-color: rgb(241, 241, 241);
    color: rgb(170, 2, 2);
-}`, "",{"version":3,"sources":["webpack://./client/features/navbar/Nav.css"],"names":[],"mappings":"AAAA;GACG,oCAAoC;GACpC,YAAY;GACZ,YAAY;GACZ,gBAAgB;GAChB,MAAM;GACN,YAAY;AACf;;AAEA;GACG,aAAa;GACb,uBAAuB;GACvB,mBAAmB;AACtB;;AAEA;GACG,uBAAuB;GACvB,sBAAsB;GACtB,qBAAqB;GACrB,2BAA2B;GAC3B,eAAe;GACf,YAAY;GACZ,4EAA4E;GAC5E,cAAc;AACjB;;AAEA;GACG,qBAAqB;AACxB;;AAEA;GACG,iBAAiB;AACpB;;AAEA;GACG,YAAY;GACZ,yBAAyB;GACzB,YAAY;GACZ,eAAe;GACf,kBAAkB;GAClB,eAAe;GACf,eAAe;GACf,4EAA4E;AAC/E;;AAEA;GACG,oCAAoC;GACpC,qBAAqB;AACxB","sourcesContent":[".navbar {\n   background-color: rgb(255, 255, 255);\n   padding: 5px;\n   height: auto;\n   position: sticky;\n   top: 0;\n   z-index: 100;\n}\n\n.navbar nav {\n   display: flex;\n   justify-content: center;\n   align-items: center;\n}\n\n.navbar a {\n   font-family: sans-serif;\n   color: rgb(37, 37, 37);\n   text-decoration: none;\n   transition: color 0.3s ease;\n   font-size: 28px;\n   padding: 5px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n   margin: 0 .8em;\n}\n\n.navbar a:hover {\n   color: rgb(170, 2, 2);\n}\n\n.navbar a.active {\n   font-weight: bold;\n}\n\n.navbar-nav button {\n   color: white;\n   background-color: #000000;\n   border: none;\n   padding: 5px 10;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 28px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n}\n\n.navbar-nav button:hover {\n   background-color: rgb(241, 241, 241);\n   color: rgb(170, 2, 2);\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/navbar/Nav.css"],"names":[],"mappings":"AAAA;GACG,oCAAoC;GACpC,YAAY;GACZ,YAAY;GACZ,gBAAgB;GAChB,MAAM;GACN,YAAY;AACf;;AAEA;GACG,aAAa;GACb,uBAAuB;GACvB,mBAAmB;AACtB;;AAEA;GACG,uBAAuB;GACvB,yBAAyB;GACzB,qBAAqB;GACrB,2BAA2B;GAC3B,eAAe;GACf,YAAY;GACZ,4EAA4E;GAC5E,cAAc;AACjB;;AAEA;GACG,qBAAqB;AACxB;;AAEA;GACG,iBAAiB;AACpB;;AAEA;GACG,YAAY;GACZ,yBAAyB;GACzB,YAAY;GACZ,eAAe;GACf,kBAAkB;GAClB,eAAe;GACf,eAAe;GACf,4EAA4E;AAC/E;;AAEA;GACG,oCAAoC;GACpC,qBAAqB;AACxB","sourcesContent":[".navbar {\n   background-color: rgb(255, 255, 255);\n   padding: 5px;\n   height: auto;\n   position: sticky;\n   top: 0;\n   z-index: 100;\n}\n\n.navbar nav {\n   display: flex;\n   justify-content: center;\n   align-items: center;\n}\n\n.navbar a {\n   font-family: sans-serif;\n   color: rgb(130, 124, 163);\n   text-decoration: none;\n   transition: color 0.3s ease;\n   font-size: 28px;\n   padding: 5px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n   margin: 0 .8em;\n}\n\n.navbar a:hover {\n   color: rgb(242, 0, 0);\n}\n\n.navbar a.active {\n   font-weight: bold;\n}\n\n.navbar-nav button {\n   color: white;\n   background-color: #000000;\n   border: none;\n   padding: 5px 10;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 28px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n}\n\n.navbar-nav button:hover {\n   background-color: rgb(241, 241, 241);\n   color: rgb(170, 2, 2);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

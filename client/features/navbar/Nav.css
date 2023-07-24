@@ -15,7 +15,7 @@
 
 .navbar a {
    font-family: sans-serif;
-   color: rgb(37, 37, 37);
+   color: rgb(130, 124, 163);
    text-decoration: none;
    transition: color 0.3s ease;
    font-size: 28px;
@@ -25,7 +25,7 @@
 }
 
 .navbar a:hover {
-   color: rgb(170, 2, 2);
+   color: rgb(242, 0, 0);
 }
 
 .navbar a.active {
