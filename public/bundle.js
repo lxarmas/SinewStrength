@@ -11017,18 +11017,18 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.training-sessions-tracker {
-   background-color: #000000;
-   color: white;
+   background-color: #f5f5f5;
+   color: rgb(0, 0, 0);
    padding-top: 50px;
 }
 
 .completedStatus-training-sessions-tracker {
-   background-color: #092309;
-   color: white;
+   /* background-color: #929292; */
+   color: rgb(0, 0, 0);
 }
 
 .program-complete {
-   background-color: #000000;
+   /* background-color: #000000; */
    padding: 10px;
    display: flex;
    flex-direction: column;
@@ -11070,10 +11070,11 @@ label h2 {
 }
 
 .week-title {
+   color:#000;
    font-size: 35px;
    font-weight: bold;
    text-align: center;
-   background-color: #282c34;
+
    padding: 50px;
 }
 
@@ -11083,7 +11084,7 @@ label h2 {
    text-align: center;
    text-decoration: line-through;
    color: #47a23d;
-   background-color: #000000;
+   /* background-color: #000000; */
    padding: 50px;
 }
 
@@ -11096,7 +11097,7 @@ label h2 {
    font-weight: bold;
    margin-bottom: 30px;
    text-align: center;
-   color: #008afb;
+   color: #000000;
 }
 
 .completedStatus-day-title {
@@ -11113,7 +11114,7 @@ label h2 {
    flex-wrap: wrap;
    /* gap: 20px; */
    justify-content: center;
-   background-color: #282c34;
+   /* background-color: #282c34; */
 }
 
 .completedStatus-exercises-container {
@@ -11121,12 +11122,12 @@ label h2 {
    flex-wrap: wrap;
    gap: 0px;
    justify-content: center;
-   background-color: #000000;
+   background-color: #686868;
 }
 
 .exercise-container {
    width: calc(20% - 10px);
-   background-color: #282c34;
+   background-color: #acacac;
    padding: 16px;
    /* border: 4px solid rgb(20, 21, 11); */
    border-right: 4px solid black;
@@ -11156,7 +11157,7 @@ label h2 {
    font-weight: bold;
    margin-bottom: 8px;
    text-align: center;
-   color: rgb(0, 163, 251);
+   color: rgb(0, 0, 0);
    text-transform: uppercase;
 }
 
@@ -11201,8 +11202,8 @@ label h2 {
    width: 100%;
    margin-top: 16px;
    border-collapse: collapse;
-   background-color: #333;
-   color: #fff;
+   background-color: #e7e7e7;
+   color: #000000;
 }
 
 .completedStatus-exercise-table {
@@ -11211,7 +11212,7 @@ label h2 {
    border-collapse: collapse;
    background-color: #333;
    text-decoration: line-through;
-   color: #8b8b8b;
+   color: #000000;
 }
 
 .exercise-table th,
@@ -11219,15 +11220,15 @@ label h2 {
    font-size: 18px;
    padding: 8px;
    text-align: center;
-   border: 1px solid #555;
+   border: 1px solid #000000;
 }
 
 .exercise-table th {
-   background-color: #222;
+   background-color: #adadad;
 }
 
 .exercise-table td {
-   background-color: #444;
+   background-color: #cccccc;
 }
 
 .completedStatus-exercise-table td {
@@ -11347,7 +11348,7 @@ label h2 {
    margin-top: 20px;
    border-radius: 4px;
    overflow: hidden;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 2px 4px rgba(152, 152, 152, 0.2);
    position: relative;
 }
 
@@ -11393,7 +11394,7 @@ label h2 {
    to {
       background-position-x: 0;
    }
-}`, "",{"version":3,"sources":["webpack://./client/features/tracker/TYP.css"],"names":[],"mappings":"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","sourcesContent":[".training-sessions-tracker {\n   background-color: #000000;\n   color: white;\n   padding-top: 50px;\n}\n\n.completedStatus-training-sessions-tracker {\n   background-color: #092309;\n   color: white;\n}\n\n.program-complete {\n   background-color: #000000;\n   padding: 10px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   \n   height:40px;\n}\n\n.program-complete h1 {\n   margin: 0;\n   color: #12b900;\n}\n\n.week-selector {\n   text-align: center;\n   height: 80px;\n}\n\nlabel h2 {\n   font-size: 28px;\n}\n\n.completedStatus-week-selector {\n   text-align: center;\n   height: 80px;\n}\n\n.week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n}\n\n.completedStatus-week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n   /* background-color: #12b900; */\n}\n\n.week-title {\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n   background-color: #282c34;\n   padding: 50px;\n}\n\n.completedStatus-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n   text-decoration: line-through;\n   color: #47a23d;\n   background-color: #000000;\n   padding: 50px;\n}\n\n.day-container {\n   margin-bottom: 50px;\n}\n\n.day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #008afb;\n}\n\n.completedStatus-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: line-through;\n}\n\n.exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   /* gap: 20px; */\n   justify-content: center;\n   background-color: #282c34;\n}\n\n.completedStatus-exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   gap: 0px;\n   justify-content: center;\n   background-color: #000000;\n}\n\n.exercise-container {\n   width: calc(20% - 10px);\n   background-color: #282c34;\n   padding: 16px;\n   /* border: 4px solid rgb(20, 21, 11); */\n   border-right: 4px solid black;\n   border-left: 4px solid black;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.completedStatus-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #000;\n   padding: 16px;\n   /* border: 4px solid rgb(48, 194, 63); */\n   border: 4px solid #092309;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(0, 163, 251);\n   text-transform: uppercase;\n}\n\n.completedStatus-exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(48, 194, 63);\n   text-transform: uppercase;\n   text-decoration: line-through;\n}\n\n.modification-mode-container {\n   margin-top: 16px;\n   margin-bottom: 8px;\n   text-align: center;\n}\n\n.modification-mode-label {\n   font-size: 14px;\n}\n\n.modification-mode-checkbox {\n   margin-right: 8px;\n   vertical-align: middle;\n}\n\n.modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #2970ff;\n}\n\n.completedStatus-modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #1ca800;\n}\n\n.exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   color: #fff;\n}\n\n.completedStatus-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   text-decoration: line-through;\n   color: #8b8b8b;\n}\n\n.exercise-table th,\n.exercise-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #555;\n}\n\n.exercise-table th {\n   background-color: #222;\n}\n\n.exercise-table td {\n   background-color: #444;\n}\n\n.completedStatus-exercise-table td {\n   text-align: center;\n}\n\n.button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #007bff;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.completedStatus-button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #0e4011;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.button:hover {\n   background-color: #0056b3;\n}\n\n.completedStatus-button:hover {\n   background-color: #972718;\n}\n\n.bottom-buttons {\n   margin-top: 150px;\n   display: flex;\n   flex-wrap: wrap;\n   gap: 40px;\n   justify-content: center;\n   padding-bottom: 40px;\n}\n\n.complete-archive-button {\n   margin-top: 20px;\n   padding: 1px 16px;\n   background-color: #0e4011;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.complete-archive-button:hover {\n   background-color: rgb(210, 205, 205);\n   color: #0e4011;\n   font-weight: bold;\n}\n\n.archive-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: #da4100;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.archive-button:hover {\n   background-color: rgb(210, 205, 205);\n   color: #da4100;\n   font-weight: bold;\n}\n\n.delete-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(187, 1, 1);\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.delete-button:hover {\n   color: rgb(187, 1, 1);\n   font-weight: bold;\n   background-color:rgb(210, 205, 205);\n}\n\n.progress-bar-container {\n   position: relative;\n   min-height: 100vh;\n   width: auto;\n}\n\n.sticky-footer {\n   position: sticky;\n   bottom: 0;\n   z-index: 100;\n}\n\n.custom-progress-bar {\n   height: 30px;\n   margin-top: 20px;\n   border-radius: 4px;\n   overflow: hidden;\n   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n   position: relative;\n}\n\n.progress-bar {\n   height: 100%;\n   background-color: #12b900;\n   transition: width 0.5s ease-in-out;\n   background-image: linear-gradient(\n      45deg,\n      rgba(255, 255, 255, 0.15) 25%,\n      transparent 25%,\n      transparent 50%,\n      rgba(255, 255, 255, 0.15) 50%,\n      rgba(255, 255, 255, 0.15) 75%,\n      transparent 75%,\n      transparent\n   );\n   background-size: 1rem 1rem;\n   animation: progress-bar-stripes 1s linear infinite;\n   position: relative;\n}\n\n.progress-bar-percentage {\n   position: absolute;\n   top: 50%;\n   right: 0;\n   transform: translate(0, -50%);\n   display: flex;\n   align-items: center;\n   justify-content: center;\n   /* padding: 0 10px; */\n   font-size: 14px;\n   color: #000000;\n   white-space: nowrap;\n   font-weight: bold;\n   font-size: 20px;\n}\n\n@keyframes progress-bar-stripes {\n   from {\n      background-position-x: 1rem;\n   }\n   to {\n      background-position-x: 0;\n   }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/tracker/TYP.css"],"names":[],"mappings":"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","sourcesContent":[".training-sessions-tracker {\n   background-color: #f5f5f5;\n   color: rgb(0, 0, 0);\n   padding-top: 50px;\n}\n\n.completedStatus-training-sessions-tracker {\n   /* background-color: #929292; */\n   color: rgb(0, 0, 0);\n}\n\n.program-complete {\n   /* background-color: #000000; */\n   padding: 10px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   \n   height:40px;\n}\n\n.program-complete h1 {\n   margin: 0;\n   color: #12b900;\n}\n\n.week-selector {\n   text-align: center;\n   height: 80px;\n}\n\nlabel h2 {\n   font-size: 28px;\n}\n\n.completedStatus-week-selector {\n   text-align: center;\n   height: 80px;\n}\n\n.week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n}\n\n.completedStatus-week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n   /* background-color: #12b900; */\n}\n\n.week-title {\n   color:#000;\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n\n   padding: 50px;\n}\n\n.completedStatus-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n   text-decoration: line-through;\n   color: #47a23d;\n   /* background-color: #000000; */\n   padding: 50px;\n}\n\n.day-container {\n   margin-bottom: 50px;\n}\n\n.day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #000000;\n}\n\n.completedStatus-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: line-through;\n}\n\n.exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   /* gap: 20px; */\n   justify-content: center;\n   /* background-color: #282c34; */\n}\n\n.completedStatus-exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   gap: 0px;\n   justify-content: center;\n   background-color: #686868;\n}\n\n.exercise-container {\n   width: calc(20% - 10px);\n   background-color: #acacac;\n   padding: 16px;\n   /* border: 4px solid rgb(20, 21, 11); */\n   border-right: 4px solid black;\n   border-left: 4px solid black;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.completedStatus-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #000;\n   padding: 16px;\n   /* border: 4px solid rgb(48, 194, 63); */\n   border: 4px solid #092309;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(0, 0, 0);\n   text-transform: uppercase;\n}\n\n.completedStatus-exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(48, 194, 63);\n   text-transform: uppercase;\n   text-decoration: line-through;\n}\n\n.modification-mode-container {\n   margin-top: 16px;\n   margin-bottom: 8px;\n   text-align: center;\n}\n\n.modification-mode-label {\n   font-size: 14px;\n}\n\n.modification-mode-checkbox {\n   margin-right: 8px;\n   vertical-align: middle;\n}\n\n.modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #2970ff;\n}\n\n.completedStatus-modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #1ca800;\n}\n\n.exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #e7e7e7;\n   color: #000000;\n}\n\n.completedStatus-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   text-decoration: line-through;\n   color: #000000;\n}\n\n.exercise-table th,\n.exercise-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #000000;\n}\n\n.exercise-table th {\n   background-color: #adadad;\n}\n\n.exercise-table td {\n   background-color: #cccccc;\n}\n\n.completedStatus-exercise-table td {\n   text-align: center;\n}\n\n.button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #007bff;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.completedStatus-button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #0e4011;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.button:hover {\n   background-color: #0056b3;\n}\n\n.completedStatus-button:hover {\n   background-color: #972718;\n}\n\n.bottom-buttons {\n   margin-top: 150px;\n   display: flex;\n   flex-wrap: wrap;\n   gap: 40px;\n   justify-content: center;\n   padding-bottom: 40px;\n}\n\n.complete-archive-button {\n   margin-top: 20px;\n   padding: 1px 16px;\n   background-color: #0e4011;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.complete-archive-button:hover {\n   background-color: rgb(210, 205, 205);\n   color: #0e4011;\n   font-weight: bold;\n}\n\n.archive-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: #da4100;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.archive-button:hover {\n   background-color: rgb(210, 205, 205);\n   color: #da4100;\n   font-weight: bold;\n}\n\n.delete-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(187, 1, 1);\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.delete-button:hover {\n   color: rgb(187, 1, 1);\n   font-weight: bold;\n   background-color:rgb(210, 205, 205);\n}\n\n.progress-bar-container {\n   position: relative;\n   min-height: 100vh;\n   width: auto;\n}\n\n.sticky-footer {\n   position: sticky;\n   bottom: 0;\n   z-index: 100;\n}\n\n.custom-progress-bar {\n   height: 30px;\n   margin-top: 20px;\n   border-radius: 4px;\n   overflow: hidden;\n   box-shadow: 0 2px 4px rgba(152, 152, 152, 0.2);\n   position: relative;\n}\n\n.progress-bar {\n   height: 100%;\n   background-color: #12b900;\n   transition: width 0.5s ease-in-out;\n   background-image: linear-gradient(\n      45deg,\n      rgba(255, 255, 255, 0.15) 25%,\n      transparent 25%,\n      transparent 50%,\n      rgba(255, 255, 255, 0.15) 50%,\n      rgba(255, 255, 255, 0.15) 75%,\n      transparent 75%,\n      transparent\n   );\n   background-size: 1rem 1rem;\n   animation: progress-bar-stripes 1s linear infinite;\n   position: relative;\n}\n\n.progress-bar-percentage {\n   position: absolute;\n   top: 50%;\n   right: 0;\n   transform: translate(0, -50%);\n   display: flex;\n   align-items: center;\n   justify-content: center;\n   /* padding: 0 10px; */\n   font-size: 14px;\n   color: #000000;\n   white-space: nowrap;\n   font-weight: bold;\n   font-size: 20px;\n}\n\n@keyframes progress-bar-stripes {\n   from {\n      background-position-x: 1rem;\n   }\n   to {\n      background-position-x: 0;\n   }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
