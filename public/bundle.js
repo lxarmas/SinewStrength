@@ -6056,6 +6056,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _features_navbar_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../features/navbar/Navbar */ "./client/features/navbar/Navbar.js");
 /* harmony import */ var _AppRoutes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AppRoutes */ "./client/app/AppRoutes.js");
 /* harmony import */ var _features_footer_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../features/footer/Footer */ "./client/features/footer/Footer.js");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./App.css */ "./client/app/App.css");
+
 
 
 
@@ -7742,14 +7744,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../training programs/Intermediate/IntermediateTrainingProgram */ "./client/features/training programs/Intermediate/IntermediateTrainingProgram.js");
 /* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _StartYourTraining_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StartYourTraining.css */ "./client/features/startyourtraining/StartYourTraining.css");
 /* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-toastify */ "./node_modules/react-toastify/dist/react-toastify.esm.mjs");
 /* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-toastify/dist/ReactToastify.css */ "./node_modules/react-toastify/dist/ReactToastify.css");
 /* harmony import */ var _tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../tracker/trainingProgramSlice */ "./client/features/tracker/trainingProgramSlice.js");
-/* harmony import */ var _assets_SinewStrengthAlbum_pictures_IMG_3599_JPG__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/SinewStrengthAlbum/pictures/IMG_3599.JPG */ "./client/assets/SinewStrengthAlbum/pictures/IMG_3599.JPG");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -7762,7 +7763,6 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
 
 
@@ -7844,7 +7844,7 @@ var customToastErrorStyle3 = {
   }
 };
 var StartYourTraining = function StartYourTraining() {
-  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.useNavigate)();
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__.useNavigate)();
   var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
   var username = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.auth.me.username;
@@ -7948,12 +7948,7 @@ var StartYourTraining = function StartYourTraining() {
       navigate('/track-your-progress');
     }, 2000);
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "main",
-    style: {
-      backgroundImage: "url(".concat(_assets_SinewStrengthAlbum_pictures_IMG_3599_JPG__WEBPACK_IMPORTED_MODULE_7__["default"], ")")
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "STYT-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_toastify__WEBPACK_IMPORTED_MODULE_4__.ToastContainer, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "Program-Heading"
@@ -9653,6 +9648,35 @@ function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else i
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./client/app/App.css":
+/*!******************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./client/app/App.css ***!
+  \******************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `body{
+  background-color: #efeeee;
+}`, "",{"version":3,"sources":["webpack://./client/app/App.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;AAC3B","sourcesContent":["body{\n  background-color: #efeeee;\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./client/assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos.module.css":
 /*!***********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./client/assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos.module.css ***!
@@ -9684,14 +9708,14 @@ body {
 .VjU9XGO0kYRdExTSvYTZ {
     padding: 40px;
     text-align: center;
-    background-color: #282c34;
-    color: white;
+  
+    color: rgb(202, 202, 202);
 }
 
 .EXH2Prg3IuNmds2gABjQ {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #ffffff;
+ color:rgb(207, 0, 0);
 }
 
 /* Video Card styles */
@@ -9746,7 +9770,7 @@ body {
     margin-bottom: 20px;
   }
 }
-`, "",{"version":3,"sources":["webpack://./client/assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos.module.css"],"names":[],"mappings":"AAAA,kBAAkB;AAClB;EACE,SAAS;EACT,gCAAgC;AAClC;;;AAGA,qBAAqB;AACrB;IACI,aAAa;IACb,kBAAkB;IAClB,yBAAyB;IACzB,YAAY;AAChB;;AAEA;EACE,eAAe;EACf,mBAAmB;EACnB,cAAc;AAChB;;AAEA,sBAAsB;AACtB;EACE,aAAa;EACb,eAAe;EACf,uBAAuB;AACzB;;AAEA;;EAEE,uBAAuB,EAAE,0CAA0C;;EAEnE,kBAAkB;EAClB,gBAAgB;EAChB,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;;EAEE,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;EACjB,mBAAmB;AACrB;;AAEA,kCAAkC;AAClC;EACE,WAAW;EACX,YAAY;EACZ,gBAAgB;EAChB,iBAAiB;AACnB;;AAEA,sBAAsB;AACtB;EACE;;IAEE,wBAAwB,EAAE,0CAA0C;EACtE;;EAEA;;IAEE,mBAAmB;EACrB;AACF","sourcesContent":["/* Global styles */\nbody {\n  margin: 0;\n  font-family: 'Arial', sans-serif;\n}\n\n\n/* Container styles */\n.container {\n    padding: 40px;\n    text-align: center;\n    background-color: #282c34;\n    color: white;\n}\n\n.heading {\n  font-size: 36px;\n  margin-bottom: 20px;\n  color: #ffffff;\n}\n\n/* Video Card styles */\n.videoGrid {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.videoCardLeft,\n.videoCardRight {\n  width: calc(50% - 20px); /* To add some spacing between the cards */\n\n  border-radius: 8px;\n  overflow: hidden;\n  transition: transform 0.2s ease;\n  cursor: pointer;\n}\n\n.videoCardLeft:hover,\n.videoCardRight:hover {\n  transform: translateY(-5px);\n}\n\n.videoCardLeft {\n  margin-right: 20px;\n  margin-bottom: 20px;\n}\n\n.videoCardRight {\n  margin-left: 20px;\n  margin-bottom: 20px;\n}\n\n/* ... Other existing styles ... */\n.videoPlayer {\n  width: 100%;\n  height: auto;\n  max-width: 320px;\n  max-height: 180px;\n}\n\n/* Responsive styles */\n@media (max-width: 768px) {\n  .videoCardLeft,\n  .videoCardRight {\n    width: calc(100% - 40px); /* To add some spacing between the cards */\n  }\n\n  .videoCardLeft:not(:last-child),\n  .videoCardRight:not(:last-child) {\n    margin-bottom: 20px;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./client/assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos.module.css"],"names":[],"mappings":"AAAA,kBAAkB;AAClB;EACE,SAAS;EACT,gCAAgC;AAClC;;;AAGA,qBAAqB;AACrB;IACI,aAAa;IACb,kBAAkB;;IAElB,yBAAyB;AAC7B;;AAEA;EACE,eAAe;EACf,mBAAmB;CACpB,oBAAoB;AACrB;;AAEA,sBAAsB;AACtB;EACE,aAAa;EACb,eAAe;EACf,uBAAuB;AACzB;;AAEA;;EAEE,uBAAuB,EAAE,0CAA0C;;EAEnE,kBAAkB;EAClB,gBAAgB;EAChB,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;;EAEE,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;EACjB,mBAAmB;AACrB;;AAEA,kCAAkC;AAClC;EACE,WAAW;EACX,YAAY;EACZ,gBAAgB;EAChB,iBAAiB;AACnB;;AAEA,sBAAsB;AACtB;EACE;;IAEE,wBAAwB,EAAE,0CAA0C;EACtE;;EAEA;;IAEE,mBAAmB;EACrB;AACF","sourcesContent":["/* Global styles */\nbody {\n  margin: 0;\n  font-family: 'Arial', sans-serif;\n}\n\n\n/* Container styles */\n.container {\n    padding: 40px;\n    text-align: center;\n  \n    color: rgb(202, 202, 202);\n}\n\n.heading {\n  font-size: 36px;\n  margin-bottom: 20px;\n color:rgb(207, 0, 0);\n}\n\n/* Video Card styles */\n.videoGrid {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.videoCardLeft,\n.videoCardRight {\n  width: calc(50% - 20px); /* To add some spacing between the cards */\n\n  border-radius: 8px;\n  overflow: hidden;\n  transition: transform 0.2s ease;\n  cursor: pointer;\n}\n\n.videoCardLeft:hover,\n.videoCardRight:hover {\n  transform: translateY(-5px);\n}\n\n.videoCardLeft {\n  margin-right: 20px;\n  margin-bottom: 20px;\n}\n\n.videoCardRight {\n  margin-left: 20px;\n  margin-bottom: 20px;\n}\n\n/* ... Other existing styles ... */\n.videoPlayer {\n  width: 100%;\n  height: auto;\n  max-width: 320px;\n  max-height: 180px;\n}\n\n/* Responsive styles */\n@media (max-width: 768px) {\n  .videoCardLeft,\n  .videoCardRight {\n    width: calc(100% - 40px); /* To add some spacing between the cards */\n  }\n\n  .videoCardLeft:not(:last-child),\n  .videoCardRight:not(:last-child) {\n    margin-bottom: 20px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"container": `VjU9XGO0kYRdExTSvYTZ`,
@@ -10417,30 +10441,27 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   text-align: center;
   background-color: #e0e0e0;
   padding: 32px;
+  color:rgb(207, 0, 0);
   font-size: 40px;
 
 }
 
 /* HPimageContainer */
 .HPimageContainer {
+  
+  background-color: #efeeee;
   position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 700px;
-
-
 }
 
 .HPlogo {
-
-  width: 540px;
+  width: 700px;
   height: auto;
-  background-color: transparent; /* Ensure it has a transparent background */
-  transform: translateY(-60%);
-  transform: translateX(-5%);
- 
-
+  transform: translateX(-2%);
+   transform: translateY(10%);
 }
 
 /* Slogan Containers */
@@ -10455,7 +10476,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
  }
 
 .sloganContainerLeft {
-  font-size: 18px;
+  font-size: 22px;
   left: 10%;
   color: #ffffff;
   top: 40%;
@@ -10468,12 +10489,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 }
 
 .sloganContainerRight {
-  font-size: 33px;
-  color: #afafaf;
-  right: 40px;
+  font-size: 28px;
+  color: #d30000;
+  left:130px;
   top: 85%;
- 
-  /* Cool Animation for sloganContainerRight */
   animation-name: coolAnimationRight;
   animation-duration: 5s;
   animation-timing-function: ease-out;
@@ -10511,7 +10530,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   width: 100%;
   border-radius: 10px;
   left:10%;
-    
+  
 }
 
 .dynamicImage.show {
@@ -10530,6 +10549,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 }
 
 .dynamicImageTextContainer h2 {
+  background-color: #e0e0e0;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -10615,7 +10635,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 .tickerContainer {
   background-color: rgb(0, 0, 0);
   padding: 10px 0px;
-  margin-top: 20px;
+  margin-top: 5px;
   width: 100%;
   overflow: hidden;
 }
@@ -10714,7 +10734,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 .HPwomanDumbellQuote{
   font-style: oblique;
   color:rgb(149, 149, 149);
-}`, "",{"version":3,"sources":["webpack://./client/features/home/Home.css"],"names":[],"mappings":"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","sourcesContent":["/* HPcontainer */\n.HPcontainer {\n  text-align: center;\n  background-color: #e0e0e0;\n  padding: 32px;\n  font-size: 40px;\n\n}\n\n/* HPimageContainer */\n.HPimageContainer {\n  position: relative;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  height: 700px;\n\n\n}\n\n.HPlogo {\n\n  width: 540px;\n  height: auto;\n  background-color: transparent; /* Ensure it has a transparent background */\n  transform: translateY(-60%);\n  transform: translateX(-5%);\n \n\n}\n\n/* Slogan Containers */\n.sloganContainerLeft,\n.sloganContainerRight {\n  font-style: oblique;\n  position: absolute;\n  text-align: center;\n  padding: 5px;\n  z-index: 1;\n  display: block;\n }\n\n.sloganContainerLeft {\n  font-size: 18px;\n  left: 10%;\n  color: #ffffff;\n  top: 40%;\n  \n  animation-name: coolAnimationLeft;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n.sloganContainerRight {\n  font-size: 33px;\n  color: #afafaf;\n  right: 40px;\n  top: 85%;\n \n  /* Cool Animation for sloganContainerRight */\n  animation-name: coolAnimationRight;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n/* HPimageWrapper */\n.HPimageWrapper {\n  position: relative;\n}\n\n/* HPimage */\n.HPimageOne {\n  width: 80%;\n  border-radius: 10px;\n  margin-bottom: -5px;\n  transform: translateX(10%);\n }\n\n.HPimage.show {\n  opacity: 1;\n}\n\n/* DynamicImageContainer */\n.dynamicImageContainer {\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n/* DynamicImage */\n.dynamicImage {\n  width: 100%;\n  border-radius: 10px;\n  left:10%;\n    \n}\n\n.dynamicImage.show {\n  opacity: 1;\n}\n\n/* DynamicImageTextContainer */\n.dynamicImageTextContainer {\n  position: absolute;\n  top: 40%;\n  left: 85%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n  color: #ffffff;\n  z-index: 2;\n}\n\n.dynamicImageTextContainer h2 {\n  font-size: 24px;\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.dynamicImageTextContainer h1 {\n  font-size: 36px;\n  font-weight: bold;\n}\n\n/* Animation for slogans */\n@keyframes slideInFromLeft {\n  0% {\n    transform: translateX(-50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n@keyframes slideInFromRight {\n  0% {\n    transform: translateX(50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerLeft */\n@keyframes coolAnimationLeft {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  50% {\n    transform: scale(1.2);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerRight */\n@keyframes coolAnimationRight {\n  0% {\n    transform: translateY(100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateY(-10%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n/* Apply animation to slogans */\n.HPsloganOne,\n.HPsloganTwo {\n  animation-duration: 1s;\n  animation-fill-mode: forwards;\n  opacity: 0;\n}\n\n.HPsloganOne {\n  animation-name: slideInFromLeft;\n}\n\n.HPsloganTwo {\n  animation-name: slideInFromRight;\n}\n\n/* Ticker Container */\n.tickerContainer {\n  background-color: rgb(0, 0, 0);\n  padding: 10px 0px;\n  margin-top: 20px;\n  width: 100%;\n  overflow: hidden;\n}\n\n.tickerContent {\n  display: flex;\n  align-items: center;\n}\n\n\n\n.tickerList {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  animation: ticker 20s linear infinite;\n}\n\n.tickerList li {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 24px;\n  color: rgb(255, 0, 0);\n  font-family: \"Courier New\", monospace;\n  letter-spacing: 2px;\n  text-transform: uppercase;\n  animation: glow 1s ease-in-out infinite alternate;\n}\n\n@keyframes ticker {\n  0% {\n    transform: translateX(90%);\n  }\n  100% {\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes glow {\n  0% {\n    text-shadow: 0 0 5px rgb(255, 1, 1), 0 0 10px rgb(255, 3, 3), 0 0 20px rgb(255, 4, 4), 0 0 30px rgb(255, 9, 9)\n  }\n  100% {\n    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff1e00, 0 0 30px #ff0000, 0 0 40px #ff0000;\n  }\n}\n\n\n/* HPwomanDumbBellImage */\n.HPwomanDumbBellImage {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n \n\n  height: 500px;\n \n  background-color: white;\n}\n\n.HPwomanDumbBellImage img {\n  max-width: 100%;\n  max-height: 500px;\n  margin-right: 120px;\n\n}\n\n\n\n/* HPvideo */\n.HPvideo {\n  max-width: 80%; /* Adjust the max-width to make the video smaller */\n  height: 500px;\n}\n\n.HPwomanDumbellText{\n  justify-content: left;\n  align-items: center;\n  margin-right: 120px;\n   margin-left: 18px;\n    font-style: oblique;\n    color:black;\n}\n\n.HPwomanDumbellTextRight{\n  justify-content: right;\n  align-items: center;\n  margin-left: 120px;\n  margin-right: 18px;\n  font-style: oblique;\n  color:black\n   \n}\n.HPwomanDumbellQuote{\n  font-style: oblique;\n  color:rgb(149, 149, 149);\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/home/Home.css"],"names":[],"mappings":"AAAA,gBAAgB;AAChB;EACE,kBAAkB;EAClB,yBAAyB;EACzB,aAAa;EACb,oBAAoB;EACpB,eAAe;;AAEjB;;AAEA,qBAAqB;AACrB;;EAEE,yBAAyB;EACzB,kBAAkB;EAClB,aAAa;EACb,6BAA6B;EAC7B,mBAAmB;EACnB,aAAa;AACf;;AAEA;EACE,YAAY;EACZ,YAAY;EACZ,0BAA0B;GACzB,0BAA0B;AAC7B;;AAEA,sBAAsB;AACtB;;EAEE,mBAAmB;EACnB,kBAAkB;EAClB,kBAAkB;EAClB,YAAY;EACZ,UAAU;EACV,cAAc;CACf;;AAED;EACE,eAAe;EACf,SAAS;EACT,cAAc;EACd,QAAQ;;EAER,iCAAiC;EACjC,sBAAsB;EACtB,mCAAmC;EACnC,UAAU;EACV,6BAA6B;AAC/B;;AAEA;EACE,eAAe;EACf,cAAc;EACd,UAAU;EACV,QAAQ;EACR,kCAAkC;EAClC,sBAAsB;EACtB,mCAAmC;EACnC,UAAU;EACV,6BAA6B;AAC/B;;AAEA,mBAAmB;AACnB;EACE,kBAAkB;AACpB;;AAEA,YAAY;AACZ;EACE,UAAU;EACV,mBAAmB;EACnB,mBAAmB;EACnB,0BAA0B;CAC3B;;AAED;EACE,UAAU;AACZ;;AAEA,0BAA0B;AAC1B;EACE,kBAAkB;EAClB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB;;AAEA,iBAAiB;AACjB;EACE,WAAW;EACX,mBAAmB;EACnB,QAAQ;;AAEV;;AAEA;EACE,UAAU;AACZ;;AAEA,8BAA8B;AAC9B;EACE,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,gCAAgC;EAChC,kBAAkB;EAClB,cAAc;EACd,UAAU;AACZ;;AAEA;EACE,yBAAyB;EACzB,eAAe;EACf,iBAAiB;EACjB,mBAAmB;AACrB;;AAEA;EACE,eAAe;EACf,iBAAiB;AACnB;;AAEA,0BAA0B;AAC1B;EACE;IACE,4BAA4B;IAC5B,UAAU;EACZ;EACA;IACE,wBAAwB;IACxB,UAAU;EACZ;AACF;;AAEA;EACE;IACE,2BAA2B;IAC3B,UAAU;EACZ;EACA;IACE,wBAAwB;IACxB,UAAU;EACZ;AACF;;AAEA,2CAA2C;AAC3C;EACE;IACE,mBAAmB;IACnB,UAAU;EACZ;EACA;IACE,qBAAqB;IACrB,UAAU;EACZ;EACA;IACE,mBAAmB;IACnB,UAAU;EACZ;AACF;;AAEA,4CAA4C;AAC5C;EACE;IACE,2BAA2B;IAC3B,UAAU;EACZ;EACA;IACE,2BAA2B;IAC3B,UAAU;EACZ;EACA;IACE,wBAAwB;IACxB,UAAU;EACZ;AACF;;AAEA,+BAA+B;AAC/B;;EAEE,sBAAsB;EACtB,6BAA6B;EAC7B,UAAU;AACZ;;AAEA;EACE,+BAA+B;AACjC;;AAEA;EACE,gCAAgC;AAClC;;AAEA,qBAAqB;AACrB;EACE,8BAA8B;EAC9B,iBAAiB;EACjB,eAAe;EACf,WAAW;EACX,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,mBAAmB;AACrB;;;;AAIA;EACE,qBAAqB;EACrB,SAAS;EACT,UAAU;EACV,mBAAmB;EACnB,qCAAqC;AACvC;;AAEA;EACE,qBAAqB;EACrB,kBAAkB;EAClB,eAAe;EACf,qBAAqB;EACrB,qCAAqC;EACrC,mBAAmB;EACnB,yBAAyB;EACzB,iDAAiD;AACnD;;AAEA;EACE;IACE,0BAA0B;EAC5B;EACA;IACE,4BAA4B;EAC9B;AACF;;AAEA;EACE;IACE;EACF;EACA;IACE,mFAAmF;EACrF;AACF;;;AAGA,yBAAyB;AACzB;EACE,kBAAkB;EAClB,aAAa;EACb,uBAAuB;EACvB,mBAAmB;;;EAGnB,aAAa;;EAEb,uBAAuB;AACzB;;AAEA;EACE,eAAe;EACf,iBAAiB;EACjB,mBAAmB;;AAErB;;;;AAIA,YAAY;AACZ;EACE,cAAc,EAAE,mDAAmD;EACnE,aAAa;AACf;;AAEA;EACE,qBAAqB;EACrB,mBAAmB;EACnB,mBAAmB;GAClB,iBAAiB;IAChB,mBAAmB;IACnB,WAAW;AACf;;AAEA;EACE,sBAAsB;EACtB,mBAAmB;EACnB,kBAAkB;EAClB,kBAAkB;EAClB,mBAAmB;EACnB;;AAEF;AACA;EACE,mBAAmB;EACnB,wBAAwB;AAC1B","sourcesContent":["/* HPcontainer */\n.HPcontainer {\n  text-align: center;\n  background-color: #e0e0e0;\n  padding: 32px;\n  color:rgb(207, 0, 0);\n  font-size: 40px;\n\n}\n\n/* HPimageContainer */\n.HPimageContainer {\n  \n  background-color: #efeeee;\n  position: relative;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  height: 700px;\n}\n\n.HPlogo {\n  width: 700px;\n  height: auto;\n  transform: translateX(-2%);\n   transform: translateY(10%);\n}\n\n/* Slogan Containers */\n.sloganContainerLeft,\n.sloganContainerRight {\n  font-style: oblique;\n  position: absolute;\n  text-align: center;\n  padding: 5px;\n  z-index: 1;\n  display: block;\n }\n\n.sloganContainerLeft {\n  font-size: 22px;\n  left: 10%;\n  color: #ffffff;\n  top: 40%;\n  \n  animation-name: coolAnimationLeft;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n.sloganContainerRight {\n  font-size: 28px;\n  color: #d30000;\n  left:130px;\n  top: 85%;\n  animation-name: coolAnimationRight;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n/* HPimageWrapper */\n.HPimageWrapper {\n  position: relative;\n}\n\n/* HPimage */\n.HPimageOne {\n  width: 80%;\n  border-radius: 10px;\n  margin-bottom: -5px;\n  transform: translateX(10%);\n }\n\n.HPimage.show {\n  opacity: 1;\n}\n\n/* DynamicImageContainer */\n.dynamicImageContainer {\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n/* DynamicImage */\n.dynamicImage {\n  width: 100%;\n  border-radius: 10px;\n  left:10%;\n  \n}\n\n.dynamicImage.show {\n  opacity: 1;\n}\n\n/* DynamicImageTextContainer */\n.dynamicImageTextContainer {\n  position: absolute;\n  top: 40%;\n  left: 85%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n  color: #ffffff;\n  z-index: 2;\n}\n\n.dynamicImageTextContainer h2 {\n  background-color: #e0e0e0;\n  font-size: 24px;\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.dynamicImageTextContainer h1 {\n  font-size: 36px;\n  font-weight: bold;\n}\n\n/* Animation for slogans */\n@keyframes slideInFromLeft {\n  0% {\n    transform: translateX(-50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n@keyframes slideInFromRight {\n  0% {\n    transform: translateX(50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerLeft */\n@keyframes coolAnimationLeft {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  50% {\n    transform: scale(1.2);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerRight */\n@keyframes coolAnimationRight {\n  0% {\n    transform: translateY(100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateY(-10%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n/* Apply animation to slogans */\n.HPsloganOne,\n.HPsloganTwo {\n  animation-duration: 1s;\n  animation-fill-mode: forwards;\n  opacity: 0;\n}\n\n.HPsloganOne {\n  animation-name: slideInFromLeft;\n}\n\n.HPsloganTwo {\n  animation-name: slideInFromRight;\n}\n\n/* Ticker Container */\n.tickerContainer {\n  background-color: rgb(0, 0, 0);\n  padding: 10px 0px;\n  margin-top: 5px;\n  width: 100%;\n  overflow: hidden;\n}\n\n.tickerContent {\n  display: flex;\n  align-items: center;\n}\n\n\n\n.tickerList {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  animation: ticker 20s linear infinite;\n}\n\n.tickerList li {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 24px;\n  color: rgb(255, 0, 0);\n  font-family: \"Courier New\", monospace;\n  letter-spacing: 2px;\n  text-transform: uppercase;\n  animation: glow 1s ease-in-out infinite alternate;\n}\n\n@keyframes ticker {\n  0% {\n    transform: translateX(90%);\n  }\n  100% {\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes glow {\n  0% {\n    text-shadow: 0 0 5px rgb(255, 1, 1), 0 0 10px rgb(255, 3, 3), 0 0 20px rgb(255, 4, 4), 0 0 30px rgb(255, 9, 9)\n  }\n  100% {\n    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff1e00, 0 0 30px #ff0000, 0 0 40px #ff0000;\n  }\n}\n\n\n/* HPwomanDumbBellImage */\n.HPwomanDumbBellImage {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n \n\n  height: 500px;\n \n  background-color: white;\n}\n\n.HPwomanDumbBellImage img {\n  max-width: 100%;\n  max-height: 500px;\n  margin-right: 120px;\n\n}\n\n\n\n/* HPvideo */\n.HPvideo {\n  max-width: 80%; /* Adjust the max-width to make the video smaller */\n  height: 500px;\n}\n\n.HPwomanDumbellText{\n  justify-content: left;\n  align-items: center;\n  margin-right: 120px;\n   margin-left: 18px;\n    font-style: oblique;\n    color:black;\n}\n\n.HPwomanDumbellTextRight{\n  justify-content: right;\n  align-items: center;\n  margin-left: 120px;\n  margin-right: 18px;\n  font-style: oblique;\n  color:black\n   \n}\n.HPwomanDumbellQuote{\n  font-style: oblique;\n  color:rgb(149, 149, 149);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10825,7 +10845,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
    margin: 0 auto;
    /* margin-top: 10px; */
    padding: 20px;
-   background-color: #282c34;
+  
    
 }
 
@@ -10839,7 +10859,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
 .STYT-heading {
    text-align: center;
    font-size: 45px;
-   color: #ffffff;
+
    font-family: palatino bold;
 }
 
@@ -10849,14 +10869,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
    align-items: center;
    font-weight: bold;
    font-size: 50px;
-   color: white;
+   color: rgb(201, 201, 201);
    padding-top: 50px;
 }
 
 .disclaimer {
    font-size: 26px;
-   color: rgb(204, 0, 0);
-   background-color: #000000;
+   color: rgb(0, 0, 0);
+
    display: flex;
    justify-content: center;
    align-items: center;
@@ -10870,12 +10890,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
 .STYT-instructions strong {
    margin-top: 15px;
    display: block;
-   color: #fbf9f9;
+   color: #c10000;
 }
 
 .STYT-instructions {
 
-   color: #e6e6e6;
+   color: #000000;
 }
 
 .instructions-container {
@@ -10905,8 +10925,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
    width: 100%;
    border-collapse: collapse;
    margin-top: 20px;
-   background-color: #333;
-   color: #f8f8f8;
+   background-color: #bfbfbf;
+   color: #000000;
 }
 
 .STYT-table th,
@@ -10914,7 +10934,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
    font-size: 18px;
    padding: 8px;
    text-align: center;
-   border: 1px solid #555;
+   border: 1px solid #ffffff;
 }
 
 /* Input styles */
@@ -10935,7 +10955,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   color: #ececec;
+   color: #000000;
    font-size: 18px;
 }
 
@@ -10945,18 +10965,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
    width: 100%;
    padding: 10px;
    font-size: 24px;
-   background-color: black;
-   color: white;
+   background-color:  rgb(200, 200, 200);  
+   color: rgb(55, 55, 55);
    border: none;
-   border-radius: 4px;
+   border-radius: 10px;
    cursor: pointer;
    transition: background-color 0.3s ease;
    font-weight: bold;
 }
 
 .STYT-button:hover {
-   color: black;
-   background-color: white;  
+   color: rgb(255, 0, 0);
+   background-color: rgb(153, 152, 152);  
 }
 
 /* Animation styles */
@@ -10989,7 +11009,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
 form div {
    margin: 1em;
    display: inline-block;
-}`, "",{"version":3,"sources":["webpack://./client/features/startyourtraining/StartYourTraining.css"],"names":[],"mappings":"AAAA,qBAAqB;AACrB;GACG,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,iBAAiB;GACjB,cAAc;GACd,sBAAsB;GACtB,aAAa;GACb,yBAAyB;;AAE5B;;AAEA;GACG,2BAA2B;GAC3B,uBAAuB;GACvB,4BAA4B;AAC/B;;AAEA,mBAAmB;AACnB;GACG,kBAAkB;GAClB,eAAe;GACf,cAAc;GACd,0BAA0B;AAC7B;;AAEA;GACG,eAAe;GACf,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,eAAe;GACf,YAAY;GACZ,iBAAiB;AACpB;;AAEA;GACG,eAAe;GACf,qBAAqB;GACrB,yBAAyB;GACzB,aAAa;GACb,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,kBAAkB;AACrB;;;;AAIA,wBAAwB;AACxB;GACG,gBAAgB;GAChB,cAAc;GACd,cAAc;AACjB;;AAEA;;GAEG,cAAc;AACjB;;AAEA;GACG,cAAc;GACd,YAAY;GACZ,gBAAgB;;AAEnB;;AAEA,WAAW;AACX,WAAW;AACX,WAAW;AACX;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,gBAAgB;AAClB;;AAEA,iBAAiB;AACjB;GACG,WAAW;GACX,yBAAyB;GACzB,gBAAgB;GAChB,sBAAsB;GACtB,cAAc;AACjB;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,sBAAsB;AACzB;;AAEA,iBAAiB;AACjB;GACG,cAAc;GACd,iBAAiB;GACjB,iBAAiB;GACjB,WAAW;GACX,YAAY;GACZ,sBAAsB;GACtB,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,mBAAmB;AACnB;GACG,mBAAmB;GACnB,aAAa;GACb,eAAe;GACf,uBAAuB;GACvB,cAAc;GACd,eAAe;AAClB;;AAEA,kBAAkB;AAClB;GACG,cAAc;GACd,WAAW;GACX,aAAa;GACb,eAAe;GACf,uBAAuB;GACvB,YAAY;GACZ,YAAY;GACZ,kBAAkB;GAClB,eAAe;GACf,sCAAsC;GACtC,iBAAiB;AACpB;;AAEA;GACG,YAAY;GACZ,uBAAuB;AAC1B;;AAEA,qBAAqB;AACrB;GACG;MACG,UAAU;GACb;GACA;MACG,UAAU;GACb;AACH;;AAEA,qCAAqC;AACrC;GACG,4BAA4B;AAC/B;;AAEA,wDAAwD;AACxD;GACG,eAAe;GACf,UAAU;GACV,kBAAkB;AACrB;;AAEA,sCAAsC;AACtC;EACE,mBAAmB;AACrB;;AAEA;GACG,WAAW;GACX,qBAAqB;AACxB","sourcesContent":["/* Container styles */\n.STYT-container {\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   max-width: 1340px;\n   margin: 0 auto;\n   /* margin-top: 10px; */\n   padding: 20px;\n   background-color: #282c34;\n   \n}\n\n.main {\n   background-repeat: repeat-x;\n   background-size:contain;\n   background-position-x: -93px;\n}\n\n/* Heading styles */\n.STYT-heading {\n   text-align: center;\n   font-size: 45px;\n   color: #ffffff;\n   font-family: palatino bold;\n}\n\n.Program-Heading {\n   display: 'flex';\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   font-size: 50px;\n   color: white;\n   padding-top: 50px;\n}\n\n.disclaimer {\n   font-size: 26px;\n   color: rgb(204, 0, 0);\n   background-color: #000000;\n   display: flex;\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   border-radius: 5px;\n}\n\n\n\n/* Instructions styles */\n.STYT-instructions strong {\n   margin-top: 15px;\n   display: block;\n   color: #fbf9f9;\n}\n\n.STYT-instructions {\n\n   color: #e6e6e6;\n}\n\n.instructions-container {\n   display: block;\n   width: 740px;\n   font-size: large;\n\n}\n\n/* Images */\n/* Images */\n/* Images */\n.STYT-image {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  margin-bottom: 20px;\n}\n\n.STYimage {\n  width: 60%;\n  max-width: 400px;\n}\n\n/* Table styles */\n.STYT-table {\n   width: 100%;\n   border-collapse: collapse;\n   margin-top: 20px;\n   background-color: #333;\n   color: #f8f8f8;\n}\n\n.STYT-table th,\n.STYT-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #555;\n}\n\n/* Input styles */\n.STYT-input {\n   color: #000000;\n   font-weight: bold;\n   font-size: medium;\n   width: 80px;\n   padding: 6px;\n   border: 1px solid #555;\n   border-radius: 4px;\n   background-color: #f1f1f1;\n}\n\n/* Options styles */\n.STYT-options {\n   margin-bottom: 10px;\n   display: flex;\n   flex-wrap: wrap;\n   justify-content: center;\n   color: #ececec;\n   font-size: 18px;\n}\n\n/* Button styles */\n.STYT-button {\n   display: block;\n   width: 100%;\n   padding: 10px;\n   font-size: 24px;\n   background-color: black;\n   color: white;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   transition: background-color 0.3s ease;\n   font-weight: bold;\n}\n\n.STYT-button:hover {\n   color: black;\n   background-color: white;  \n}\n\n/* Animation styles */\n@keyframes fade-in {\n   from {\n      opacity: 0;\n   }\n   to {\n      opacity: 1;\n   }\n}\n\n/* Apply animation to the container */\n.STYT-container {\n   animation: fade-in 0.5s ease;\n}\n\n/* fontSize: '22px', color: 'red', textAlign: 'center' */\n.loginToCreate {\n   font-size: 22px;\n   color: red;\n   text-align: center;\n}\n\n/* Add space between image and chart */\n.STYT-image {\n  margin-bottom: 70px;\n}\n\nform div {\n   margin: 1em;\n   display: inline-block;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/startyourtraining/StartYourTraining.css"],"names":[],"mappings":"AAAA,qBAAqB;AACrB;GACG,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,iBAAiB;GACjB,cAAc;GACd,sBAAsB;GACtB,aAAa;;;AAGhB;;AAEA;GACG,2BAA2B;GAC3B,uBAAuB;GACvB,4BAA4B;AAC/B;;AAEA,mBAAmB;AACnB;GACG,kBAAkB;GAClB,eAAe;;GAEf,0BAA0B;AAC7B;;AAEA;GACG,eAAe;GACf,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,eAAe;GACf,yBAAyB;GACzB,iBAAiB;AACpB;;AAEA;GACG,eAAe;GACf,mBAAmB;;GAEnB,aAAa;GACb,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,kBAAkB;AACrB;;;;AAIA,wBAAwB;AACxB;GACG,gBAAgB;GAChB,cAAc;GACd,cAAc;AACjB;;AAEA;;GAEG,cAAc;AACjB;;AAEA;GACG,cAAc;GACd,YAAY;GACZ,gBAAgB;;AAEnB;;AAEA,WAAW;AACX,WAAW;AACX,WAAW;AACX;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,gBAAgB;AAClB;;AAEA,iBAAiB;AACjB;GACG,WAAW;GACX,yBAAyB;GACzB,gBAAgB;GAChB,yBAAyB;GACzB,cAAc;AACjB;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,iBAAiB;AACjB;GACG,cAAc;GACd,iBAAiB;GACjB,iBAAiB;GACjB,WAAW;GACX,YAAY;GACZ,sBAAsB;GACtB,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,mBAAmB;AACnB;GACG,mBAAmB;GACnB,aAAa;GACb,eAAe;GACf,uBAAuB;GACvB,cAAc;GACd,eAAe;AAClB;;AAEA,kBAAkB;AAClB;GACG,cAAc;GACd,WAAW;GACX,aAAa;GACb,eAAe;GACf,qCAAqC;GACrC,sBAAsB;GACtB,YAAY;GACZ,mBAAmB;GACnB,eAAe;GACf,sCAAsC;GACtC,iBAAiB;AACpB;;AAEA;GACG,qBAAqB;GACrB,oCAAoC;AACvC;;AAEA,qBAAqB;AACrB;GACG;MACG,UAAU;GACb;GACA;MACG,UAAU;GACb;AACH;;AAEA,qCAAqC;AACrC;GACG,4BAA4B;AAC/B;;AAEA,wDAAwD;AACxD;GACG,eAAe;GACf,UAAU;GACV,kBAAkB;AACrB;;AAEA,sCAAsC;AACtC;EACE,mBAAmB;AACrB;;AAEA;GACG,WAAW;GACX,qBAAqB;AACxB","sourcesContent":["/* Container styles */\n.STYT-container {\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   max-width: 1340px;\n   margin: 0 auto;\n   /* margin-top: 10px; */\n   padding: 20px;\n  \n   \n}\n\n.main {\n   background-repeat: repeat-x;\n   background-size:contain;\n   background-position-x: -93px;\n}\n\n/* Heading styles */\n.STYT-heading {\n   text-align: center;\n   font-size: 45px;\n\n   font-family: palatino bold;\n}\n\n.Program-Heading {\n   display: 'flex';\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   font-size: 50px;\n   color: rgb(201, 201, 201);\n   padding-top: 50px;\n}\n\n.disclaimer {\n   font-size: 26px;\n   color: rgb(0, 0, 0);\n\n   display: flex;\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   border-radius: 5px;\n}\n\n\n\n/* Instructions styles */\n.STYT-instructions strong {\n   margin-top: 15px;\n   display: block;\n   color: #c10000;\n}\n\n.STYT-instructions {\n\n   color: #000000;\n}\n\n.instructions-container {\n   display: block;\n   width: 740px;\n   font-size: large;\n\n}\n\n/* Images */\n/* Images */\n/* Images */\n.STYT-image {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  margin-bottom: 20px;\n}\n\n.STYimage {\n  width: 60%;\n  max-width: 400px;\n}\n\n/* Table styles */\n.STYT-table {\n   width: 100%;\n   border-collapse: collapse;\n   margin-top: 20px;\n   background-color: #bfbfbf;\n   color: #000000;\n}\n\n.STYT-table th,\n.STYT-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #ffffff;\n}\n\n/* Input styles */\n.STYT-input {\n   color: #000000;\n   font-weight: bold;\n   font-size: medium;\n   width: 80px;\n   padding: 6px;\n   border: 1px solid #555;\n   border-radius: 4px;\n   background-color: #f1f1f1;\n}\n\n/* Options styles */\n.STYT-options {\n   margin-bottom: 10px;\n   display: flex;\n   flex-wrap: wrap;\n   justify-content: center;\n   color: #000000;\n   font-size: 18px;\n}\n\n/* Button styles */\n.STYT-button {\n   display: block;\n   width: 100%;\n   padding: 10px;\n   font-size: 24px;\n   background-color:  rgb(200, 200, 200);  \n   color: rgb(55, 55, 55);\n   border: none;\n   border-radius: 10px;\n   cursor: pointer;\n   transition: background-color 0.3s ease;\n   font-weight: bold;\n}\n\n.STYT-button:hover {\n   color: rgb(255, 0, 0);\n   background-color: rgb(153, 152, 152);  \n}\n\n/* Animation styles */\n@keyframes fade-in {\n   from {\n      opacity: 0;\n   }\n   to {\n      opacity: 1;\n   }\n}\n\n/* Apply animation to the container */\n.STYT-container {\n   animation: fade-in 0.5s ease;\n}\n\n/* fontSize: '22px', color: 'red', textAlign: 'center' */\n.loginToCreate {\n   font-size: 22px;\n   color: red;\n   text-align: center;\n}\n\n/* Add space between image and chart */\n.STYT-image {\n  margin-bottom: 70px;\n}\n\nform div {\n   margin: 1em;\n   display: inline-block;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11574,8 +11594,9 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `body {
-   margin: 0;
-}`, "",{"version":3,"sources":["webpack://./client/index.css"],"names":[],"mappings":"AAAA;GACG,SAAS;AACZ","sourcesContent":["body {\n   margin: 0;\n}"],"sourceRoot":""}]);
+ margin: 0;
+
+}`, "",{"version":3,"sources":["webpack://./client/index.css"],"names":[],"mappings":"AAAA;CACC,SAAS;;AAEV","sourcesContent":["body {\n margin: 0;\n\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -12377,21 +12398,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "c5c07c1b7eea2d49d2adeea3832ec2b7.png");
-
-/***/ }),
-
-/***/ "./client/assets/SinewStrengthAlbum/pictures/IMG_3599.JPG":
-/*!****************************************************************!*\
-  !*** ./client/assets/SinewStrengthAlbum/pictures/IMG_3599.JPG ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "3c766a7c7cbf9345be4cb826333abe5a.JPG");
 
 /***/ }),
 
@@ -51744,6 +51750,61 @@ if (
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/scheduler/cjs/scheduler.development.js");
 }
+
+
+/***/ }),
+
+/***/ "./client/app/App.css":
+/*!****************************!*\
+  !*** ./client/app/App.css ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_App_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./App.css */ "./node_modules/css-loader/dist/cjs.js!./client/app/App.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_App_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_App_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_App_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_App_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),

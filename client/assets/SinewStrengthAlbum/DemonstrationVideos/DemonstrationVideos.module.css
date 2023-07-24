@@ -9,14 +9,14 @@ body {
 .container {
     padding: 40px;
     text-align: center;
-    background-color: #282c34;
-    color: white;
+  
+    color: rgb(202, 202, 202);
 }
 
 .heading {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #ffffff;
+ color:rgb(207, 0, 0);
 }
 
 /* Video Card styles */

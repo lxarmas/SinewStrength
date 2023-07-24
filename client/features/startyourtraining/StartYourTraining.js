@@ -6,7 +6,7 @@ import './StartYourTraining.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { createProgram, fetchTrainingProgramAsync, selectTrainingProgram } from '../tracker/trainingProgramSlice';
-import background from '../../assets/SinewStrengthAlbum/pictures/IMG_3599.JPG'
+
 
 const customToastErrorStyle = {
    position: 'top-center',
@@ -175,7 +175,7 @@ const StartYourTraining = () => {
    };
 
    return (
-      <div className='main' style={{ backgroundImage: `url(${background})`}}>
+      <div >
          <div className="STYT-container" >
          <ToastContainer />
          {/* <h2 className="STYT-heading">Let's get started{username ? <span style={{ textTransform: 'uppercase'}}>, {username}</span> : ''}!</h2> */}
