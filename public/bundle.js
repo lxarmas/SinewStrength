@@ -10794,8 +10794,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
 }
 
 .navbar-nav button {
-   color: white;
-   background-color: #000000;
+   color:rgb(130, 124, 163);
+   background-color: #e4e4e4;
    border: none;
    padding: 5px 10;
    border-radius: 4px;
@@ -10806,8 +10806,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
 
 .navbar-nav button:hover {
    background-color: rgb(241, 241, 241);
-   color: rgb(170, 2, 2);
-}`, "",{"version":3,"sources":["webpack://./client/features/navbar/Nav.css"],"names":[],"mappings":"AAAA;GACG,oCAAoC;GACpC,YAAY;GACZ,YAAY;GACZ,gBAAgB;GAChB,MAAM;GACN,YAAY;AACf;;AAEA;GACG,aAAa;GACb,uBAAuB;GACvB,mBAAmB;AACtB;;AAEA;GACG,uBAAuB;GACvB,yBAAyB;GACzB,qBAAqB;GACrB,2BAA2B;GAC3B,eAAe;GACf,YAAY;GACZ,4EAA4E;GAC5E,cAAc;AACjB;;AAEA;GACG,qBAAqB;AACxB;;AAEA;GACG,iBAAiB;AACpB;;AAEA;GACG,YAAY;GACZ,yBAAyB;GACzB,YAAY;GACZ,eAAe;GACf,kBAAkB;GAClB,eAAe;GACf,eAAe;GACf,4EAA4E;AAC/E;;AAEA;GACG,oCAAoC;GACpC,qBAAqB;AACxB","sourcesContent":[".navbar {\n   background-color: rgb(255, 255, 255);\n   padding: 5px;\n   height: auto;\n   position: sticky;\n   top: 0;\n   z-index: 100;\n}\n\n.navbar nav {\n   display: flex;\n   justify-content: center;\n   align-items: center;\n}\n\n.navbar a {\n   font-family: sans-serif;\n   color: rgb(130, 124, 163);\n   text-decoration: none;\n   transition: color 0.3s ease;\n   font-size: 28px;\n   padding: 5px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n   margin: 0 .8em;\n}\n\n.navbar a:hover {\n   color: rgb(242, 0, 0);\n}\n\n.navbar a.active {\n   font-weight: bold;\n}\n\n.navbar-nav button {\n   color: white;\n   background-color: #000000;\n   border: none;\n   padding: 5px 10;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 28px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n}\n\n.navbar-nav button:hover {\n   background-color: rgb(241, 241, 241);\n   color: rgb(170, 2, 2);\n}"],"sourceRoot":""}]);
+   color: rgb(232, 0, 0);
+}`, "",{"version":3,"sources":["webpack://./client/features/navbar/Nav.css"],"names":[],"mappings":"AAAA;GACG,oCAAoC;GACpC,YAAY;GACZ,YAAY;GACZ,gBAAgB;GAChB,MAAM;GACN,YAAY;AACf;;AAEA;GACG,aAAa;GACb,uBAAuB;GACvB,mBAAmB;AACtB;;AAEA;GACG,uBAAuB;GACvB,yBAAyB;GACzB,qBAAqB;GACrB,2BAA2B;GAC3B,eAAe;GACf,YAAY;GACZ,4EAA4E;GAC5E,cAAc;AACjB;;AAEA;GACG,qBAAqB;AACxB;;AAEA;GACG,iBAAiB;AACpB;;AAEA;GACG,wBAAwB;GACxB,yBAAyB;GACzB,YAAY;GACZ,eAAe;GACf,kBAAkB;GAClB,eAAe;GACf,eAAe;GACf,4EAA4E;AAC/E;;AAEA;GACG,oCAAoC;GACpC,qBAAqB;AACxB","sourcesContent":[".navbar {\n   background-color: rgb(255, 255, 255);\n   padding: 5px;\n   height: auto;\n   position: sticky;\n   top: 0;\n   z-index: 100;\n}\n\n.navbar nav {\n   display: flex;\n   justify-content: center;\n   align-items: center;\n}\n\n.navbar a {\n   font-family: sans-serif;\n   color: rgb(130, 124, 163);\n   text-decoration: none;\n   transition: color 0.3s ease;\n   font-size: 28px;\n   padding: 5px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n   margin: 0 .8em;\n}\n\n.navbar a:hover {\n   color: rgb(242, 0, 0);\n}\n\n.navbar a.active {\n   font-weight: bold;\n}\n\n.navbar-nav button {\n   color:rgb(130, 124, 163);\n   background-color: #e4e4e4;\n   border: none;\n   padding: 5px 10;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 28px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n}\n\n.navbar-nav button:hover {\n   background-color: rgb(241, 241, 241);\n   color: rgb(232, 0, 0);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
