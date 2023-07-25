@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import './Home.css';
-import logo from '../../assets/ColorHighres.png'
+import logo from '../../assets/MyLogo.png'
 import pictureOne from "../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg"
 
 
@@ -107,7 +107,7 @@ const Home = () => {
 
      
 
-      {/* Digital Ticker */}
+     
       <div className="tickerContainer">
         <div className="tickerContent">
           <ul className="tickerList">
@@ -131,7 +131,7 @@ const Home = () => {
             users get the most out of every workout. It's an invaluable tool for both beginners and experienced fitness
             enthusiasts alike."
             </h3>
-           <h3 className='HPwomanDumbellQuote'>  Emily S. - Long-time Gym Goer</h3>
+           <h3 className='HPwomanDumbellQuote'>Emily S. - Long-time Gym Goer</h3>
           
         </div>
       
@@ -154,7 +154,7 @@ const Home = () => {
             groups effectively. Thanks to this website, I've seen incredible gains in my strength and overall fitness
             level. Highly recommended!"
           </h3>
-          <h3 className='HPwomanDumbellQuote'> Mike T. - Busy Professional and Fitness Novice</h3>
+          <h3 className='HPwomanDumbellQuote'>Mike T. - Busy Professional and Fitness Novice</h3>
            
           
         </div>

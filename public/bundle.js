@@ -7515,7 +7515,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _Home_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home.css */ "./client/features/home/Home.css");
-/* harmony import */ var _assets_ColorHighres_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/ColorHighres.png */ "./client/assets/ColorHighres.png");
+/* harmony import */ var _assets_MyLogo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/MyLogo.png */ "./client/assets/MyLogo.png");
 /* harmony import */ var _assets_SinewStrengthAlbum_pictures_WomanTraining_jpeg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg */ "./client/assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg");
 
 
@@ -7587,7 +7587,7 @@ var Home = function Home() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "HPlogoContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: _assets_ColorHighres_png__WEBPACK_IMPORTED_MODULE_3__["default"],
+    src: _assets_MyLogo_png__WEBPACK_IMPORTED_MODULE_3__["default"],
     alt: "logo",
     className: "HPlogo"
   })), "`", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -7624,7 +7624,7 @@ var Home = function Home() {
     className: "HPwomanDumbellText"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, " \"As a fitness coach, I'm always on the lookout for quality resources to recommend to my clients. This strength training website is hands down one of the best I've come across. The variety of workout plans caters to my demands, and the attention to detail in exercise explanations ensures that users get the most out of every workout. It's an invaluable tool for both beginners and experienced fitness enthusiasts alike.\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "HPwomanDumbellQuote"
-  }, "  Emily S. - Long-time Gym Goer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }, "Emily S. - Long-time Gym Goer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "HPwomanDumbBellImage",
     ref: dynamicImageRefs[1],
     src: "https://www.byrdie.com/thmb/OrNyxtm_DhFfasz3iQuzpen6O_4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1289416088-351bf8ecc9c846be9419657522b625c6.jpg",
@@ -7640,7 +7640,7 @@ var Home = function Home() {
     className: "HPwomanDumbellTextRight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "\"I've tried numerous fitness websites, but none compare to the effectiveness and user-friendliness of this strength training platform. The workout routines are well-designed and target different muscle groups effectively. Thanks to this website, I've seen incredible gains in my strength and overall fitness level. Highly recommended!\""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
     className: "HPwomanDumbellQuote"
-  }, " Mike T. - Busy Professional and Fitness Novice"))));
+  }, "Mike T. - Busy Professional and Fitness Novice"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
 
@@ -12178,21 +12178,6 @@ module.exports = function (item) {
   }
   return [content].join("\n");
 };
-
-/***/ }),
-
-/***/ "./client/assets/ColorHighres.png":
-/*!****************************************!*\
-  !*** ./client/assets/ColorHighres.png ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "ef8434a1545d0f7899f41fe941c40226.png");
 
 /***/ }),
 
