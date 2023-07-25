@@ -1,6 +1,6 @@
 .navbar {
-   background-color: rgb(255, 255, 255);
-   padding: 5px;
+   background-color: #333; /* Update to a more modern color */
+   padding: 10px;
    height: auto;
    position: sticky;
    top: 0;
@@ -15,35 +15,39 @@
 
 .navbar a {
    font-family: sans-serif;
-   color: rgb(130, 124, 163);
+   color: #fff; /* Update text color */
    text-decoration: none;
    transition: color 0.3s ease;
-   font-size: 28px;
-   padding: 5px;
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 22px; /* Adjust font size for a more modern look */
+   padding: 10px;
    margin: 0 .8em;
+   display: flex; /* To use flex properties */
+   align-items: center; /* To vertically center elements */
 }
 
+/* Add a hover effect for a more interactive feel */
 .navbar a:hover {
-   color: rgb(242, 0, 0);
+   background-color: #555;
+   border-radius: 4px;
 }
 
+/* Add a class for the active link */
 .navbar a.active {
    font-weight: bold;
 }
 
-.navbar-nav button {
-   color:rgb(130, 124, 163);
-   background-color: #e4e4e4;
-   border: none;
-   padding: 5px 10;
-   border-radius: 4px;
-   cursor: pointer;
-   font-size: 28px;
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* Style the hamburger menu icon for mobile devices */
+.hamburger-menu {
+   display: none; /* Hide by default on larger screens */
 }
 
-.navbar-nav button:hover {
-   background-color: rgb(241, 241, 241);
-   color: rgb(232, 0, 0);
+/* Add media query for mobile devices */
+@media (max-width: 768px) {
+   .navbar a:not(.active) {
+      display: none; /* Hide the links on smaller screens */
+   }
+
+   .hamburger-menu {
+      display: block; /* Show the hamburger menu on smaller screens */
+   }
 }

@@ -9571,19 +9571,18 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-
 /* Container styles */
 .VjU9XGO0kYRdExTSvYTZ {
-    padding: 40px;
-    text-align: center;
+  padding: 40px;
+  text-align: center;
   
-    color: rgb(202, 202, 202);
+  
 }
 
 .EXH2Prg3IuNmds2gABjQ {
   font-size: 36px;
   margin-bottom: 20px;
- color:rgb(207, 0, 0);
+  color: rgb(207, 0, 0);
 }
 
 /* Video Card styles */
@@ -9591,26 +9590,30 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .pvsPWoXrVmU9jehf568d,
 .qN2nmbrGC_H97OB4uljt {
   width: calc(50% - 20px); /* To add some spacing between the cards */
-
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s ease;
   cursor: pointer;
+  position: relative; /* For overlay */
+  
 }
 
 .pvsPWoXrVmU9jehf568d:hover,
 .qN2nmbrGC_H97OB4uljt:hover {
-  transform: translateY(-5px);
+  transform: scale(1.1); /* Increase card size on hover */
 }
 
 .pvsPWoXrVmU9jehf568d {
   margin-right: 20px;
   margin-bottom: 20px;
+  
+ 
 }
 
 .qN2nmbrGC_H97OB4uljt {
@@ -9618,14 +9621,55 @@ body {
   margin-bottom: 20px;
 }
 
-/* ... Other existing styles ... */
+/* Overlay for video cards */
+.EgtjkRJBtFTJ67m6tG4j {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.pvsPWoXrVmU9jehf568d:hover .EgtjkRJBtFTJ67m6tG4j,
+.qN2nmbrGC_H97OB4uljt:hover .EgtjkRJBtFTJ67m6tG4j {
+  opacity: 1; /* Show overlay on hover */
+}
+
 .CQ6ILZajYFoICntl9uGg {
   width: 100%;
   height: auto;
   max-width: 320px;
   max-height: 180px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 8px solid rgb(200, 200, 200);
+  margin-bottom: 20px;
 }
 
+.iBxOZ8ZOLpVjILroFoDY{
+  color:rgb(0, 0, 0);
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 10px;
+
+}
+.kF4Vr1YeOWFGCzcTn6P1{
+  color:rgb(57, 57, 57);
+  background-color: rgb(255, 255, 255);
+  border: 3px  solid rgb(86, 86, 86); /* Set the border width and color */
+  padding:10px ;
+  border-radius: 8px;
+    display: inline; 
+    margin: 20px;
+}
 /* Responsive styles */
 @media (max-width: 768px) {
   .pvsPWoXrVmU9jehf568d,
@@ -9638,7 +9682,7 @@ body {
     margin-bottom: 20px;
   }
 }
-`, "",{"version":3,"sources":["webpack://./client/assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos.module.css"],"names":[],"mappings":"AAAA,kBAAkB;AAClB;EACE,SAAS;EACT,gCAAgC;AAClC;;;AAGA,qBAAqB;AACrB;IACI,aAAa;IACb,kBAAkB;;IAElB,yBAAyB;AAC7B;;AAEA;EACE,eAAe;EACf,mBAAmB;CACpB,oBAAoB;AACrB;;AAEA,sBAAsB;AACtB;EACE,aAAa;EACb,eAAe;EACf,uBAAuB;AACzB;;AAEA;;EAEE,uBAAuB,EAAE,0CAA0C;;EAEnE,kBAAkB;EAClB,gBAAgB;EAChB,+BAA+B;EAC/B,eAAe;AACjB;;AAEA;;EAEE,2BAA2B;AAC7B;;AAEA;EACE,kBAAkB;EAClB,mBAAmB;AACrB;;AAEA;EACE,iBAAiB;EACjB,mBAAmB;AACrB;;AAEA,kCAAkC;AAClC;EACE,WAAW;EACX,YAAY;EACZ,gBAAgB;EAChB,iBAAiB;AACnB;;AAEA,sBAAsB;AACtB;EACE;;IAEE,wBAAwB,EAAE,0CAA0C;EACtE;;EAEA;;IAEE,mBAAmB;EACrB;AACF","sourcesContent":["/* Global styles */\nbody {\n  margin: 0;\n  font-family: 'Arial', sans-serif;\n}\n\n\n/* Container styles */\n.container {\n    padding: 40px;\n    text-align: center;\n  \n    color: rgb(202, 202, 202);\n}\n\n.heading {\n  font-size: 36px;\n  margin-bottom: 20px;\n color:rgb(207, 0, 0);\n}\n\n/* Video Card styles */\n.videoGrid {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n\n.videoCardLeft,\n.videoCardRight {\n  width: calc(50% - 20px); /* To add some spacing between the cards */\n\n  border-radius: 8px;\n  overflow: hidden;\n  transition: transform 0.2s ease;\n  cursor: pointer;\n}\n\n.videoCardLeft:hover,\n.videoCardRight:hover {\n  transform: translateY(-5px);\n}\n\n.videoCardLeft {\n  margin-right: 20px;\n  margin-bottom: 20px;\n}\n\n.videoCardRight {\n  margin-left: 20px;\n  margin-bottom: 20px;\n}\n\n/* ... Other existing styles ... */\n.videoPlayer {\n  width: 100%;\n  height: auto;\n  max-width: 320px;\n  max-height: 180px;\n}\n\n/* Responsive styles */\n@media (max-width: 768px) {\n  .videoCardLeft,\n  .videoCardRight {\n    width: calc(100% - 40px); /* To add some spacing between the cards */\n  }\n\n  .videoCardLeft:not(:last-child),\n  .videoCardRight:not(:last-child) {\n    margin-bottom: 20px;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./client/assets/SinewStrengthAlbum/DemonstrationVideos/DemonstrationVideos.module.css"],"names":[],"mappings":"AAAA,kBAAkB;AAClB;EACE,SAAS;EACT,gCAAgC;AAClC;;AAEA,qBAAqB;AACrB;EACE,aAAa;EACb,kBAAkB;;;AAGpB;;AAEA;EACE,eAAe;EACf,mBAAmB;EACnB,qBAAqB;AACvB;;AAEA,sBAAsB;AACtB;EACE,aAAa;EACb,eAAe;EACf,uBAAuB;;AAEzB;;AAEA;;EAEE,uBAAuB,EAAE,0CAA0C;EACnE,kBAAkB;EAClB,gBAAgB;EAChB,+BAA+B;EAC/B,eAAe;EACf,kBAAkB,EAAE,gBAAgB;;AAEtC;;AAEA;;EAEE,qBAAqB,EAAE,gCAAgC;AACzD;;AAEA;EACE,kBAAkB;EAClB,mBAAmB;;;AAGrB;;AAEA;EACE,iBAAiB;EACjB,mBAAmB;AACrB;;AAEA,4BAA4B;AAC5B;EACE,kBAAkB;EAClB,MAAM;EACN,OAAO;EACP,WAAW;EACX,YAAY;;EAEZ,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,UAAU;EACV,6BAA6B;AAC/B;;AAEA;;EAEE,UAAU,EAAE,0BAA0B;AACxC;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,gBAAgB;EAChB,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;EAChB,wCAAwC;EACxC,oCAAoC;EACpC,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,eAAe;EACf,kBAAkB;EAClB,aAAa;EACb,gBAAgB;;AAElB;AACA;EACE,qBAAqB;EACrB,oCAAoC;EACpC,kCAAkC,EAAE,mCAAmC;EACvE,aAAa;EACb,kBAAkB;IAChB,eAAe;IACf,YAAY;AAChB;AACA,sBAAsB;AACtB;EACE;;IAEE,wBAAwB,EAAE,0CAA0C;EACtE;;EAEA;;IAEE,mBAAmB;EACrB;AACF","sourcesContent":["/* Global styles */\nbody {\n  margin: 0;\n  font-family: 'Arial', sans-serif;\n}\n\n/* Container styles */\n.container {\n  padding: 40px;\n  text-align: center;\n  \n  \n}\n\n.heading {\n  font-size: 36px;\n  margin-bottom: 20px;\n  color: rgb(207, 0, 0);\n}\n\n/* Video Card styles */\n.videoGrid {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n\n}\n\n.videoCardLeft,\n.videoCardRight {\n  width: calc(50% - 20px); /* To add some spacing between the cards */\n  border-radius: 8px;\n  overflow: hidden;\n  transition: transform 0.2s ease;\n  cursor: pointer;\n  position: relative; /* For overlay */\n  \n}\n\n.videoCardLeft:hover,\n.videoCardRight:hover {\n  transform: scale(1.1); /* Increase card size on hover */\n}\n\n.videoCardLeft {\n  margin-right: 20px;\n  margin-bottom: 20px;\n  \n \n}\n\n.videoCardRight {\n  margin-left: 20px;\n  margin-bottom: 20px;\n}\n\n/* Overlay for video cards */\n.videoOverlay {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  \n  display: flex;\n  align-items: center;\n  justify-content: center;\n  opacity: 0;\n  transition: opacity 0.2s ease;\n}\n\n.videoCardLeft:hover .videoOverlay,\n.videoCardRight:hover .videoOverlay {\n  opacity: 1; /* Show overlay on hover */\n}\n\n.videoPlayer {\n  width: 100%;\n  height: auto;\n  max-width: 320px;\n  max-height: 180px;\n  border-radius: 8px;\n  overflow: hidden;\n  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n  border: 8px solid rgb(200, 200, 200);\n  margin-bottom: 20px;\n}\n\n.videoDescription{\n  color:rgb(0, 0, 0);\n  font-size: 16px;\n  border-radius: 8px;\n  padding: 30px;\n  margin-top: 10px;\n\n}\n.videoTitle{\n  color:rgb(57, 57, 57);\n  background-color: rgb(255, 255, 255);\n  border: 3px  solid rgb(86, 86, 86); /* Set the border width and color */\n  padding:10px ;\n  border-radius: 8px;\n    display: inline; \n    margin: 20px;\n}\n/* Responsive styles */\n@media (max-width: 768px) {\n  .videoCardLeft,\n  .videoCardRight {\n    width: calc(100% - 40px); /* To add some spacing between the cards */\n  }\n\n  .videoCardLeft:not(:last-child),\n  .videoCardRight:not(:last-child) {\n    margin-bottom: 20px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"container": `VjU9XGO0kYRdExTSvYTZ`,
@@ -9646,7 +9690,10 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"videoGrid": `nqQA8hmZWbRtp1xPXoAc`,
 	"videoCardLeft": `pvsPWoXrVmU9jehf568d`,
 	"videoCardRight": `qN2nmbrGC_H97OB4uljt`,
-	"videoPlayer": `CQ6ILZajYFoICntl9uGg`
+	"videoOverlay": `EgtjkRJBtFTJ67m6tG4j`,
+	"videoPlayer": `CQ6ILZajYFoICntl9uGg`,
+	"videoDescription": `iBxOZ8ZOLpVjILroFoDY`,
+	"videoTitle": `kF4Vr1YeOWFGCzcTn6P1`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10628,8 +10675,8 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
-   background-color: rgb(255, 255, 255);
-   padding: 5px;
+   background-color: #333; /* Update to a more modern color */
+   padding: 10px;
    height: auto;
    position: sticky;
    top: 0;
@@ -10644,38 +10691,43 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
 
 .navbar a {
    font-family: sans-serif;
-   color: rgb(130, 124, 163);
+   color: #fff; /* Update text color */
    text-decoration: none;
    transition: color 0.3s ease;
-   font-size: 28px;
-   padding: 5px;
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 22px; /* Adjust font size for a more modern look */
+   padding: 10px;
    margin: 0 .8em;
+   display: flex; /* To use flex properties */
+   align-items: center; /* To vertically center elements */
 }
 
+/* Add a hover effect for a more interactive feel */
 .navbar a:hover {
-   color: rgb(242, 0, 0);
+   background-color: #555;
+   border-radius: 4px;
 }
 
+/* Add a class for the active link */
 .navbar a.active {
    font-weight: bold;
 }
 
-.navbar-nav button {
-   color:rgb(130, 124, 163);
-   background-color: #e4e4e4;
-   border: none;
-   padding: 5px 10;
-   border-radius: 4px;
-   cursor: pointer;
-   font-size: 28px;
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* Style the hamburger menu icon for mobile devices */
+.hamburger-menu {
+   display: none; /* Hide by default on larger screens */
 }
 
-.navbar-nav button:hover {
-   background-color: rgb(241, 241, 241);
-   color: rgb(232, 0, 0);
-}`, "",{"version":3,"sources":["webpack://./client/features/navbar/Nav.css"],"names":[],"mappings":"AAAA;GACG,oCAAoC;GACpC,YAAY;GACZ,YAAY;GACZ,gBAAgB;GAChB,MAAM;GACN,YAAY;AACf;;AAEA;GACG,aAAa;GACb,uBAAuB;GACvB,mBAAmB;AACtB;;AAEA;GACG,uBAAuB;GACvB,yBAAyB;GACzB,qBAAqB;GACrB,2BAA2B;GAC3B,eAAe;GACf,YAAY;GACZ,4EAA4E;GAC5E,cAAc;AACjB;;AAEA;GACG,qBAAqB;AACxB;;AAEA;GACG,iBAAiB;AACpB;;AAEA;GACG,wBAAwB;GACxB,yBAAyB;GACzB,YAAY;GACZ,eAAe;GACf,kBAAkB;GAClB,eAAe;GACf,eAAe;GACf,4EAA4E;AAC/E;;AAEA;GACG,oCAAoC;GACpC,qBAAqB;AACxB","sourcesContent":[".navbar {\n   background-color: rgb(255, 255, 255);\n   padding: 5px;\n   height: auto;\n   position: sticky;\n   top: 0;\n   z-index: 100;\n}\n\n.navbar nav {\n   display: flex;\n   justify-content: center;\n   align-items: center;\n}\n\n.navbar a {\n   font-family: sans-serif;\n   color: rgb(130, 124, 163);\n   text-decoration: none;\n   transition: color 0.3s ease;\n   font-size: 28px;\n   padding: 5px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n   margin: 0 .8em;\n}\n\n.navbar a:hover {\n   color: rgb(242, 0, 0);\n}\n\n.navbar a.active {\n   font-weight: bold;\n}\n\n.navbar-nav button {\n   color:rgb(130, 124, 163);\n   background-color: #e4e4e4;\n   border: none;\n   padding: 5px 10;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 28px;\n   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n}\n\n.navbar-nav button:hover {\n   background-color: rgb(241, 241, 241);\n   color: rgb(232, 0, 0);\n}"],"sourceRoot":""}]);
+/* Add media query for mobile devices */
+@media (max-width: 768px) {
+   .navbar a:not(.active) {
+      display: none; /* Hide the links on smaller screens */
+   }
+
+   .hamburger-menu {
+      display: block; /* Show the hamburger menu on smaller screens */
+   }
+}
+`, "",{"version":3,"sources":["webpack://./client/features/navbar/Nav.css"],"names":[],"mappings":"AAAA;GACG,sBAAsB,EAAE,kCAAkC;GAC1D,aAAa;GACb,YAAY;GACZ,gBAAgB;GAChB,MAAM;GACN,YAAY;AACf;;AAEA;GACG,aAAa;GACb,uBAAuB;GACvB,mBAAmB;AACtB;;AAEA;GACG,uBAAuB;GACvB,WAAW,EAAE,sBAAsB;GACnC,qBAAqB;GACrB,2BAA2B;GAC3B,eAAe,EAAE,4CAA4C;GAC7D,aAAa;GACb,cAAc;GACd,aAAa,EAAE,2BAA2B;GAC1C,mBAAmB,EAAE,kCAAkC;AAC1D;;AAEA,mDAAmD;AACnD;GACG,sBAAsB;GACtB,kBAAkB;AACrB;;AAEA,oCAAoC;AACpC;GACG,iBAAiB;AACpB;;AAEA,qDAAqD;AACrD;GACG,aAAa,EAAE,sCAAsC;AACxD;;AAEA,uCAAuC;AACvC;GACG;MACG,aAAa,EAAE,sCAAsC;GACxD;;GAEA;MACG,cAAc,EAAE,+CAA+C;GAClE;AACH","sourcesContent":[".navbar {\n   background-color: #333; /* Update to a more modern color */\n   padding: 10px;\n   height: auto;\n   position: sticky;\n   top: 0;\n   z-index: 100;\n}\n\n.navbar nav {\n   display: flex;\n   justify-content: center;\n   align-items: center;\n}\n\n.navbar a {\n   font-family: sans-serif;\n   color: #fff; /* Update text color */\n   text-decoration: none;\n   transition: color 0.3s ease;\n   font-size: 22px; /* Adjust font size for a more modern look */\n   padding: 10px;\n   margin: 0 .8em;\n   display: flex; /* To use flex properties */\n   align-items: center; /* To vertically center elements */\n}\n\n/* Add a hover effect for a more interactive feel */\n.navbar a:hover {\n   background-color: #555;\n   border-radius: 4px;\n}\n\n/* Add a class for the active link */\n.navbar a.active {\n   font-weight: bold;\n}\n\n/* Style the hamburger menu icon for mobile devices */\n.hamburger-menu {\n   display: none; /* Hide by default on larger screens */\n}\n\n/* Add media query for mobile devices */\n@media (max-width: 768px) {\n   .navbar a:not(.active) {\n      display: none; /* Hide the links on smaller screens */\n   }\n\n   .hamburger-menu {\n      display: block; /* Show the hamburger menu on smaller screens */\n   }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
