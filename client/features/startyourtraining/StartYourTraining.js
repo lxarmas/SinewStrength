@@ -301,7 +301,7 @@ const StartYourTraining = () => {
                            max={50}
                            className="STYT-input"
                            value={firstSetPercent.row}
-                           onChange={(e) => setExerciseInterval({ ...firstSetPercent, row: e.target.value })}
+                           onChange={(e) => setFirstSetPercent({ ...firstSetPercent, row: e.target.value })}
                         />
                      </td>
                      <td>{maxWeight.row && reps.row ? Math.round((maxWeight.row / (1.0278 - (0.0278 * reps.row)))) : ''}</td>

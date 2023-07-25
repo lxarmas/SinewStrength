@@ -8049,7 +8049,7 @@ var StartYourTraining = function StartYourTraining() {
     className: "STYT-input",
     value: firstSetPercent.row,
     onChange: function onChange(e) {
-      return setExerciseInterval(_objectSpread(_objectSpread({}, firstSetPercent), {}, {
+      return setFirstSetPercent(_objectSpread(_objectSpread({}, firstSetPercent), {}, {
         row: e.target.value
       }));
     }
