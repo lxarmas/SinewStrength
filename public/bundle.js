@@ -7738,7 +7738,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../training programs/Intermediate/IntermediateTrainingProgram */ "./client/features/training programs/Intermediate/IntermediateTrainingProgram.js");
+/* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../training_programs/Intermediate/IntermediateTrainingProgram */ "./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js");
 /* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _StartYourTraining_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StartYourTraining.css */ "./client/features/startyourtraining/StartYourTraining.css");
 /* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-toastify */ "./node_modules/react-toastify/dist/react-toastify.esm.mjs");
@@ -8941,9 +8941,9 @@ var selectTrainingProgram = function selectTrainingProgram(state) {
 
 /***/ }),
 
-/***/ "./client/features/training programs/Intermediate/IntermediateTrainingProgram.js":
+/***/ "./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js":
 /*!***************************************************************************************!*\
-  !*** ./client/features/training programs/Intermediate/IntermediateTrainingProgram.js ***!
+  !*** ./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js ***!
   \***************************************************************************************/
 /***/ ((module) => {
 
