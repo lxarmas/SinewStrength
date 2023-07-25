@@ -7055,7 +7055,7 @@ var TrainingHistory = function TrainingHistory() {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
       className: "training-history",
       style: {
-        backgroundColor: 'black'
+        backgroundColor: 'white'
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
       style: {
@@ -7302,7 +7302,7 @@ var HistorySingleProgramFullView = function HistorySingleProgramFullView() {
       fontSize: '28px',
       marginBottom: '30px',
       textAlign: 'center',
-      color: ' #12b900'
+      color: '#BA181B'
     }
   }, "Week Completed"), pastProgram.weeks && pastProgram.weeks[selectedWeek].completed ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "single-week-selector"
@@ -9953,7 +9953,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.training-history {
-   /* background-color: #282c34; */
+  
    margin: 0 auto;
    /* padding: 20px 0px; */
    color: white;
@@ -9983,7 +9983,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.training-history {
    margin-bottom: 80px;
    text-align: center;
    font-family: Verdana;
-   color:rgb(0, 0, 0);
+   color:rgb(169, 0, 0);
    background-color: rgb(241, 241, 241);
    padding: 10px 0;
    margin-top: -10px;
@@ -10008,8 +10008,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.training-history {
    font-size: 40px;
    font-weight: bold;
    text-align: center;
-   color:  white;
-   /* background-color: black; */
+   color:  rgb(180, 0, 0);
+ 
    padding: 20px;
    margin-bottom: 0;
 }
@@ -10115,7 +10115,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.training-history {
 .view-all-button:hover {
    background-color: #000000;
    color: #ffffff;
-}`, "",{"version":3,"sources":["webpack://./client/features/history/all/TrainingHistory.css"],"names":[],"mappings":"AAAA;GACG,+BAA+B;GAC/B,cAAc;GACd,uBAAuB;GACvB,YAAY;GACZ,uBAAuB;GACvB,aAAa;GACb,qBAAqB;GACrB,4BAA4B;GAC5B,2BAA2B;GAC3B,mBAAmB;GACnB,mBAAmB;AACtB;;AAEA;GACG,eAAe;GACf,8BAA8B;GAC9B,WAAW;GACX,iBAAiB;GACjB,YAAY;GACZ,sBAAsB;;GAEtB,2BAA2B;AAC9B;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;GAClB,oBAAoB;GACpB,kBAAkB;GAClB,oCAAoC;GACpC,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,YAAY;GACZ,kBAAkB;AACrB;;AAEA;GACG,yBAAyB;GACzB,oCAAoC;GACpC,mBAAmB;GACnB,WAAW;GACX,gBAAgB;GAChB,mBAAmB;GACnB,6BAA6B;GAC7B,mBAAmB;GACnB,aAAa;AAChB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,aAAa;GACb,6BAA6B;GAC7B,aAAa;GACb,gBAAgB;AACnB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,YAAY;GACZ,6BAA6B;GAC7B,aAAa;GACb,QAAQ;AACX;;AAEA;GACG,6BAA6B;GAC7B,aAAa;AAChB;;AAEA;GACG,iBAAiB;GACjB,yBAAyB;GACzB,oBAAoB;GACpB,kBAAkB;GAClB,eAAe;GACf,YAAY;GACZ,eAAe;GACf,iBAAiB;GACjB,YAAY;AACf;;AAEA;GACG,uBAAuB;GACvB,eAAe;AAClB;;AAEA;GACG,aAAa;GACb,eAAe;GACf,uBAAuB;AAC1B;;AAEA;GACG,uBAAuB;GACvB,+BAA+B;GAC/B,aAAa;GACb,kBAAkB;GAClB,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,uBAAuB;GACvB;AACH;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,kBAAkB;GAClB,qBAAqB;GACrB,yBAAyB;AAC5B;;AAEA;GACG,kBAAkB;GAClB,kBAAkB;AACrB;;AAEA;GACG,WAAW;GACX,gBAAgB;GAChB,yBAAyB;GACzB,sBAAsB;GACtB,WAAW;AACd;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,sBAAsB;AACzB;;AAEA;GACG,sBAAsB;AACzB;;AAEA;GACG,sBAAsB;AACzB;;AAEA;GACG,iBAAiB;GACjB,yBAAyB;GACzB,cAAc;GACd,kBAAkB;GAClB,eAAe;GACf,eAAe;GACf,iBAAiB;AACpB;;AAEA;GACG,yBAAyB;GACzB,cAAc;AACjB","sourcesContent":[".training-history {\n   /* background-color: #282c34; */\n   margin: 0 auto;\n   /* padding: 20px 0px; */\n   color: white;\n   justify-content: center;\n   display: flex;\n   background-size:cover;\n   background-repeat: no-repeat;\n   background-position: center;\n   margin-right: -10px;\n   margin-bottom: -5px;\n}\n\n.program-container {\n   margin-top: 0px;\n   /* background-color:#282c34; */\n   width: auto;\n   /* opacity: .6; */\n   display:flex;\n   flex-direction: column;\n   \n   /* align-content: center; */\n}\n\n.program-title {\n   font-size: 50px;\n   font-weight: bold;\n   margin-bottom: 80px;\n   text-align: center;\n   font-family: Verdana;\n   color:rgb(0, 0, 0);\n   background-color: rgb(241, 241, 241);\n   padding: 10px 0;\n   margin-top: -10px;\n   border-radius: 10px;\n   width: 550px;\n   align-self: center;\n}\n\n.program-info-container {\n   /* margin-bottom: 50px; */\n   background-color: rgb(206, 206, 206);\n   /* padding: 50px; */\n   width: auto;\n   min-width: 500px;\n   border-radius: 30px;\n   justify-content:space-between;\n   margin-bottom: 50px;\n   padding: 20px;\n}\n\n.program-info-title {\n   font-size: 40px;\n   font-weight: bold;\n   text-align: center;\n   color:  white;\n   /* background-color: black; */\n   padding: 20px;\n   margin-bottom: 0;\n}\n\n.program-info-name {\n   font-size: 28px;\n   font-weight: bold;\n   text-align: center;\n   color: white;\n   /* background-color: black; */\n   padding: 20px;\n   margin:0;\n}\n\n.expand-button-container {\n   /* background-color: black; */\n   padding: 10px;\n}\n\n.expand-button {\n   padding: 0px 16px;\n   background-color: #c2c2c2;\n   color:rgb(191, 0, 0);\n   border-radius: 4px;\n   cursor: pointer;\n   height: 36px;\n   font-size: 22px;\n   font-weight: bold;\n   border: none;\n}\n\n.expand-button:hover {\n   background-color: black;\n   color:  #ffffff;\n}\n\n.expanded-info-container {\n   display: flex;\n   flex-wrap: wrap;\n   justify-content: center;\n}\n\n.info-box-container {\n   width: calc(50% - 10px);\n   /* background-color: #282c34; */\n   padding: 16px;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   width:fit-content\n}\n\n.active-status {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(255, 0, 0);\n   text-transform: uppercase;\n}\n\n.expand-button-container {\n   margin-bottom: 8px;\n   text-align: center;\n}\n\n.info-box-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   color: #fff;\n}\n\n.info-box-table th,\n.info-box-table td {\n   font-size: 20px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #555;\n}\n\n.info-box-table th {\n   background-color: #222;\n}\n\n.info-box-table td {\n   background-color: #444;\n}\n\n.view-all-button {\n   padding: 1px 16px;\n   background-color: #e2e2e2;\n   color: #fc0000;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 18px;\n   font-weight: bold;\n}\n\n.view-all-button:hover {\n   background-color: #000000;\n   color: #ffffff;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/history/all/TrainingHistory.css"],"names":[],"mappings":"AAAA;;GAEG,cAAc;GACd,uBAAuB;GACvB,YAAY;GACZ,uBAAuB;GACvB,aAAa;GACb,qBAAqB;GACrB,4BAA4B;GAC5B,2BAA2B;GAC3B,mBAAmB;GACnB,mBAAmB;AACtB;;AAEA;GACG,eAAe;GACf,8BAA8B;GAC9B,WAAW;GACX,iBAAiB;GACjB,YAAY;GACZ,sBAAsB;;GAEtB,2BAA2B;AAC9B;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;GAClB,oBAAoB;GACpB,oBAAoB;GACpB,oCAAoC;GACpC,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,YAAY;GACZ,kBAAkB;AACrB;;AAEA;GACG,yBAAyB;GACzB,oCAAoC;GACpC,mBAAmB;GACnB,WAAW;GACX,gBAAgB;GAChB,mBAAmB;GACnB,6BAA6B;GAC7B,mBAAmB;GACnB,aAAa;AAChB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,sBAAsB;;GAEtB,aAAa;GACb,gBAAgB;AACnB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,YAAY;GACZ,6BAA6B;GAC7B,aAAa;GACb,QAAQ;AACX;;AAEA;GACG,6BAA6B;GAC7B,aAAa;AAChB;;AAEA;GACG,iBAAiB;GACjB,yBAAyB;GACzB,oBAAoB;GACpB,kBAAkB;GAClB,eAAe;GACf,YAAY;GACZ,eAAe;GACf,iBAAiB;GACjB,YAAY;AACf;;AAEA;GACG,uBAAuB;GACvB,eAAe;AAClB;;AAEA;GACG,aAAa;GACb,eAAe;GACf,uBAAuB;AAC1B;;AAEA;GACG,uBAAuB;GACvB,+BAA+B;GAC/B,aAAa;GACb,kBAAkB;GAClB,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,uBAAuB;GACvB;AACH;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,kBAAkB;GAClB,qBAAqB;GACrB,yBAAyB;AAC5B;;AAEA;GACG,kBAAkB;GAClB,kBAAkB;AACrB;;AAEA;GACG,WAAW;GACX,gBAAgB;GAChB,yBAAyB;GACzB,sBAAsB;GACtB,WAAW;AACd;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,sBAAsB;AACzB;;AAEA;GACG,sBAAsB;AACzB;;AAEA;GACG,sBAAsB;AACzB;;AAEA;GACG,iBAAiB;GACjB,yBAAyB;GACzB,cAAc;GACd,kBAAkB;GAClB,eAAe;GACf,eAAe;GACf,iBAAiB;AACpB;;AAEA;GACG,yBAAyB;GACzB,cAAc;AACjB","sourcesContent":[".training-history {\n  \n   margin: 0 auto;\n   /* padding: 20px 0px; */\n   color: white;\n   justify-content: center;\n   display: flex;\n   background-size:cover;\n   background-repeat: no-repeat;\n   background-position: center;\n   margin-right: -10px;\n   margin-bottom: -5px;\n}\n\n.program-container {\n   margin-top: 0px;\n   /* background-color:#282c34; */\n   width: auto;\n   /* opacity: .6; */\n   display:flex;\n   flex-direction: column;\n   \n   /* align-content: center; */\n}\n\n.program-title {\n   font-size: 50px;\n   font-weight: bold;\n   margin-bottom: 80px;\n   text-align: center;\n   font-family: Verdana;\n   color:rgb(169, 0, 0);\n   background-color: rgb(241, 241, 241);\n   padding: 10px 0;\n   margin-top: -10px;\n   border-radius: 10px;\n   width: 550px;\n   align-self: center;\n}\n\n.program-info-container {\n   /* margin-bottom: 50px; */\n   background-color: rgb(206, 206, 206);\n   /* padding: 50px; */\n   width: auto;\n   min-width: 500px;\n   border-radius: 30px;\n   justify-content:space-between;\n   margin-bottom: 50px;\n   padding: 20px;\n}\n\n.program-info-title {\n   font-size: 40px;\n   font-weight: bold;\n   text-align: center;\n   color:  rgb(180, 0, 0);\n \n   padding: 20px;\n   margin-bottom: 0;\n}\n\n.program-info-name {\n   font-size: 28px;\n   font-weight: bold;\n   text-align: center;\n   color: white;\n   /* background-color: black; */\n   padding: 20px;\n   margin:0;\n}\n\n.expand-button-container {\n   /* background-color: black; */\n   padding: 10px;\n}\n\n.expand-button {\n   padding: 0px 16px;\n   background-color: #c2c2c2;\n   color:rgb(191, 0, 0);\n   border-radius: 4px;\n   cursor: pointer;\n   height: 36px;\n   font-size: 22px;\n   font-weight: bold;\n   border: none;\n}\n\n.expand-button:hover {\n   background-color: black;\n   color:  #ffffff;\n}\n\n.expanded-info-container {\n   display: flex;\n   flex-wrap: wrap;\n   justify-content: center;\n}\n\n.info-box-container {\n   width: calc(50% - 10px);\n   /* background-color: #282c34; */\n   padding: 16px;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n   width:fit-content\n}\n\n.active-status {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(255, 0, 0);\n   text-transform: uppercase;\n}\n\n.expand-button-container {\n   margin-bottom: 8px;\n   text-align: center;\n}\n\n.info-box-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   color: #fff;\n}\n\n.info-box-table th,\n.info-box-table td {\n   font-size: 20px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #555;\n}\n\n.info-box-table th {\n   background-color: #222;\n}\n\n.info-box-table td {\n   background-color: #444;\n}\n\n.view-all-button {\n   padding: 1px 16px;\n   background-color: #e2e2e2;\n   color: #fc0000;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 18px;\n   font-weight: bold;\n}\n\n.view-all-button:hover {\n   background-color: #000000;\n   color: #ffffff;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10143,10 +10143,9 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.single-training-history {
-   background-color: #282c34;
+   background-color: #e0e0e0;
    margin: 0 auto;
    padding: 20px;
-   color: white;
    justify-content: center;
 }
 
@@ -10155,6 +10154,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.single-training-history {
    font-weight: bold;
    margin-bottom: 60px;
    text-align: center;
+   color:rgb(0, 0, 0);
 }
 
 .single-program-info-title {
@@ -10162,31 +10162,26 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.single-training-history {
    font-weight: bold;
    margin-bottom: 0px;
    text-align: center;
-   color:  #2970ff;
+   color: #d30b0e;
    text-decoration: underline;
 }
 
 .single-week-selector {
    margin-bottom: 40px;
    text-align: center;
-   color: #ccc9c9;
+   color: #BA181B;
 }
 
 .single-week-selector select {
    font-size: 18px;
    padding: 4px;
    width: 100px;
-   background-color: #0b213d;
-   color: white;
+   background-color: #bcbcbc;
+   color: rgb(255, 255, 255);
    border: none;
 }
 
-/* .completedStatus-single-week-selector select {
-   font-size: 18px;
-   padding: 4px;
-   width: 100px;
-   background-color: #12b900;
-} */
+
 
 .single-week-container {
    margin-top: 100px;
@@ -10239,9 +10234,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.single-training-history {
 
 .single-exercise-container {
    width: calc(20% - 10px);
-   background-color: #613030;
+   background-color: #c60000;
    padding: 16px;
-   border: 4px solid rgb(20, 21, 11);
+   border: 4px solid rgb(140, 140, 140);
    border-radius: 4px;
    display: flex;
    flex-direction: column;
@@ -10251,9 +10246,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.single-training-history {
 
 .completedStatus-single-exercise-container {
    width: calc(20% - 10px);
-   background-color: #334e33;
+   background-color: #d4d4d4;
    padding: 16px;
-   border: 4px solid rgb(20, 21, 11);
+   border: 4px solid rgb(186, 186, 186);
    border-radius: 4px;
    display: flex;
    flex-direction: column;
@@ -10275,14 +10270,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.single-training-history {
    margin-top: 16px;
    border-collapse: collapse;
    background-color: #333;
-   color: #c3c3c3;
+   color: #ffffff;
 }
 
 .completedStatus-single-exercise-table {
    width: 100%;
    margin-top: 16px;
    border-collapse: collapse;
-   background-color: #333;
+   background-color: #929292;
    text-decoration: line-through;
    color: #8b8b8b;
 }
@@ -10313,7 +10308,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.single-training-history {
 
 .exit-button {
    padding: 1px 16px;
-   background-color: #0056b3;
+   background-color: #bbbbbb;
    color: #fff;
    border-radius: 4px;
    cursor: pointer;
@@ -10324,8 +10319,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.single-training-history {
 
 .exit-button:hover {
    background-color: #e2e2e2;
-   color: #0056b3;
-}`, "",{"version":3,"sources":["webpack://./client/features/history/single/HSPFV.css"],"names":[],"mappings":"AAAA;GACG,yBAAyB;GACzB,cAAc;GACd,aAAa;GACb,YAAY;GACZ,uBAAuB;AAC1B;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;AACrB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,kBAAkB;GAClB,eAAe;GACf,0BAA0B;AAC7B;;AAEA;GACG,mBAAmB;GACnB,kBAAkB;GAClB,cAAc;AACjB;;AAEA;GACG,eAAe;GACf,YAAY;GACZ,YAAY;GACZ,yBAAyB;GACzB,YAAY;GACZ,YAAY;AACf;;AAEA;;;;;GAKG;;AAEH;GACG,iBAAiB;AACpB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;AACrB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;GAClB,6BAA6B;GAC7B,cAAc;AACjB;;AAEA;GACG,mBAAmB;AACtB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;GAClB,cAAc;GACd,0BAA0B;AAC7B;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;GAClB,cAAc;GACd,6BAA6B;AAChC;;AAEA;GACG,aAAa;GACb,eAAe;GACf,SAAS;GACT,uBAAuB;AAC1B;;AAEA;GACG,uBAAuB;GACvB,yBAAyB;GACzB,aAAa;GACb,iCAAiC;GACjC,kBAAkB;GAClB,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,uBAAuB;AAC1B;;AAEA;GACG,uBAAuB;GACvB,yBAAyB;GACzB,aAAa;GACb,iCAAiC;GACjC,kBAAkB;GAClB,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,uBAAuB;AAC1B;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,kBAAkB;GAClB,mBAAmB;GACnB,yBAAyB;AAC5B;;AAEA;GACG,WAAW;GACX,gBAAgB;GAChB,yBAAyB;GACzB,sBAAsB;GACtB,cAAc;AACjB;;AAEA;GACG,WAAW;GACX,gBAAgB;GAChB,yBAAyB;GACzB,sBAAsB;GACtB,6BAA6B;GAC7B,cAAc;AACjB;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,sBAAsB;AACzB;;AAEA;GACG,sBAAsB;AACzB;;AAEA;GACG,sBAAsB;AACzB;;AAEA;GACG,iBAAiB;GACjB,aAAa;GACb,eAAe;GACf,SAAS;GACT,uBAAuB;AAC1B;;AAEA;GACG,iBAAiB;GACjB,yBAAyB;GACzB,WAAW;GACX,kBAAkB;GAClB,eAAe;GACf,YAAY;GACZ,eAAe;GACf,iBAAiB;AACpB;;AAEA;GACG,yBAAyB;GACzB,cAAc;AACjB","sourcesContent":[".single-training-history {\n   background-color: #282c34;\n   margin: 0 auto;\n   padding: 20px;\n   color: white;\n   justify-content: center;\n}\n\n.single-program-title {\n   font-size: 50px;\n   font-weight: bold;\n   margin-bottom: 60px;\n   text-align: center;\n}\n\n.single-program-info-title {\n   font-size: 36px;\n   font-weight: bold;\n   margin-bottom: 0px;\n   text-align: center;\n   color:  #2970ff;\n   text-decoration: underline;\n}\n\n.single-week-selector {\n   margin-bottom: 40px;\n   text-align: center;\n   color: #ccc9c9;\n}\n\n.single-week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: 100px;\n   background-color: #0b213d;\n   color: white;\n   border: none;\n}\n\n/* .completedStatus-single-week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: 100px;\n   background-color: #12b900;\n} */\n\n.single-week-container {\n   margin-top: 100px;\n}\n\n.single-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n}\n\n.completedStatus-single-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   text-decoration: line-through;\n   color: #c2c2c2;\n}\n\n.single-day-container {\n   margin-bottom: 50px;\n}\n\n.single-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: underline;\n}\n\n.completedStatus-single-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: line-through;\n}\n\n.single-exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   gap: 20px;\n   justify-content: center;\n}\n\n.single-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #613030;\n   padding: 16px;\n   border: 4px solid rgb(20, 21, 11);\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.completedStatus-single-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #334e33;\n   padding: 16px;\n   border: 4px solid rgb(20, 21, 11);\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.single-exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(0, 0, 0);\n   text-transform: uppercase;\n}\n\n.single-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   color: #c3c3c3;\n}\n\n.completedStatus-single-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   text-decoration: line-through;\n   color: #8b8b8b;\n}\n\n.single-exercise-table th,\n.single-exercise-table td {\n   font-size: 18px;\n   padding: 4px;\n   text-align: center;\n   border: 1px solid #555;\n}\n\n.single-exercise-table th {\n   background-color: #222;\n}\n\n.single-exercise-table td {\n   background-color: #444;\n}\n\n.bottom-button {\n   margin-top: 150px;\n   display: flex;\n   flex-wrap: wrap;\n   gap: 20px;\n   justify-content: center;\n}\n\n.exit-button {\n   padding: 1px 16px;\n   background-color: #0056b3;\n   color: #fff;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.exit-button:hover {\n   background-color: #e2e2e2;\n   color: #0056b3;\n}"],"sourceRoot":""}]);
+   color: #c60000;
+}`, "",{"version":3,"sources":["webpack://./client/features/history/single/HSPFV.css"],"names":[],"mappings":"AAAA;GACG,yBAAyB;GACzB,cAAc;GACd,aAAa;GACb,uBAAuB;AAC1B;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;GAClB,kBAAkB;AACrB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,kBAAkB;GAClB,cAAc;GACd,0BAA0B;AAC7B;;AAEA;GACG,mBAAmB;GACnB,kBAAkB;GAClB,cAAc;AACjB;;AAEA;GACG,eAAe;GACf,YAAY;GACZ,YAAY;GACZ,yBAAyB;GACzB,yBAAyB;GACzB,YAAY;AACf;;;;AAIA;GACG,iBAAiB;AACpB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;AACrB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;GAClB,6BAA6B;GAC7B,cAAc;AACjB;;AAEA;GACG,mBAAmB;AACtB;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;GAClB,cAAc;GACd,0BAA0B;AAC7B;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,mBAAmB;GACnB,kBAAkB;GAClB,cAAc;GACd,6BAA6B;AAChC;;AAEA;GACG,aAAa;GACb,eAAe;GACf,SAAS;GACT,uBAAuB;AAC1B;;AAEA;GACG,uBAAuB;GACvB,yBAAyB;GACzB,aAAa;GACb,oCAAoC;GACpC,kBAAkB;GAClB,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,uBAAuB;AAC1B;;AAEA;GACG,uBAAuB;GACvB,yBAAyB;GACzB,aAAa;GACb,oCAAoC;GACpC,kBAAkB;GAClB,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,uBAAuB;AAC1B;;AAEA;GACG,eAAe;GACf,iBAAiB;GACjB,kBAAkB;GAClB,kBAAkB;GAClB,mBAAmB;GACnB,yBAAyB;AAC5B;;AAEA;GACG,WAAW;GACX,gBAAgB;GAChB,yBAAyB;GACzB,sBAAsB;GACtB,cAAc;AACjB;;AAEA;GACG,WAAW;GACX,gBAAgB;GAChB,yBAAyB;GACzB,yBAAyB;GACzB,6BAA6B;GAC7B,cAAc;AACjB;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,sBAAsB;AACzB;;AAEA;GACG,sBAAsB;AACzB;;AAEA;GACG,sBAAsB;AACzB;;AAEA;GACG,iBAAiB;GACjB,aAAa;GACb,eAAe;GACf,SAAS;GACT,uBAAuB;AAC1B;;AAEA;GACG,iBAAiB;GACjB,yBAAyB;GACzB,WAAW;GACX,kBAAkB;GAClB,eAAe;GACf,YAAY;GACZ,eAAe;GACf,iBAAiB;AACpB;;AAEA;GACG,yBAAyB;GACzB,cAAc;AACjB","sourcesContent":[".single-training-history {\n   background-color: #e0e0e0;\n   margin: 0 auto;\n   padding: 20px;\n   justify-content: center;\n}\n\n.single-program-title {\n   font-size: 50px;\n   font-weight: bold;\n   margin-bottom: 60px;\n   text-align: center;\n   color:rgb(0, 0, 0);\n}\n\n.single-program-info-title {\n   font-size: 36px;\n   font-weight: bold;\n   margin-bottom: 0px;\n   text-align: center;\n   color: #d30b0e;\n   text-decoration: underline;\n}\n\n.single-week-selector {\n   margin-bottom: 40px;\n   text-align: center;\n   color: #BA181B;\n}\n\n.single-week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: 100px;\n   background-color: #bcbcbc;\n   color: rgb(255, 255, 255);\n   border: none;\n}\n\n\n\n.single-week-container {\n   margin-top: 100px;\n}\n\n.single-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n}\n\n.completedStatus-single-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   text-decoration: line-through;\n   color: #c2c2c2;\n}\n\n.single-day-container {\n   margin-bottom: 50px;\n}\n\n.single-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: underline;\n}\n\n.completedStatus-single-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: line-through;\n}\n\n.single-exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   gap: 20px;\n   justify-content: center;\n}\n\n.single-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #c60000;\n   padding: 16px;\n   border: 4px solid rgb(140, 140, 140);\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.completedStatus-single-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #d4d4d4;\n   padding: 16px;\n   border: 4px solid rgb(186, 186, 186);\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.single-exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(0, 0, 0);\n   text-transform: uppercase;\n}\n\n.single-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   color: #ffffff;\n}\n\n.completedStatus-single-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #929292;\n   text-decoration: line-through;\n   color: #8b8b8b;\n}\n\n.single-exercise-table th,\n.single-exercise-table td {\n   font-size: 18px;\n   padding: 4px;\n   text-align: center;\n   border: 1px solid #555;\n}\n\n.single-exercise-table th {\n   background-color: #222;\n}\n\n.single-exercise-table td {\n   background-color: #444;\n}\n\n.bottom-button {\n   margin-top: 150px;\n   display: flex;\n   flex-wrap: wrap;\n   gap: 20px;\n   justify-content: center;\n}\n\n.exit-button {\n   padding: 1px 16px;\n   background-color: #bbbbbb;\n   color: #fff;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.exit-button:hover {\n   background-color: #e2e2e2;\n   color: #c60000;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

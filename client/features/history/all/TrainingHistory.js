@@ -66,7 +66,7 @@ const TrainingHistory = () => {
 
    if (!isLoading && !allPrograms || allPrograms.length === 0) {
       return (
-         <div className="training-history" style={{ backgroundColor: 'black'}}>
+         <div className="training-history" style={{ backgroundColor: 'white'}}>
             <p style={{ fontSize: '26px', color: 'red', textAlign: 'center', fontWeight: 'bold' }}>
                You Don't Have A Training History
             </p>

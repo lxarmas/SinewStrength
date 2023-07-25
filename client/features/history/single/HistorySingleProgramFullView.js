@@ -69,7 +69,7 @@ const HistorySingleProgramFullView = () => {
             </>
          )}
          {pastProgram.weeks && pastProgram.weeks[selectedWeek].completed && !pastProgram.completed && (
-            <h1 style={{ fontSize: '28px',marginBottom: '30px', textAlign: 'center',color: ' #12b900'}}>
+            <h1 style={{ fontSize: '28px',marginBottom: '30px', textAlign: 'center',color: '#BA181B'}}>
                Week Completed
             </h1>
          )}
