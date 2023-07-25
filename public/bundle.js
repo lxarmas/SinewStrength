@@ -7737,12 +7737,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../training_programs/Intermediate/IntermediateTrainingProgram */ "./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js");
-/* harmony import */ var _StartYourTraining_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StartYourTraining.css */ "./client/features/startyourtraining/StartYourTraining.css");
-/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-toastify */ "./node_modules/react-toastify/dist/react-toastify.esm.mjs");
-/* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-toastify/dist/ReactToastify.css */ "./node_modules/react-toastify/dist/ReactToastify.css");
-/* harmony import */ var _tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../tracker/trainingProgramSlice */ "./client/features/tracker/trainingProgramSlice.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _StartYourTraining_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StartYourTraining.css */ "./client/features/startyourtraining/StartYourTraining.css");
+/* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-toastify */ "./node_modules/react-toastify/dist/react-toastify.esm.mjs");
+/* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-toastify/dist/ReactToastify.css */ "./node_modules/react-toastify/dist/ReactToastify.css");
+/* harmony import */ var _tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../tracker/trainingProgramSlice */ "./client/features/tracker/trainingProgramSlice.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -7758,7 +7757,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
+// import generateIntermediateTrainingProgram from '../training_programs/Intermediate/IntermediateTrainingProgram';
 
 
 
@@ -7836,7 +7835,7 @@ var customToastErrorStyle3 = {
   }
 };
 var StartYourTraining = function StartYourTraining() {
-  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__.useNavigate)();
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useNavigate)();
   var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
   var username = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.auth.me.username;
@@ -7844,10 +7843,10 @@ var StartYourTraining = function StartYourTraining() {
   var isLoggedIn = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return !!state.auth.me.id;
   });
-  var trainingProgram = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(_tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_6__.selectTrainingProgram);
+  var trainingProgram = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(_tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_5__.selectTrainingProgram);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     if (username) {
-      dispatch((0,_tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_6__.fetchTrainingProgramAsync)(username));
+      dispatch((0,_tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_5__.fetchTrainingProgramAsync)(username));
     }
   }, [dispatch, username]);
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
@@ -7900,15 +7899,15 @@ var StartYourTraining = function StartYourTraining() {
   var handleSubmit = function handleSubmit(event) {
     event.preventDefault();
     if (!isLoggedIn) {
-      react_toastify__WEBPACK_IMPORTED_MODULE_4__.toast.error('Must Be Logged In To Create A Program.', customToastErrorStyle);
+      react_toastify__WEBPACK_IMPORTED_MODULE_3__.toast.error('Must Be Logged In To Create A Program.', customToastErrorStyle);
       return;
     }
     if (isLoggedIn && trainingProgram.weeks) {
-      react_toastify__WEBPACK_IMPORTED_MODULE_4__.toast.error('Finish Your Current Program Before Creating Another.', customToastErrorStyle2);
+      react_toastify__WEBPACK_IMPORTED_MODULE_3__.toast.error('Finish Your Current Program Before Creating Another.', customToastErrorStyle2);
       return;
     }
     if (!firstSetPercent.squat || !firstSetPercent.bench || !firstSetPercent.row || !firstSetPercent.press || !firstSetPercent.deadlift || !maxWeight.squat || !maxWeight.bench || !maxWeight.row || !maxWeight.press || !maxWeight.deadlift || !reps.squat || !reps.bench || !reps.row || !reps.press || !reps.deadlift || !barbell || !smallestPlates || !prWeek) {
-      react_toastify__WEBPACK_IMPORTED_MODULE_4__.toast.error('Fill In All Fields Before Submitting.', customToastErrorStyle3);
+      react_toastify__WEBPACK_IMPORTED_MODULE_3__.toast.error('Fill In All Fields Before Submitting.', customToastErrorStyle3);
       return;
     }
     setIsCreatingProgram(true);
@@ -7931,8 +7930,8 @@ var StartYourTraining = function StartYourTraining() {
     var sP = parseFloat(smallestPlates);
     var prW = parseInt(prWeek);
     setTimeout(function () {
-      var newProgram = (0,_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__["default"])(sMW, bMW, rMW, pMW, dMW, sR, bR, rR, pR, dR, sFSP, bFSP, rFSP, pFSP, dFSP, bb, sP, prW);
-      dispatch((0,_tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_6__.createProgram)({
+      var newProgram = generateIntermediateTrainingProgram(sMW, bMW, rMW, pMW, dMW, sR, bR, rR, pR, dR, sFSP, bFSP, rFSP, pFSP, dFSP, bb, sP, prW);
+      dispatch((0,_tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_5__.createProgram)({
         username: username,
         newProgram: newProgram
       }));
@@ -7942,7 +7941,7 @@ var StartYourTraining = function StartYourTraining() {
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "STYT-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_toastify__WEBPACK_IMPORTED_MODULE_4__.ToastContainer, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_toastify__WEBPACK_IMPORTED_MODULE_3__.ToastContainer, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "Program-Heading"
   }, "Intermediate Training Program"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     style: {
@@ -8937,526 +8936,6 @@ var selectTrainingProgram = function selectTrainingProgram(state) {
   return state.trainingProgram;
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (trainingProgramSlice.reducer);
-
-/***/ }),
-
-/***/ "./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js":
-/*!***************************************************************************************!*\
-  !*** ./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js ***!
-  \***************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-// Intermediate Training Program
-var IntermediateTrainingProgram = {
-  // Program contains 'name', 'description' and an array of 'weeks'
-  name: 'Intermediate Training Program',
-  description: 'A 12-week strength training program',
-  weeks: Array(12).fill().map(function (_, weekIndex) {
-    return {
-      number: weekIndex + 1,
-      // Weeks array contains an array of 'days'
-      days: [
-      // Days array contains objects
-      {
-        // Each contains 'day', and an array of 'exercises'
-        day: 'Monday',
-        exercises: [
-        // Exercises array contains objects
-        {
-          // Each contains 'name', and array of 'sets'
-          name: 'Squat',
-          sets: [// Sets array contains objects
-            // { //Each contains 'name', 'reps', and 'weight'
-            //    name: '',
-            //    reps: 0,
-            //    weight: 0,
-            // }
-          ]
-        }, {
-          name: 'Bench',
-          sets: []
-        }, {
-          name: 'Row',
-          sets: []
-        }],
-        maxes: {
-          squat: 0,
-          bench: 0,
-          row: 0
-        }
-      }, {
-        day: 'Wednesday',
-        exercises: [{
-          name: 'Squat',
-          sets: []
-        }, {
-          name: 'Press',
-          sets: []
-        }, {
-          name: 'Deadlift',
-          sets: []
-        }],
-        maxes: {
-          press: 0,
-          deadlift: 0
-        }
-      }, {
-        day: 'Friday',
-        exercises: [{
-          name: 'Squat',
-          sets: []
-        }, {
-          name: 'Bench',
-          sets: []
-        }, {
-          name: 'Row',
-          sets: []
-        }]
-      }]
-    };
-  })
-};
-
-// Intermediate Training Program formulas
-var intermediateFormulas = {
-  // Function to calculate 1RM for a given exercise
-  calculate1RM: function calculate1RM(maxWeight, reps) {
-    return maxWeight / (1.0278 - 0.0278 * reps);
-  },
-  // Function to calculate 5RM based on 1RM
-  calculate5RM: function calculate5RM(OneRM) {
-    return OneRM * (1.0278 - 0.0278 * 5);
-  },
-  // Function to calculate starting weight for an exercise
-  calculateStartingWeight: function calculateStartingWeight(FiveRM, barbell, smallestPlates, prWeek) {
-    var exponent = prWeek - 2;
-    var base = 1 / 1.025;
-    return Math.round((FiveRM - barbell) * Math.pow(base, exponent) / (2 * smallestPlates)) * (2 * smallestPlates) + barbell;
-  },
-  // Function to calculate weight for a set
-  calculateWeight: function calculateWeight(exerciseName, firstSetPercent, setName, weekIndex, startingWeightOrTopSetWeight, bb, sP, dayName) {
-    // const setName = set.name;
-    var exName = exerciseName;
-    var currentWeek = weekIndex + 1;
-    var previousWeek = currentWeek - 1;
-    var topSetWeight = startingWeightOrTopSetWeight;
-
-    // Special case exercise formulas
-    if (exName === 'Press' || exName === 'Deadlift') {
-      var startWeight = startingWeightOrTopSetWeight;
-      if (setName === 'Set 1') {
-        return Math.round((topSetWeight * firstSetPercent - bb) / (2 * sP)) * (2 * sP) + bb;
-      } else if (setName === 'Set 2') {
-        return Math.round((topSetWeight * ((1 - firstSetPercent) / 3 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
-      } else if (setName === 'Set 3') {
-        return Math.round((topSetWeight * ((1 - firstSetPercent) / 3 * 2 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
-      } else if (setName === 'Set 4') {
-        // Applies to weeks 2-12 // Value for week-1/Set-4 is 'startingWeight', which is added in program population
-        return Math.round((startWeight * Math.pow(1.025, previousWeek) - bb) / (2 * sP)) * (2 * sP) + bb;
-      }
-    }
-
-    // Formula structure that applies to most
-    if (setName === 'Set 1') {
-      return Math.round((topSetWeight * firstSetPercent - bb) / (2 * sP)) * (2 * sP) + bb;
-    } else if (setName === 'Set 2') {
-      return Math.round((topSetWeight * ((1 - firstSetPercent) / 4 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
-    } else if (setName === 'Set 3') {
-      return Math.round((topSetWeight * ((1 - firstSetPercent) / 4 * 2 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
-    } else if (setName === 'Set 4') {
-      return Math.round((topSetWeight * ((1 - firstSetPercent) / 4 * 3 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
-    }
-
-    // Special case formulas
-    if (dayName === 'Friday') {
-      // Friday-Set 5
-      var _startWeight = startingWeightOrTopSetWeight;
-      if (setName === 'Set 5') {
-        return Math.round((_startWeight * Math.pow(1.025, currentWeek) - bb) / (2 * sP)) * (2 * sP) + bb;
-      }
-    } else {
-      // Monday-Set 5 
-      var _startWeight2 = startingWeightOrTopSetWeight;
-      if (setName === 'Set 5') {
-        return Math.round((_startWeight2 * Math.pow(1.025, previousWeek) - bb) / (2 * sP)) * (2 * sP) + bb;
-      }
-    }
-
-    // Default case: Return 0 if no formula is matched
-    return 0;
-  }
-};
-
-// Function to generate the Intermediate Training Program
-var generateIntermediateTrainingProgram = function generateIntermediateTrainingProgram(
-// squatMaxWeight, benchMaxWeight, rowMaxWeight, pressMaxWeight, deadliftMaxWeight,
-// squatReps, benchReps, rowReps, pressReps, deadliftReps,
-// squatFirstSetPercent, benchFirstSetPercent, rowFirstSetPercent, pressFirstSetPercent, deadliftFirstSetPercent,
-// barbell, smallestPlates, prWeek,
-
-// Shortcut values
-sMW, bMW, rMW, pMW, dMW, sR, bR, rR, pR, dR, sFSP, bFSP, rFSP, pFSP, dFSP, bb, sP, prW) {
-  // Calculate 1RM for each exercise
-  var squatMax = intermediateFormulas.calculate1RM(sMW, sR);
-  var benchMax = intermediateFormulas.calculate1RM(bMW, bR);
-  var rowMax = intermediateFormulas.calculate1RM(rMW, rR);
-  var pressMax = intermediateFormulas.calculate1RM(pMW, pR);
-  var deadliftMax = intermediateFormulas.calculate1RM(dMW, dR);
-
-  // Calculate 5RM for each exercise
-  var squatMax5 = intermediateFormulas.calculate5RM(squatMax);
-  var benchMax5 = intermediateFormulas.calculate5RM(benchMax);
-  var rowMax5 = intermediateFormulas.calculate5RM(rowMax);
-  var pressMax5 = intermediateFormulas.calculate5RM(pressMax);
-  var deadliftMax5 = intermediateFormulas.calculate5RM(deadliftMax);
-
-  // Calculate starting weight for each exercise
-  var squatStartingWeight = intermediateFormulas.calculateStartingWeight(squatMax5, bb, sP, prW);
-  var benchStartingWeight = intermediateFormulas.calculateStartingWeight(benchMax5, bb, sP, prW);
-  var rowStartingWeight = intermediateFormulas.calculateStartingWeight(rowMax5, bb, sP, prW);
-  var pressStartingWeight = intermediateFormulas.calculateStartingWeight(pressMax5, bb, sP, prW);
-  var deadliftStartingWeight = intermediateFormulas.calculateStartingWeight(deadliftMax5, bb, sP, prW);
-
-  // Initialize the training program
-  var program = IntermediateTrainingProgram;
-
-  // Populate the sets for each exercise in the program
-  program.weeks.forEach(function (week, weekIndex) {
-    week.days.forEach(function (day) {
-      day.exercises.forEach(function (exercise) {
-        var dayName = day.day;
-        var exerciseName = exercise.name;
-        var sets = exercise.sets;
-
-        // Clear sets to prevent duplication
-        sets.length = 0;
-
-        // SQUAT
-        if (exerciseName === 'Squat') {
-          sets.push({
-            name: 'Set 1',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 2',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 3',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 4',
-            reps: 5,
-            weight: 0
-          });
-          if (dayName === 'Monday') {
-            sets.push({
-              name: 'Set 5',
-              reps: 5,
-              weight: 0
-            });
-          } else if (dayName === 'Friday') {
-            sets.push({
-              name: 'Set 5',
-              reps: 3,
-              weight: 0
-            });
-            sets.push({
-              name: 'Set 6',
-              reps: 8,
-              weight: 0
-            });
-          }
-
-          // Week 1
-          if (weekIndex === 0) {
-            // SET 5
-            if (dayName === 'Monday') {
-              sets[4].weight = squatStartingWeight;
-            } else if (dayName === 'Friday') {
-              sets[4].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[4].name, weekIndex, squatStartingWeight, bb, sP, dayName);
-            }
-
-            // SETS 1-3
-            sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[0].name, weekIndex, squatStartingWeight, bb, sP, dayName);
-            sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[1].name, weekIndex, squatStartingWeight, bb, sP, dayName);
-            sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[2].name, weekIndex, squatStartingWeight, bb, sP, dayName);
-
-            // SET 4
-            if (dayName === 'Wednesday') {
-              // Wednesday
-              sets[3].weight = sets[2].weight;
-            } else {
-              // Other days
-              sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[3].name, weekIndex, squatStartingWeight, bb, sP, dayName);
-            }
-
-            // Weeks 2-12
-          } else {
-            var squatTopSetMonday = intermediateFormulas.calculateWeight(exerciseName, sFSP, 'Set 5', weekIndex, squatStartingWeight, bb, sP, 'Monday');
-
-            // SET 5
-            if (sets[4]) {
-              sets[4].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[4].name, weekIndex, squatStartingWeight, bb, sP, dayName);
-            }
-
-            // SETS 1-3
-            sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[0].name, weekIndex, squatTopSetMonday, bb, sP, dayName);
-            sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[1].name, weekIndex, squatTopSetMonday, bb, sP, dayName);
-            sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[2].name, weekIndex, squatTopSetMonday, bb, sP, dayName);
-
-            // SET 4
-            if (dayName === 'Wednesday') {
-              // Wednesday
-              sets[3].weight = sets[2].weight;
-            } else {
-              // Other days
-              sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[3].name, weekIndex, squatTopSetMonday, bb, sP, dayName);
-            }
-          }
-
-          // SET 6 for Fridays
-          if (dayName === 'Friday') {
-            sets[5].weight = sets[2].weight;
-          }
-
-          // BENCH
-        } else if (exerciseName === 'Bench') {
-          sets.push({
-            name: 'Set 1',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 2',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 3',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 4',
-            reps: 5,
-            weight: 0
-          });
-          if (dayName === 'Monday') {
-            sets.push({
-              name: 'Set 5',
-              reps: 5,
-              weight: 0
-            });
-          } else if (dayName === 'Friday') {
-            sets.push({
-              name: 'Set 5',
-              reps: 3,
-              weight: 0
-            });
-            sets.push({
-              name: 'Set 6',
-              reps: 8,
-              weight: 0
-            });
-          }
-
-          // SET 5
-          if (weekIndex === 0 && dayName === 'Monday') {
-            // Week 1 - Monday
-            sets[4].weight = benchStartingWeight;
-          } else {
-            // All Weeks for Friday && Weeks 2-12 for Monday
-            sets[4].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[4].name, weekIndex, benchStartingWeight, bb, sP, dayName);
-          }
-
-          // SETS 1-4  //  Applies to all Bench days
-          var benchTopSetMonday = 0;
-          if (weekIndex === 0) {
-            benchTopSetMonday = benchStartingWeight;
-          } else {
-            benchTopSetMonday = intermediateFormulas.calculateWeight(exerciseName, bFSP, 'Set 5', weekIndex, benchStartingWeight, bb, sP, 'Monday');
-          }
-          var benchTopSet = benchTopSetMonday;
-          sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[0].name, weekIndex, benchTopSet, bb, sP, dayName);
-          sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[1].name, weekIndex, benchTopSet, bb, sP, dayName);
-          sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[2].name, weekIndex, benchTopSet, bb, sP, dayName);
-          sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[3].name, weekIndex, benchTopSet, bb, sP, dayName);
-
-          // SET 6 for Fridays
-          if (dayName === 'Friday') {
-            sets[5].weight = sets[2].weight;
-          }
-
-          // ROW
-        } else if (exerciseName === 'Row') {
-          sets.push({
-            name: 'Set 1',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 2',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 3',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 4',
-            reps: 5,
-            weight: 0
-          });
-          if (dayName === 'Monday') {
-            sets.push({
-              name: 'Set 5',
-              reps: 5,
-              weight: 0
-            });
-          } else if (dayName === 'Friday') {
-            sets.push({
-              name: 'Set 5',
-              reps: 3,
-              weight: 0
-            });
-            sets.push({
-              name: 'Set 6',
-              reps: 8,
-              weight: 0
-            });
-          }
-
-          // SET 5
-          if (weekIndex === 0 && dayName === 'Monday') {
-            // Week 1 - Monday
-            sets[4].weight = rowStartingWeight;
-          } else {
-            // All Weeks for Friday && Weeks 2-12 for Monday
-            sets[4].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[4].name, weekIndex, rowStartingWeight, bb, sP, dayName);
-          }
-
-          // SETS 1-4  //  Applies to all Row days
-          var rowTopSetMonday = 0;
-          if (weekIndex === 0) {
-            rowTopSetMonday = rowStartingWeight;
-          } else {
-            rowTopSetMonday = intermediateFormulas.calculateWeight(exerciseName, rFSP, 'Set 5', weekIndex, rowStartingWeight, bb, sP, 'Monday');
-          }
-          var rowTopSet = rowTopSetMonday;
-          sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[0].name, weekIndex, rowTopSet, bb, sP, dayName);
-          sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[1].name, weekIndex, rowTopSet, bb, sP, dayName);
-          sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[2].name, weekIndex, rowTopSet, bb, sP, dayName);
-          sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[3].name, weekIndex, rowTopSet, bb, sP, dayName);
-
-          // SET 6 for Fridays
-          if (dayName === 'Friday') {
-            sets[5].weight = sets[2].weight;
-          }
-
-          // PRESS
-        } else if (exerciseName === 'Press') {
-          sets.push({
-            name: 'Set 1',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 2',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 3',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 4',
-            reps: 5,
-            weight: 0
-          });
-
-          // SET 4
-          if (weekIndex === 0) {
-            sets[3].weight = pressStartingWeight;
-          } else {
-            sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, pFSP, sets[3].name, weekIndex, pressStartingWeight, bb, sP, dayName);
-          }
-
-          // SETS 1-3
-          var pressTopSet = sets[3].weight;
-          sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, pFSP, sets[2].name, weekIndex, pressTopSet, bb, sP, dayName);
-          sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, pFSP, sets[1].name, weekIndex, pressTopSet, bb, sP, dayName);
-          sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, pFSP, sets[0].name, weekIndex, pressTopSet, bb, sP, dayName);
-
-          // DEADLIFT
-        } else if (exerciseName === 'Deadlift') {
-          sets.push({
-            name: 'Set 1',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 2',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 3',
-            reps: 5,
-            weight: 0
-          });
-          sets.push({
-            name: 'Set 4',
-            reps: 5,
-            weight: 0
-          });
-
-          // SET 4
-          if (weekIndex === 0) {
-            sets[3].weight = deadliftStartingWeight;
-          } else {
-            sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, dFSP, sets[3].name, weekIndex, deadliftStartingWeight, bb, sP, dayName);
-          }
-
-          // SETS 1-3
-          var deadliftTopSet = sets[3].weight;
-          sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, dFSP, sets[2].name, weekIndex, deadliftTopSet, bb, sP, dayName);
-          sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, dFSP, sets[1].name, weekIndex, deadliftTopSet, bb, sP, dayName);
-          sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, dFSP, sets[0].name, weekIndex, deadliftTopSet, bb, sP, dayName);
-        }
-
-        // Maxes for each week
-      });
-    });
-  });
-
-  return program;
-};
-
-// Example usage
-// const trainingProgram = generateIntermediateTrainingProgram(
-//    500, 315, 225, 185, 600,
-//    1, 1, 1, 1, 1,
-//    .125, .125, .125, .125, .125,
-//    2.5, 4
-// );
-
-// console.log(JSON.stringify(trainingProgram, null, 2))
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateIntermediateTrainingProgram);
 
 /***/ }),
 

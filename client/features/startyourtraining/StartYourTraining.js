@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import generateIntermediateTrainingProgram from '../training_programs/Intermediate/IntermediateTrainingProgram';
+// import generateIntermediateTrainingProgram from '../training_programs/Intermediate/IntermediateTrainingProgram';
 import './StartYourTraining.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
