@@ -7739,7 +7739,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../training_programs/Intermediate/IntermediateTrainingProgram */ "./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js");
-/* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _StartYourTraining_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StartYourTraining.css */ "./client/features/startyourtraining/StartYourTraining.css");
 /* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-toastify */ "./node_modules/react-toastify/dist/react-toastify.esm.mjs");
 /* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-toastify/dist/ReactToastify.css */ "./node_modules/react-toastify/dist/ReactToastify.css");
@@ -7932,7 +7931,7 @@ var StartYourTraining = function StartYourTraining() {
     var sP = parseFloat(smallestPlates);
     var prW = parseInt(prWeek);
     setTimeout(function () {
-      var newProgram = _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2___default()(sMW, bMW, rMW, pMW, dMW, sR, bR, rR, pR, dR, sFSP, bFSP, rFSP, pFSP, dFSP, bb, sP, prW);
+      var newProgram = (0,_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_2__["default"])(sMW, bMW, rMW, pMW, dMW, sR, bR, rR, pR, dR, sFSP, bFSP, rFSP, pFSP, dFSP, bb, sP, prW);
       dispatch((0,_tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_6__.createProgram)({
         username: username,
         newProgram: newProgram
@@ -8945,8 +8944,13 @@ var selectTrainingProgram = function selectTrainingProgram(state) {
 /*!***************************************************************************************!*\
   !*** ./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js ***!
   \***************************************************************************************/
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 // Intermediate Training Program
 var IntermediateTrainingProgram = {
   // Program contains 'name', 'description' and an array of 'weeks'
@@ -9452,7 +9456,7 @@ sMW, bMW, rMW, pMW, dMW, sR, bR, rR, pR, dR, sFSP, bFSP, rFSP, pFSP, dFSP, bb, s
 
 // console.log(JSON.stringify(trainingProgram, null, 2))
 
-module.exports = generateIntermediateTrainingProgram;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateIntermediateTrainingProgram);
 
 /***/ }),
 

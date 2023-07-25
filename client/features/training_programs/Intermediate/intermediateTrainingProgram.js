@@ -386,4 +386,4 @@ const generateIntermediateTrainingProgram = (
 
 // console.log(JSON.stringify(trainingProgram, null, 2))
 
-module.exports = generateIntermediateTrainingProgram;
+export default generateIntermediateTrainingProgram;
