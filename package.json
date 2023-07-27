@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Some boilerplate code to get you started - get shakin'!",
   "main": "index.js",
-    "scripts": {
+  "scripts": {
     "build": "webpack",
     "build:dev": "npm run build -- --watch --mode=development",
     "seed": "node script/seed.js",
@@ -25,7 +25,6 @@
     "chart.js": "^3.5.1",
     "compression": "^1.7.4",
     "express": "^4.18.2",
-  
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "pg": "^8.8.0",
