@@ -125,7 +125,7 @@ const Home = () => {
       
       <div className="HPwomanDumbBellImage">
         <div className='HPwomanDumbellText'>
-          <h3> "As a fitness coach, I'm always on the lookout for quality resources to recommend to my clients.
+          <h3> " I'm always on the lookout for quality resources to recommend to my clients.
             This strength training website is hands down one of the best I've come across. The variety of workout
             plans caters to my demands, and the attention to detail in exercise explanations ensures that
             users get the most out of every workout. It's an invaluable tool for both beginners and experienced fitness
