@@ -1,7 +1,7 @@
 /* HPcontainer */
 .HPcontainer {
   text-align: center;
-  background-color: #202121;
+  background-color: #63ffff;
   padding: 32px;
   color:rgb(207, 0, 0);
   font-size: 40px;
@@ -11,7 +11,7 @@
 /* HPimageContainer */
 .HPimageContainer {
   
-  background-color: #efeeee;
+  background-color: #eb0000;
   position: relative;
   display: flex;
   justify-content: space-evenly;

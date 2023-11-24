@@ -53,7 +53,7 @@ const Home = () => {
     <div>
       <div className="HPcontainer">
         <h3 >
-            Welcome to Sinew Strength Training, <span style={{ textTransform: 'uppercase' }}>{username}</span>!
+            Welcome to Sinew , <span style={{ textTransform: 'uppercase' }}>{username}</span>!
          </h3>
       </div>
 
