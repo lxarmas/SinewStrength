@@ -1,17 +1,16 @@
 /* HPcontainer */
 .HPcontainer {
   text-align: center;
-  background-color: #63ffff;
+ 
   padding: 32px;
-  color:rgb(207, 0, 0);
+  color:rgb(201, 201, 201);
   font-size: 40px;
 
 }
 
 /* HPimageContainer */
 .HPimageContainer {
-  
-  background-color: #eb0000;
+
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -20,7 +19,7 @@
 }
 
 .HPlogo {
-  width: 700px;
+  width: 350px;
   height: auto;
   transform: translateX(-2%);
    transform: translateY(10%);
@@ -51,8 +50,8 @@
 }
 
 .sloganContainerRight {
-  font-size: 28px;
-  color: #d30000;
+  font-size: 26px;
+  color: #9d9d9d;
   left:130px;
   top: 85%;
   animation-name: coolAnimationRight;
@@ -92,8 +91,9 @@
 
 /* DynamicImage */
 .dynamicImage {
-  width: 100%;
-  border-radius: 10px;
+  width: 50%;
+  border-radius: 20px;
+  
   
   
 }
@@ -106,10 +106,10 @@
 .dynamicImageTextContainer {
   position: absolute;
   top: 40%;
-  left: 85%;
+  left: 80%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #ffffff;
+  color: #070707;
   z-index: 2;
 }
 

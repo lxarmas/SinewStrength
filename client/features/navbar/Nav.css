@@ -1,5 +1,5 @@
 .navbar {
-   background-color: #333; /* Update to a more modern color */
+  
    padding: 10px;
    height: auto;
    position: sticky;
@@ -15,7 +15,7 @@
 
 .navbar a {
    font-family: sans-serif;
-   color: #fff; /* Update text color */
+   color: #0b0b0b; /* Update text color */
    text-decoration: none;
    transition: color 0.3s ease;
    font-size: 22px; /* Adjust font size for a more modern look */
@@ -27,8 +27,9 @@
 
 /* Add a hover effect for a more interactive feel */
 .navbar a:hover {
-   background-color: #555;
-   border-radius: 4px;
+   background-color: #d0d0d0;
+   
+   border-radius: 48px;
 }
 
 /* Add a class for the active link */

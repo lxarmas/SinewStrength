@@ -80,30 +80,6 @@ const Home = () => {
          </div>
       </div>
 
-      <div className="dynamicImageContainer">
-        <div className="dynamicImageWrapper">
-          <img
-            className="dynamicImage"
-            ref={dynamicImageRefs[0]}
-            src="https://www.muscleandfitness.com/wp-content/uploads/2019/06/Twenty-Five-Percent-Growth-Strength.jpg?quality=86&strip=all"
-            alt="Image Description"
-          />
-        </div>
-
-        <div className="dynamicImageTextContainer">
-          <h2>Unlock Your Potential</h2>
-          <h1>Experience Strength Transformation</h1>
-        </div>
-
-        <div className="dynamicImageWrapper">
-          <img
-            className="dynamicImage"
-            ref={dynamicImageRefs[1]}
-            src="https://www.bodybuilding.com/fun/images/2015/beginners-guide-to-resistance-training-tablet-960x540.jpg"
-            alt="Image Description"
-          />
-        </div>
-      </div>
 
      
 
