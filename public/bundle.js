@@ -8053,11 +8053,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _StartYourTraining_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StartYourTraining.css */ "./client/features/startyourtraining/StartYourTraining.css");
 /* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-toastify */ "./node_modules/react-toastify/dist/react-toastify.esm.mjs");
 /* harmony import */ var react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-toastify/dist/ReactToastify.css */ "./node_modules/react-toastify/dist/ReactToastify.css");
 /* harmony import */ var _tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../tracker/trainingProgramSlice */ "./client/features/tracker/trainingProgramSlice.js");
+/* harmony import */ var _training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../training_programs/Intermediate/IntermediateTrainingProgram */ "./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
@@ -8077,6 +8078,8 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+ // Import the function`
 
 var customToastErrorStyle = {
   position: 'top-center',
@@ -8151,7 +8154,7 @@ var customToastErrorStyle3 = {
   }
 };
 var StartYourTraining = function StartYourTraining() {
-  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useNavigate)();
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__.useNavigate)();
   var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
   var username = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.auth.me.username;
@@ -8246,7 +8249,7 @@ var StartYourTraining = function StartYourTraining() {
     var sP = parseFloat(smallestPlates);
     var prW = parseInt(prWeek);
     setTimeout(function () {
-      var newProgram = generateIntermediateTrainingProgram(sMW, bMW, rMW, pMW, dMW, sR, bR, rR, pR, dR, sFSP, bFSP, rFSP, pFSP, dFSP, bb, sP, prW);
+      var newProgram = (0,_training_programs_Intermediate_IntermediateTrainingProgram__WEBPACK_IMPORTED_MODULE_6__["default"])(sMW, bMW, rMW, pMW, dMW, sR, bR, rR, pR, dR, sFSP, bFSP, rFSP, pFSP, dFSP, bb, sP, prW);
       dispatch((0,_tracker_trainingProgramSlice__WEBPACK_IMPORTED_MODULE_5__.createProgram)({
         username: username,
         newProgram: newProgram
@@ -9252,6 +9255,526 @@ var selectTrainingProgram = function selectTrainingProgram(state) {
   return state.trainingProgram;
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (trainingProgramSlice.reducer);
+
+/***/ }),
+
+/***/ "./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js":
+/*!***************************************************************************************!*\
+  !*** ./client/features/training_programs/Intermediate/IntermediateTrainingProgram.js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Intermediate Training Program
+var IntermediateTrainingProgram = {
+  // Program contains 'name', 'description' and an array of 'weeks'
+  name: 'Intermediate Training Program',
+  description: 'A 12-week strength training program',
+  weeks: Array(12).fill().map(function (_, weekIndex) {
+    return {
+      number: weekIndex + 1,
+      // Weeks array contains an array of 'days'
+      days: [
+      // Days array contains objects
+      {
+        // Each contains 'day', and an array of 'exercises'
+        day: 'Monday',
+        exercises: [
+        // Exercises array contains objects
+        {
+          // Each contains 'name', and array of 'sets'
+          name: 'Squat',
+          sets: [// Sets array contains objects
+            // { //Each contains 'name', 'reps', and 'weight'
+            //    name: '',
+            //    reps: 0,
+            //    weight: 0,
+            // }
+          ]
+        }, {
+          name: 'Bench',
+          sets: []
+        }, {
+          name: 'Row',
+          sets: []
+        }],
+        maxes: {
+          squat: 0,
+          bench: 0,
+          row: 0
+        }
+      }, {
+        day: 'Wednesday',
+        exercises: [{
+          name: 'Squat',
+          sets: []
+        }, {
+          name: 'Press',
+          sets: []
+        }, {
+          name: 'Deadlift',
+          sets: []
+        }],
+        maxes: {
+          press: 0,
+          deadlift: 0
+        }
+      }, {
+        day: 'Friday',
+        exercises: [{
+          name: 'Squat',
+          sets: []
+        }, {
+          name: 'Bench',
+          sets: []
+        }, {
+          name: 'Row',
+          sets: []
+        }]
+      }]
+    };
+  })
+};
+
+// Intermediate Training Program formulas
+var intermediateFormulas = {
+  // Function to calculate 1RM for a given exercise
+  calculate1RM: function calculate1RM(maxWeight, reps) {
+    return maxWeight / (1.0278 - 0.0278 * reps);
+  },
+  // Function to calculate 5RM based on 1RM
+  calculate5RM: function calculate5RM(OneRM) {
+    return OneRM * (1.0278 - 0.0278 * 5);
+  },
+  // Function to calculate starting weight for an exercise
+  calculateStartingWeight: function calculateStartingWeight(FiveRM, barbell, smallestPlates, prWeek) {
+    var exponent = prWeek - 2;
+    var base = 1 / 1.025;
+    return Math.round((FiveRM - barbell) * Math.pow(base, exponent) / (2 * smallestPlates)) * (2 * smallestPlates) + barbell;
+  },
+  // Function to calculate weight for a set
+  calculateWeight: function calculateWeight(exerciseName, firstSetPercent, setName, weekIndex, startingWeightOrTopSetWeight, bb, sP, dayName) {
+    // const setName = set.name;
+    var exName = exerciseName;
+    var currentWeek = weekIndex + 1;
+    var previousWeek = currentWeek - 1;
+    var topSetWeight = startingWeightOrTopSetWeight;
+
+    // Special case exercise formulas
+    if (exName === 'Press' || exName === 'Deadlift') {
+      var startWeight = startingWeightOrTopSetWeight;
+      if (setName === 'Set 1') {
+        return Math.round((topSetWeight * firstSetPercent - bb) / (2 * sP)) * (2 * sP) + bb;
+      } else if (setName === 'Set 2') {
+        return Math.round((topSetWeight * ((1 - firstSetPercent) / 3 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
+      } else if (setName === 'Set 3') {
+        return Math.round((topSetWeight * ((1 - firstSetPercent) / 3 * 2 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
+      } else if (setName === 'Set 4') {
+        // Applies to weeks 2-12 // Value for week-1/Set-4 is 'startingWeight', which is added in program population
+        return Math.round((startWeight * Math.pow(1.025, previousWeek) - bb) / (2 * sP)) * (2 * sP) + bb;
+      }
+    }
+
+    // Formula structure that applies to most
+    if (setName === 'Set 1') {
+      return Math.round((topSetWeight * firstSetPercent - bb) / (2 * sP)) * (2 * sP) + bb;
+    } else if (setName === 'Set 2') {
+      return Math.round((topSetWeight * ((1 - firstSetPercent) / 4 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
+    } else if (setName === 'Set 3') {
+      return Math.round((topSetWeight * ((1 - firstSetPercent) / 4 * 2 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
+    } else if (setName === 'Set 4') {
+      return Math.round((topSetWeight * ((1 - firstSetPercent) / 4 * 3 + firstSetPercent) - bb) / (2 * sP)) * (2 * sP) + bb;
+    }
+
+    // Special case formulas
+    if (dayName === 'Friday') {
+      // Friday-Set 5
+      var _startWeight = startingWeightOrTopSetWeight;
+      if (setName === 'Set 5') {
+        return Math.round((_startWeight * Math.pow(1.025, currentWeek) - bb) / (2 * sP)) * (2 * sP) + bb;
+      }
+    } else {
+      // Monday-Set 5 
+      var _startWeight2 = startingWeightOrTopSetWeight;
+      if (setName === 'Set 5') {
+        return Math.round((_startWeight2 * Math.pow(1.025, previousWeek) - bb) / (2 * sP)) * (2 * sP) + bb;
+      }
+    }
+
+    // Default case: Return 0 if no formula is matched
+    return 0;
+  }
+};
+
+// Function to generate the Intermediate Training Program
+var generateIntermediateTrainingProgram = function generateIntermediateTrainingProgram(
+// squatMaxWeight, benchMaxWeight, rowMaxWeight, pressMaxWeight, deadliftMaxWeight,
+// squatReps, benchReps, rowReps, pressReps, deadliftReps,
+// squatFirstSetPercent, benchFirstSetPercent, rowFirstSetPercent, pressFirstSetPercent, deadliftFirstSetPercent,
+// barbell, smallestPlates, prWeek,
+
+// Shortcut values
+sMW, bMW, rMW, pMW, dMW, sR, bR, rR, pR, dR, sFSP, bFSP, rFSP, pFSP, dFSP, bb, sP, prW) {
+  // Calculate 1RM for each exercise
+  var squatMax = intermediateFormulas.calculate1RM(sMW, sR);
+  var benchMax = intermediateFormulas.calculate1RM(bMW, bR);
+  var rowMax = intermediateFormulas.calculate1RM(rMW, rR);
+  var pressMax = intermediateFormulas.calculate1RM(pMW, pR);
+  var deadliftMax = intermediateFormulas.calculate1RM(dMW, dR);
+
+  // Calculate 5RM for each exercise
+  var squatMax5 = intermediateFormulas.calculate5RM(squatMax);
+  var benchMax5 = intermediateFormulas.calculate5RM(benchMax);
+  var rowMax5 = intermediateFormulas.calculate5RM(rowMax);
+  var pressMax5 = intermediateFormulas.calculate5RM(pressMax);
+  var deadliftMax5 = intermediateFormulas.calculate5RM(deadliftMax);
+
+  // Calculate starting weight for each exercise
+  var squatStartingWeight = intermediateFormulas.calculateStartingWeight(squatMax5, bb, sP, prW);
+  var benchStartingWeight = intermediateFormulas.calculateStartingWeight(benchMax5, bb, sP, prW);
+  var rowStartingWeight = intermediateFormulas.calculateStartingWeight(rowMax5, bb, sP, prW);
+  var pressStartingWeight = intermediateFormulas.calculateStartingWeight(pressMax5, bb, sP, prW);
+  var deadliftStartingWeight = intermediateFormulas.calculateStartingWeight(deadliftMax5, bb, sP, prW);
+
+  // Initialize the training program
+  var program = IntermediateTrainingProgram;
+
+  // Populate the sets for each exercise in the program
+  program.weeks.forEach(function (week, weekIndex) {
+    week.days.forEach(function (day) {
+      day.exercises.forEach(function (exercise) {
+        var dayName = day.day;
+        var exerciseName = exercise.name;
+        var sets = exercise.sets;
+
+        // Clear sets to prevent duplication
+        sets.length = 0;
+
+        // SQUAT
+        if (exerciseName === 'Squat') {
+          sets.push({
+            name: 'Set 1',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 2',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 3',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 4',
+            reps: 5,
+            weight: 0
+          });
+          if (dayName === 'Monday') {
+            sets.push({
+              name: 'Set 5',
+              reps: 5,
+              weight: 0
+            });
+          } else if (dayName === 'Friday') {
+            sets.push({
+              name: 'Set 5',
+              reps: 3,
+              weight: 0
+            });
+            sets.push({
+              name: 'Set 6',
+              reps: 8,
+              weight: 0
+            });
+          }
+
+          // Week 1
+          if (weekIndex === 0) {
+            // SET 5
+            if (dayName === 'Monday') {
+              sets[4].weight = squatStartingWeight;
+            } else if (dayName === 'Friday') {
+              sets[4].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[4].name, weekIndex, squatStartingWeight, bb, sP, dayName);
+            }
+
+            // SETS 1-3
+            sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[0].name, weekIndex, squatStartingWeight, bb, sP, dayName);
+            sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[1].name, weekIndex, squatStartingWeight, bb, sP, dayName);
+            sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[2].name, weekIndex, squatStartingWeight, bb, sP, dayName);
+
+            // SET 4
+            if (dayName === 'Wednesday') {
+              // Wednesday
+              sets[3].weight = sets[2].weight;
+            } else {
+              // Other days
+              sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[3].name, weekIndex, squatStartingWeight, bb, sP, dayName);
+            }
+
+            // Weeks 2-12
+          } else {
+            var squatTopSetMonday = intermediateFormulas.calculateWeight(exerciseName, sFSP, 'Set 5', weekIndex, squatStartingWeight, bb, sP, 'Monday');
+
+            // SET 5
+            if (sets[4]) {
+              sets[4].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[4].name, weekIndex, squatStartingWeight, bb, sP, dayName);
+            }
+
+            // SETS 1-3
+            sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[0].name, weekIndex, squatTopSetMonday, bb, sP, dayName);
+            sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[1].name, weekIndex, squatTopSetMonday, bb, sP, dayName);
+            sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[2].name, weekIndex, squatTopSetMonday, bb, sP, dayName);
+
+            // SET 4
+            if (dayName === 'Wednesday') {
+              // Wednesday
+              sets[3].weight = sets[2].weight;
+            } else {
+              // Other days
+              sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, sFSP, sets[3].name, weekIndex, squatTopSetMonday, bb, sP, dayName);
+            }
+          }
+
+          // SET 6 for Fridays
+          if (dayName === 'Friday') {
+            sets[5].weight = sets[2].weight;
+          }
+
+          // BENCH
+        } else if (exerciseName === 'Bench') {
+          sets.push({
+            name: 'Set 1',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 2',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 3',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 4',
+            reps: 5,
+            weight: 0
+          });
+          if (dayName === 'Monday') {
+            sets.push({
+              name: 'Set 5',
+              reps: 5,
+              weight: 0
+            });
+          } else if (dayName === 'Friday') {
+            sets.push({
+              name: 'Set 5',
+              reps: 3,
+              weight: 0
+            });
+            sets.push({
+              name: 'Set 6',
+              reps: 8,
+              weight: 0
+            });
+          }
+
+          // SET 5
+          if (weekIndex === 0 && dayName === 'Monday') {
+            // Week 1 - Monday
+            sets[4].weight = benchStartingWeight;
+          } else {
+            // All Weeks for Friday && Weeks 2-12 for Monday
+            sets[4].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[4].name, weekIndex, benchStartingWeight, bb, sP, dayName);
+          }
+
+          // SETS 1-4  //  Applies to all Bench days
+          var benchTopSetMonday = 0;
+          if (weekIndex === 0) {
+            benchTopSetMonday = benchStartingWeight;
+          } else {
+            benchTopSetMonday = intermediateFormulas.calculateWeight(exerciseName, bFSP, 'Set 5', weekIndex, benchStartingWeight, bb, sP, 'Monday');
+          }
+          var benchTopSet = benchTopSetMonday;
+          sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[0].name, weekIndex, benchTopSet, bb, sP, dayName);
+          sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[1].name, weekIndex, benchTopSet, bb, sP, dayName);
+          sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[2].name, weekIndex, benchTopSet, bb, sP, dayName);
+          sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, bFSP, sets[3].name, weekIndex, benchTopSet, bb, sP, dayName);
+
+          // SET 6 for Fridays
+          if (dayName === 'Friday') {
+            sets[5].weight = sets[2].weight;
+          }
+
+          // ROW
+        } else if (exerciseName === 'Row') {
+          sets.push({
+            name: 'Set 1',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 2',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 3',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 4',
+            reps: 5,
+            weight: 0
+          });
+          if (dayName === 'Monday') {
+            sets.push({
+              name: 'Set 5',
+              reps: 5,
+              weight: 0
+            });
+          } else if (dayName === 'Friday') {
+            sets.push({
+              name: 'Set 5',
+              reps: 3,
+              weight: 0
+            });
+            sets.push({
+              name: 'Set 6',
+              reps: 8,
+              weight: 0
+            });
+          }
+
+          // SET 5
+          if (weekIndex === 0 && dayName === 'Monday') {
+            // Week 1 - Monday
+            sets[4].weight = rowStartingWeight;
+          } else {
+            // All Weeks for Friday && Weeks 2-12 for Monday
+            sets[4].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[4].name, weekIndex, rowStartingWeight, bb, sP, dayName);
+          }
+
+          // SETS 1-4  //  Applies to all Row days
+          var rowTopSetMonday = 0;
+          if (weekIndex === 0) {
+            rowTopSetMonday = rowStartingWeight;
+          } else {
+            rowTopSetMonday = intermediateFormulas.calculateWeight(exerciseName, rFSP, 'Set 5', weekIndex, rowStartingWeight, bb, sP, 'Monday');
+          }
+          var rowTopSet = rowTopSetMonday;
+          sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[0].name, weekIndex, rowTopSet, bb, sP, dayName);
+          sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[1].name, weekIndex, rowTopSet, bb, sP, dayName);
+          sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[2].name, weekIndex, rowTopSet, bb, sP, dayName);
+          sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, rFSP, sets[3].name, weekIndex, rowTopSet, bb, sP, dayName);
+
+          // SET 6 for Fridays
+          if (dayName === 'Friday') {
+            sets[5].weight = sets[2].weight;
+          }
+
+          // PRESS
+        } else if (exerciseName === 'Press') {
+          sets.push({
+            name: 'Set 1',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 2',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 3',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 4',
+            reps: 5,
+            weight: 0
+          });
+
+          // SET 4
+          if (weekIndex === 0) {
+            sets[3].weight = pressStartingWeight;
+          } else {
+            sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, pFSP, sets[3].name, weekIndex, pressStartingWeight, bb, sP, dayName);
+          }
+
+          // SETS 1-3
+          var pressTopSet = sets[3].weight;
+          sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, pFSP, sets[2].name, weekIndex, pressTopSet, bb, sP, dayName);
+          sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, pFSP, sets[1].name, weekIndex, pressTopSet, bb, sP, dayName);
+          sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, pFSP, sets[0].name, weekIndex, pressTopSet, bb, sP, dayName);
+
+          // DEADLIFT
+        } else if (exerciseName === 'Deadlift') {
+          sets.push({
+            name: 'Set 1',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 2',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 3',
+            reps: 5,
+            weight: 0
+          });
+          sets.push({
+            name: 'Set 4',
+            reps: 5,
+            weight: 0
+          });
+
+          // SET 4
+          if (weekIndex === 0) {
+            sets[3].weight = deadliftStartingWeight;
+          } else {
+            sets[3].weight = intermediateFormulas.calculateWeight(exerciseName, dFSP, sets[3].name, weekIndex, deadliftStartingWeight, bb, sP, dayName);
+          }
+
+          // SETS 1-3
+          var deadliftTopSet = sets[3].weight;
+          sets[2].weight = intermediateFormulas.calculateWeight(exerciseName, dFSP, sets[2].name, weekIndex, deadliftTopSet, bb, sP, dayName);
+          sets[1].weight = intermediateFormulas.calculateWeight(exerciseName, dFSP, sets[1].name, weekIndex, deadliftTopSet, bb, sP, dayName);
+          sets[0].weight = intermediateFormulas.calculateWeight(exerciseName, dFSP, sets[0].name, weekIndex, deadliftTopSet, bb, sP, dayName);
+        }
+
+        // Maxes for each week
+      });
+    });
+  });
+
+  return program;
+};
+
+// Example usage
+// const trainingProgram = generateIntermediateTrainingProgram(
+//    500, 315, 225, 185, 600,
+//    1, 1, 1, 1, 1,
+//    .125, .125, .125, .125, .125,
+//    2.5, 4
+// );
+
+// console.log(JSON.stringify(trainingProgram, null, 2))
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateIntermediateTrainingProgram);
 
 /***/ }),
 
@@ -10548,7 +11071,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
 
 .STYT-instructions {
 
-   color: #a3a3a3;
+   color: #131313;
 }
 
 .instructions-container {
@@ -10662,7 +11185,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Container styles */
 form div {
    margin: 1em;
    display: inline-block;
-}`, "",{"version":3,"sources":["webpack://./client/features/startyourtraining/StartYourTraining.css"],"names":[],"mappings":"AAAA,qBAAqB;AACrB;GACG,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,iBAAiB;GACjB,cAAc;GACd,sBAAsB;GACtB,aAAa;;;AAGhB;;AAEA;GACG,2BAA2B;GAC3B,uBAAuB;GACvB,4BAA4B;AAC/B;;AAEA,mBAAmB;AACnB;GACG,kBAAkB;GAClB,eAAe;;GAEf,0BAA0B;AAC7B;;AAEA;GACG,eAAe;GACf,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,eAAe;GACf,qBAAqB;GACrB,iBAAiB;AACpB;;AAEA;GACG,eAAe;GACf,mBAAmB;;GAEnB,aAAa;GACb,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,kBAAkB;AACrB;;;;AAIA,wBAAwB;AACxB;GACG,gBAAgB;GAChB,cAAc;GACd,cAAc;AACjB;;AAEA;;GAEG,cAAc;AACjB;;AAEA;GACG,cAAc;GACd,YAAY;GACZ,gBAAgB;;AAEnB;;AAEA,WAAW;AACX,WAAW;AACX,WAAW;AACX;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,gBAAgB;AAClB;;AAEA,iBAAiB;AACjB;GACG,WAAW;GACX,yBAAyB;GACzB,gBAAgB;GAChB,yBAAyB;GACzB,cAAc;AACjB;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,iBAAiB;AACjB;GACG,cAAc;GACd,iBAAiB;GACjB,iBAAiB;GACjB,WAAW;GACX,YAAY;GACZ,sBAAsB;GACtB,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,mBAAmB;AACnB;GACG,mBAAmB;GACnB,aAAa;GACb,eAAe;GACf,uBAAuB;GACvB,cAAc;GACd,eAAe;AAClB;;AAEA,kBAAkB;AAClB;GACG,cAAc;GACd,WAAW;GACX,aAAa;GACb,eAAe;GACf,qCAAqC;GACrC,sBAAsB;GACtB,YAAY;GACZ,mBAAmB;GACnB,eAAe;GACf,sCAAsC;GACtC,iBAAiB;AACpB;;AAEA;GACG,yBAAyB;GACzB,oCAAoC;AACvC;;AAEA,qBAAqB;AACrB;GACG;MACG,UAAU;GACb;GACA;MACG,UAAU;GACb;AACH;;AAEA,qCAAqC;AACrC;GACG,4BAA4B;AAC/B;;AAEA,wDAAwD;AACxD;GACG,eAAe;GACf,UAAU;GACV,kBAAkB;AACrB;;AAEA,sCAAsC;AACtC;EACE,mBAAmB;AACrB;;AAEA;GACG,WAAW;GACX,qBAAqB;AACxB","sourcesContent":["/* Container styles */\n.STYT-container {\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   max-width: 1340px;\n   margin: 0 auto;\n   /* margin-top: 10px; */\n   padding: 20px;\n  \n   \n}\n\n.main {\n   background-repeat: repeat-x;\n   background-size:contain;\n   background-position-x: -93px;\n}\n\n/* Heading styles */\n.STYT-heading {\n   text-align: center;\n   font-size: 45px;\n\n   font-family: palatino bold;\n}\n\n.Program-Heading {\n   display: 'flex';\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   font-size: 50px;\n   color: rgb(192, 0, 0);\n   padding-top: 50px;\n}\n\n.disclaimer {\n   font-size: 26px;\n   color: rgb(0, 0, 0);\n\n   display: flex;\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   border-radius: 5px;\n}\n\n\n\n/* Instructions styles */\n.STYT-instructions strong {\n   margin-top: 15px;\n   display: block;\n   color: #8f0000;\n}\n\n.STYT-instructions {\n\n   color: #a3a3a3;\n}\n\n.instructions-container {\n   display: block;\n   width: 740px;\n   font-size: large;\n\n}\n\n/* Images */\n/* Images */\n/* Images */\n.STYT-image {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  margin-bottom: 20px;\n}\n\n.STYimage {\n  width: 60%;\n  max-width: 400px;\n}\n\n/* Table styles */\n.STYT-table {\n   width: 100%;\n   border-collapse: collapse;\n   margin-top: 20px;\n   background-color: #d9d9d9;\n   color: #4b0000;\n}\n\n.STYT-table th,\n.STYT-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #ffffff;\n}\n\n/* Input styles */\n.STYT-input {\n   color: #6a6a6a;\n   font-weight: bold;\n   font-size: medium;\n   width: 80px;\n   padding: 6px;\n   border: 1px solid #555;\n   border-radius: 4px;\n   background-color: #f1f1f1;\n}\n\n/* Options styles */\n.STYT-options {\n   margin-bottom: 10px;\n   display: flex;\n   flex-wrap: wrap;\n   justify-content: center;\n   color: #000000;\n   font-size: 18px;\n}\n\n/* Button styles */\n.STYT-button {\n   display: block;\n   width: 100%;\n   padding: 10px;\n   font-size: 24px;\n   background-color:  rgb(225, 225, 225);  \n   color: rgb(55, 55, 55);\n   border: none;\n   border-radius: 10px;\n   cursor: pointer;\n   transition: background-color 0.3s ease;\n   font-weight: bold;\n}\n\n.STYT-button:hover {\n   color: rgb(200, 200, 200);\n   background-color: rgb(162, 162, 162);  \n}\n\n/* Animation styles */\n@keyframes fade-in {\n   from {\n      opacity: 0;\n   }\n   to {\n      opacity: 1;\n   }\n}\n\n/* Apply animation to the container */\n.STYT-container {\n   animation: fade-in 0.5s ease;\n}\n\n/* fontSize: '22px', color: 'red', textAlign: 'center' */\n.loginToCreate {\n   font-size: 22px;\n   color: red;\n   text-align: center;\n}\n\n/* Add space between image and chart */\n.STYT-image {\n  margin-bottom: 70px;\n}\n\nform div {\n   margin: 1em;\n   display: inline-block;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/startyourtraining/StartYourTraining.css"],"names":[],"mappings":"AAAA,qBAAqB;AACrB;GACG,aAAa;GACb,sBAAsB;GACtB,mBAAmB;GACnB,iBAAiB;GACjB,cAAc;GACd,sBAAsB;GACtB,aAAa;;;AAGhB;;AAEA;GACG,2BAA2B;GAC3B,uBAAuB;GACvB,4BAA4B;AAC/B;;AAEA,mBAAmB;AACnB;GACG,kBAAkB;GAClB,eAAe;;GAEf,0BAA0B;AAC7B;;AAEA;GACG,eAAe;GACf,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,eAAe;GACf,qBAAqB;GACrB,iBAAiB;AACpB;;AAEA;GACG,eAAe;GACf,mBAAmB;;GAEnB,aAAa;GACb,uBAAuB;GACvB,mBAAmB;GACnB,iBAAiB;GACjB,kBAAkB;AACrB;;;;AAIA,wBAAwB;AACxB;GACG,gBAAgB;GAChB,cAAc;GACd,cAAc;AACjB;;AAEA;;GAEG,cAAc;AACjB;;AAEA;GACG,cAAc;GACd,YAAY;GACZ,gBAAgB;;AAEnB;;AAEA,WAAW;AACX,WAAW;AACX,WAAW;AACX;EACE,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,UAAU;EACV,gBAAgB;AAClB;;AAEA,iBAAiB;AACjB;GACG,WAAW;GACX,yBAAyB;GACzB,gBAAgB;GAChB,yBAAyB;GACzB,cAAc;AACjB;;AAEA;;GAEG,eAAe;GACf,YAAY;GACZ,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,iBAAiB;AACjB;GACG,cAAc;GACd,iBAAiB;GACjB,iBAAiB;GACjB,WAAW;GACX,YAAY;GACZ,sBAAsB;GACtB,kBAAkB;GAClB,yBAAyB;AAC5B;;AAEA,mBAAmB;AACnB;GACG,mBAAmB;GACnB,aAAa;GACb,eAAe;GACf,uBAAuB;GACvB,cAAc;GACd,eAAe;AAClB;;AAEA,kBAAkB;AAClB;GACG,cAAc;GACd,WAAW;GACX,aAAa;GACb,eAAe;GACf,qCAAqC;GACrC,sBAAsB;GACtB,YAAY;GACZ,mBAAmB;GACnB,eAAe;GACf,sCAAsC;GACtC,iBAAiB;AACpB;;AAEA;GACG,yBAAyB;GACzB,oCAAoC;AACvC;;AAEA,qBAAqB;AACrB;GACG;MACG,UAAU;GACb;GACA;MACG,UAAU;GACb;AACH;;AAEA,qCAAqC;AACrC;GACG,4BAA4B;AAC/B;;AAEA,wDAAwD;AACxD;GACG,eAAe;GACf,UAAU;GACV,kBAAkB;AACrB;;AAEA,sCAAsC;AACtC;EACE,mBAAmB;AACrB;;AAEA;GACG,WAAW;GACX,qBAAqB;AACxB","sourcesContent":["/* Container styles */\n.STYT-container {\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   max-width: 1340px;\n   margin: 0 auto;\n   /* margin-top: 10px; */\n   padding: 20px;\n  \n   \n}\n\n.main {\n   background-repeat: repeat-x;\n   background-size:contain;\n   background-position-x: -93px;\n}\n\n/* Heading styles */\n.STYT-heading {\n   text-align: center;\n   font-size: 45px;\n\n   font-family: palatino bold;\n}\n\n.Program-Heading {\n   display: 'flex';\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   font-size: 50px;\n   color: rgb(192, 0, 0);\n   padding-top: 50px;\n}\n\n.disclaimer {\n   font-size: 26px;\n   color: rgb(0, 0, 0);\n\n   display: flex;\n   justify-content: center;\n   align-items: center;\n   font-weight: bold;\n   border-radius: 5px;\n}\n\n\n\n/* Instructions styles */\n.STYT-instructions strong {\n   margin-top: 15px;\n   display: block;\n   color: #8f0000;\n}\n\n.STYT-instructions {\n\n   color: #131313;\n}\n\n.instructions-container {\n   display: block;\n   width: 740px;\n   font-size: large;\n\n}\n\n/* Images */\n/* Images */\n/* Images */\n.STYT-image {\n  display: flex;\n  justify-content: flex-start;\n  align-items: center;\n  margin-bottom: 20px;\n}\n\n.STYimage {\n  width: 60%;\n  max-width: 400px;\n}\n\n/* Table styles */\n.STYT-table {\n   width: 100%;\n   border-collapse: collapse;\n   margin-top: 20px;\n   background-color: #d9d9d9;\n   color: #4b0000;\n}\n\n.STYT-table th,\n.STYT-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #ffffff;\n}\n\n/* Input styles */\n.STYT-input {\n   color: #6a6a6a;\n   font-weight: bold;\n   font-size: medium;\n   width: 80px;\n   padding: 6px;\n   border: 1px solid #555;\n   border-radius: 4px;\n   background-color: #f1f1f1;\n}\n\n/* Options styles */\n.STYT-options {\n   margin-bottom: 10px;\n   display: flex;\n   flex-wrap: wrap;\n   justify-content: center;\n   color: #000000;\n   font-size: 18px;\n}\n\n/* Button styles */\n.STYT-button {\n   display: block;\n   width: 100%;\n   padding: 10px;\n   font-size: 24px;\n   background-color:  rgb(225, 225, 225);  \n   color: rgb(55, 55, 55);\n   border: none;\n   border-radius: 10px;\n   cursor: pointer;\n   transition: background-color 0.3s ease;\n   font-weight: bold;\n}\n\n.STYT-button:hover {\n   color: rgb(200, 200, 200);\n   background-color: rgb(162, 162, 162);  \n}\n\n/* Animation styles */\n@keyframes fade-in {\n   from {\n      opacity: 0;\n   }\n   to {\n      opacity: 1;\n   }\n}\n\n/* Apply animation to the container */\n.STYT-container {\n   animation: fade-in 0.5s ease;\n}\n\n/* fontSize: '22px', color: 'red', textAlign: 'center' */\n.loginToCreate {\n   font-size: 22px;\n   color: red;\n   text-align: center;\n}\n\n/* Add space between image and chart */\n.STYT-image {\n  margin-bottom: 70px;\n}\n\nform div {\n   margin: 1em;\n   display: inline-block;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10712,7 +11235,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.training-sessions-tracker {
 
 .program-complete h1 {
    margin: 0;
-   color: #ffffff;
+   color: #840000;
 }
 
 .week-selector {
@@ -10803,8 +11326,8 @@ label h2 {
    background-color: #e3e3e3;
    padding: 16px;
    /* border: 4px solid rgb(20, 21, 11); */
-   border-right: 4px solid black;
-   border-left: 4px solid black;
+   border-right: 4px solid rgb(132, 132, 132);
+   border-left: 4px solid rgb(99, 99, 99);
    border-radius: 4px;
    display: flex;
    flex-direction: column;
@@ -10839,7 +11362,7 @@ label h2 {
    font-weight: bold;
    margin-bottom: 8px;
    text-align: center;
-   color: rgb(197, 0, 0);
+   color: rgb(103, 103, 103);
    text-transform: uppercase;
    text-decoration: line-through;
 }
@@ -10911,7 +11434,7 @@ label h2 {
 .button {
    margin-top: 8px;
    padding: 8px 16px;
-   background-color: #eaeaea;
+   background-color: #ff5555;
    color: #fff;
    border: none;
    border-radius: 4px;
@@ -10922,7 +11445,7 @@ label h2 {
 .completedStatus-button {
    margin-top: 8px;
    padding: 8px 16px;
-   background-color: #000000;
+   background-color: #909090;
    color: #d8d8d8;
    border: none;
    border-radius: 4px;
@@ -11067,7 +11590,7 @@ label h2 {
    to {
       background-position-x: 0;
    }
-}`, "",{"version":3,"sources":["webpack://./client/features/tracker/TYP.css"],"names":[],"mappings":"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","sourcesContent":[".training-sessions-tracker {\n   background-color: #f5f5f5;\n   color: rgb(0, 0, 0);\n   padding-top: 50px;\n}\n\n.completedStatus-training-sessions-tracker {\n   /* background-color: #929292; */\n   color: rgb(0, 0, 0);\n}\n\n.program-complete {\n   /* background-color: #000000; */\n   padding: 10px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   \n   height:40px;\n}\n\n.program-complete h1 {\n   margin: 0;\n   color: #ffffff;\n}\n\n.week-selector {\n   text-align: center;\n   height: 80px;\n}\n\nlabel h2 {\n   font-size: 28px;\n}\n\n.completedStatus-week-selector {\n   text-align: center;\n   height: 80px;\n}\n\n.week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n}\n\n.completedStatus-week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n   /* background-color: #12b900; */\n}\n\n.week-title {\n   color:#6b6b6b;\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n\n   padding: 50px;\n}\n\n.completedStatus-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n   text-decoration: line-through;\n   color: #e20000;\n   /* background-color: #000000; */\n   padding: 50px;\n}\n\n.day-container {\n   margin-bottom: 50px;\n}\n\n.day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #bd0000;\n}\n\n.completedStatus-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: line-through;\n}\n\n.exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   /* gap: 20px; */\n   justify-content: center;\n   /* background-color: #282c34; */\n}\n\n.completedStatus-exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   gap: 0px;\n   justify-content: center;\n  \n}\n\n.exercise-container {\n   width: calc(20% - 10px);\n   background-color: #e3e3e3;\n   padding: 16px;\n   /* border: 4px solid rgb(20, 21, 11); */\n   border-right: 4px solid black;\n   border-left: 4px solid black;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.completedStatus-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #aaaaaa;\n   padding: 16px;\n   /* border: 4px solid rgb(48, 194, 63); */\n   border: 4px solid #092309;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(236, 0, 0);\n   text-transform: uppercase;\n}\n\n.completedStatus-exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(197, 0, 0);\n   text-transform: uppercase;\n   text-decoration: line-through;\n}\n\n.modification-mode-container {\n   margin-top: 16px;\n   margin-bottom: 8px;\n   text-align: center;\n}\n\n.modification-mode-label {\n   font-size: 14px;\n}\n\n.modification-mode-checkbox {\n   margin-right: 8px;\n   vertical-align: middle;\n}\n\n.modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #8f0c00;\n}\n\n.completedStatus-modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #000000;\n}\n\n.exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #e7e7e7;\n   color: #000000;\n}\n\n.completedStatus-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   text-decoration: line-through;\n   color: #dddddd;\n}\n\n.exercise-table th,\n.exercise-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #898989;\n}\n\n.exercise-table th {\n   background-color: #adadad;\n}\n\n.exercise-table td {\n   background-color: #cccccc;\n}\n\n.completedStatus-exercise-table td {\n   text-align: center;\n}\n\n.button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #eaeaea;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.completedStatus-button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #000000;\n   color: #d8d8d8;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.button:hover {\n   background-color: #b70000;\n}\n\n.completedStatus-button:hover {\n   background-color: #972718;\n}\n\n.bottom-buttons {\n   margin-top: 150px;\n   display: flex;\n   flex-wrap: wrap;\n   gap: 40px;\n   justify-content: center;\n   padding-bottom: 40px;\n}\n\n.complete-archive-button {\n   margin-top: 20px;\n   padding: 1px 16px;\n   background-color: #0e4011;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.complete-archive-button:hover {\n   background-color: rgb(169, 169, 169);\n   color: #0e4011;\n   font-weight: bold;\n}\n\n.archive-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(167, 167, 167);\n   color: #000000;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.archive-button:hover {\n   background-color: rgb(210, 205, 205);\n   color: rgb(235, 0, 0);\n   font-weight: bold;\n}\n\n.delete-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(159, 159, 159);\n   color: #000000;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.delete-button:hover {\n   color: rgb(206, 0, 0);\n   font-weight: bold;\n   background-color:rgb(210, 205, 205);\n}\n\n.progress-bar-container {\n   position: relative;\n   min-height: 100vh;\n   width: auto;\n}\n\n.sticky-footer {\n   position: sticky;\n   bottom: 0;\n   z-index: 100;\n}\n\n.custom-progress-bar {\n   height: 30px;\n   margin-top: 20px;\n   border-radius: 4px;\n   overflow: hidden;\n   box-shadow: 0 2px 4px rgba(152, 152, 152, 0.2);\n   position: relative;\n}\n\n.progress-bar {\n   height: 100%;\n   background-color: #ec3300;\n   transition: width 0.5s ease-in-out;\n   background-image: linear-gradient(\n      45deg,\n      rgba(255, 255, 255, 0.15) 25%,\n      transparent 25%,\n      transparent 50%,\n      rgba(255, 255, 255, 0.15) 50%,\n      rgba(255, 255, 255, 0.15) 75%,\n      transparent 75%,\n      transparent\n   );\n   background-size: 1rem 1rem;\n   animation: progress-bar-stripes 1s linear infinite;\n   position: relative;\n}\n\n.progress-bar-percentage {\n   position: absolute;\n   top: 50%;\n   right: 0;\n   transform: translate(0, -50%);\n   display: flex;\n   align-items: center;\n   justify-content: center;\n   /* padding: 0 10px; */\n   font-size: 14px;\n   color: #000000;\n   white-space: nowrap;\n   font-weight: bold;\n   font-size: 20px;\n}\n\n@keyframes progress-bar-stripes {\n   from {\n      background-position-x: 1rem;\n   }\n   to {\n      background-position-x: 0;\n   }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./client/features/tracker/TYP.css"],"names":[],"mappings":"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","sourcesContent":[".training-sessions-tracker {\n   background-color: #f5f5f5;\n   color: rgb(0, 0, 0);\n   padding-top: 50px;\n}\n\n.completedStatus-training-sessions-tracker {\n   /* background-color: #929292; */\n   color: rgb(0, 0, 0);\n}\n\n.program-complete {\n   /* background-color: #000000; */\n   padding: 10px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   \n   height:40px;\n}\n\n.program-complete h1 {\n   margin: 0;\n   color: #840000;\n}\n\n.week-selector {\n   text-align: center;\n   height: 80px;\n}\n\nlabel h2 {\n   font-size: 28px;\n}\n\n.completedStatus-week-selector {\n   text-align: center;\n   height: 80px;\n}\n\n.week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n}\n\n.completedStatus-week-selector select {\n   font-size: 18px;\n   padding: 4px;\n   width: auto;\n   /* background-color: #12b900; */\n}\n\n.week-title {\n   color:#6b6b6b;\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n\n   padding: 50px;\n}\n\n.completedStatus-week-title {\n   font-size: 35px;\n   font-weight: bold;\n   text-align: center;\n   text-decoration: line-through;\n   color: #e20000;\n   /* background-color: #000000; */\n   padding: 50px;\n}\n\n.day-container {\n   margin-bottom: 50px;\n}\n\n.day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #bd0000;\n}\n\n.completedStatus-day-title {\n   font-size: 28px;\n   font-weight: bold;\n   margin-bottom: 30px;\n   text-align: center;\n   color: #818181;\n   text-decoration: line-through;\n}\n\n.exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   /* gap: 20px; */\n   justify-content: center;\n   /* background-color: #282c34; */\n}\n\n.completedStatus-exercises-container {\n   display: flex;\n   flex-wrap: wrap;\n   gap: 0px;\n   justify-content: center;\n  \n}\n\n.exercise-container {\n   width: calc(20% - 10px);\n   background-color: #e3e3e3;\n   padding: 16px;\n   /* border: 4px solid rgb(20, 21, 11); */\n   border-right: 4px solid rgb(132, 132, 132);\n   border-left: 4px solid rgb(99, 99, 99);\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.completedStatus-exercise-container {\n   width: calc(20% - 10px);\n   background-color: #aaaaaa;\n   padding: 16px;\n   /* border: 4px solid rgb(48, 194, 63); */\n   border: 4px solid #092309;\n   border-radius: 4px;\n   display: flex;\n   flex-direction: column;\n   align-items: center;\n   justify-content: center;\n}\n\n.exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(236, 0, 0);\n   text-transform: uppercase;\n}\n\n.completedStatus-exercise-title {\n   font-size: 26px;\n   font-weight: bold;\n   margin-bottom: 8px;\n   text-align: center;\n   color: rgb(103, 103, 103);\n   text-transform: uppercase;\n   text-decoration: line-through;\n}\n\n.modification-mode-container {\n   margin-top: 16px;\n   margin-bottom: 8px;\n   text-align: center;\n}\n\n.modification-mode-label {\n   font-size: 14px;\n}\n\n.modification-mode-checkbox {\n   margin-right: 8px;\n   vertical-align: middle;\n}\n\n.modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #8f0c00;\n}\n\n.completedStatus-modification-mode-checkbox-label {\n   font-size: 16px;\n   vertical-align: middle;\n   color: #000000;\n}\n\n.exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #e7e7e7;\n   color: #000000;\n}\n\n.completedStatus-exercise-table {\n   width: 100%;\n   margin-top: 16px;\n   border-collapse: collapse;\n   background-color: #333;\n   text-decoration: line-through;\n   color: #dddddd;\n}\n\n.exercise-table th,\n.exercise-table td {\n   font-size: 18px;\n   padding: 8px;\n   text-align: center;\n   border: 1px solid #898989;\n}\n\n.exercise-table th {\n   background-color: #adadad;\n}\n\n.exercise-table td {\n   background-color: #cccccc;\n}\n\n.completedStatus-exercise-table td {\n   text-align: center;\n}\n\n.button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #ff5555;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.completedStatus-button {\n   margin-top: 8px;\n   padding: 8px 16px;\n   background-color: #909090;\n   color: #d8d8d8;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   font-size: 16px;\n}\n\n.button:hover {\n   background-color: #b70000;\n}\n\n.completedStatus-button:hover {\n   background-color: #972718;\n}\n\n.bottom-buttons {\n   margin-top: 150px;\n   display: flex;\n   flex-wrap: wrap;\n   gap: 40px;\n   justify-content: center;\n   padding-bottom: 40px;\n}\n\n.complete-archive-button {\n   margin-top: 20px;\n   padding: 1px 16px;\n   background-color: #0e4011;\n   color: #fff;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.complete-archive-button:hover {\n   background-color: rgb(169, 169, 169);\n   color: #0e4011;\n   font-weight: bold;\n}\n\n.archive-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(167, 167, 167);\n   color: #000000;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.archive-button:hover {\n   background-color: rgb(210, 205, 205);\n   color: rgb(235, 0, 0);\n   font-weight: bold;\n}\n\n.delete-button {\n   margin-top: 20px;\n   padding: 8px 16px;\n   background-color: rgb(159, 159, 159);\n   color: #000000;\n   border: none;\n   border-radius: 4px;\n   cursor: pointer;\n   height: 40px;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n.delete-button:hover {\n   color: rgb(206, 0, 0);\n   font-weight: bold;\n   background-color:rgb(210, 205, 205);\n}\n\n.progress-bar-container {\n   position: relative;\n   min-height: 100vh;\n   width: auto;\n}\n\n.sticky-footer {\n   position: sticky;\n   bottom: 0;\n   z-index: 100;\n}\n\n.custom-progress-bar {\n   height: 30px;\n   margin-top: 20px;\n   border-radius: 4px;\n   overflow: hidden;\n   box-shadow: 0 2px 4px rgba(152, 152, 152, 0.2);\n   position: relative;\n}\n\n.progress-bar {\n   height: 100%;\n   background-color: #ec3300;\n   transition: width 0.5s ease-in-out;\n   background-image: linear-gradient(\n      45deg,\n      rgba(255, 255, 255, 0.15) 25%,\n      transparent 25%,\n      transparent 50%,\n      rgba(255, 255, 255, 0.15) 50%,\n      rgba(255, 255, 255, 0.15) 75%,\n      transparent 75%,\n      transparent\n   );\n   background-size: 1rem 1rem;\n   animation: progress-bar-stripes 1s linear infinite;\n   position: relative;\n}\n\n.progress-bar-percentage {\n   position: absolute;\n   top: 50%;\n   right: 0;\n   transform: translate(0, -50%);\n   display: flex;\n   align-items: center;\n   justify-content: center;\n   /* padding: 0 10px; */\n   font-size: 14px;\n   color: #000000;\n   white-space: nowrap;\n   font-weight: bold;\n   font-size: 20px;\n}\n\n@keyframes progress-bar-stripes {\n   from {\n      background-position-x: 1rem;\n   }\n   to {\n      background-position-x: 0;\n   }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -21,7 +21,7 @@
 
 .program-complete h1 {
    margin: 0;
-   color: #ffffff;
+   color: #840000;
 }
 
 .week-selector {
@@ -112,8 +112,8 @@ label h2 {
    background-color: #e3e3e3;
    padding: 16px;
    /* border: 4px solid rgb(20, 21, 11); */
-   border-right: 4px solid black;
-   border-left: 4px solid black;
+   border-right: 4px solid rgb(132, 132, 132);
+   border-left: 4px solid rgb(99, 99, 99);
    border-radius: 4px;
    display: flex;
    flex-direction: column;
@@ -148,7 +148,7 @@ label h2 {
    font-weight: bold;
    margin-bottom: 8px;
    text-align: center;
-   color: rgb(197, 0, 0);
+   color: rgb(103, 103, 103);
    text-transform: uppercase;
    text-decoration: line-through;
 }
@@ -220,7 +220,7 @@ label h2 {
 .button {
    margin-top: 8px;
    padding: 8px 16px;
-   background-color: #eaeaea;
+   background-color: #ff5555;
    color: #fff;
    border: none;
    border-radius: 4px;
@@ -231,7 +231,7 @@ label h2 {
 .completedStatus-button {
    margin-top: 8px;
    padding: 8px 16px;
-   background-color: #000000;
+   background-color: #909090;
    color: #d8d8d8;
    border: none;
    border-radius: 4px;

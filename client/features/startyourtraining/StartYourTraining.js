@@ -6,6 +6,7 @@ import './StartYourTraining.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { createProgram, fetchTrainingProgramAsync, selectTrainingProgram } from '../tracker/trainingProgramSlice';
+import generateIntermediateTrainingProgram from '../training_programs/Intermediate/IntermediateTrainingProgram';  // Import the function`
 
 
 const customToastErrorStyle = {
