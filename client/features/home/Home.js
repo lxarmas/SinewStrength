@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import './Home.css';
-import logo from '../../assets/MyLogo.png'
-import pictureOne from "../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg"
-
+import logo from '../../assets/MyLogo.png';
+import pictureOne from '../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg';
 
 const Home = () => {
   const username = useSelector((state) => state.auth.me.username);
@@ -12,30 +11,21 @@ const Home = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const hpImage = hpImageRef.current;
-    const dynamicImages = dynamicImageRefs.map((ref) => ref.current);
-    const video = videoRef.current;
-
     const handleScroll = () => {
-      const boundingRectHp = hpImage.getBoundingClientRect();
-      const boundingRectDynamics = dynamicImages.map((img) => img.getBoundingClientRect());
-      const boundingRectVideo = video.getBoundingClientRect();
+      const isVisible = (element) => element.getBoundingClientRect().top < window.innerHeight;
 
-      const isVisibleHp = boundingRectHp.top < window.innerHeight;
-      const isVisibleDynamics = boundingRectDynamics.map((rect) => rect.top < window.innerHeight);
-      const isVisibleVideo = boundingRectVideo.top < window.innerHeight;
-
-      if (isVisibleHp) {
-        hpImage.classList.add('show');
+      if (isVisible(hpImageRef.current)) {
+        hpImageRef.current.classList.add('show');
       }
 
-      isVisibleDynamics.forEach((isVisible, index) => {
-        if (isVisible) {
-          dynamicImages[index].classList.add('show');
+      dynamicImageRefs.forEach((ref) => {
+        if (isVisible(ref.current)) {
+          ref.current.classList.add('show');
         }
       });
 
-      if (isVisibleVideo) {
+      const video = videoRef.current;
+      if (isVisible(video)) {
         video.play();
       } else {
         video.pause();
@@ -52,42 +42,33 @@ const Home = () => {
   return (
     <div>
       <div className="HPcontainer">
-        <h3 >
-            Welcome to Sinew , <span style={{ textTransform: 'uppercase' }}>{username}</span>!
-         </h3>
+        <h3 className="headerBackgroundImage">
+      
+          Welcome to Sinew, <span style={{ textTransform: 'uppercase' }}>{username}</span>!
+        </h3>
       </div>
 
       <div className="HPimageContainer">
-         <div className="sloganContainerLeft">
-            <h2 className="HPsloganOne">Train like a champion, become unstoppable....</h2>
-         </div>
+        <div className="sloganContainerLeft">
+          <h2 className="HPsloganOne">Train like a champion, become unstoppable....</h2>
+        </div>
 
-         <div className="HPimageWrapper">
-            <img
-               className="HPimageOne"
-               ref={hpImageRef}
-               src={pictureOne}
-               alt="Image Description"
-            />
-         </div>
+        <div className="HPimageWrapper">
+          <img className="HPimageOne" ref={hpImageRef} src={pictureOne} alt="Image Description" />
+        </div>
 
-         <div className="HPlogoContainer">
-            <img src={logo} alt='logo' className="HPlogo" />
-         </div>
+        <div className="HPlogoContainer">
+          <img src={logo} alt="logo" className="HPlogo" />
+        </div>
 
-          `<div className="sloganContainerRight">
-            <h2 className="HPsloganTwo">Train with purpose, achieve with passion</h2>
-         </div>
+        <div className="sloganContainerRight">
+          <h2 className="HPsloganTwo">Train with purpose, achieve with passion</h2>
+        </div>
       </div>
 
-
-     
-
-     
       <div className="tickerContainer">
         <div className="tickerContent">
           <ul className="tickerList">
-            <li></li>
             <li>Sinew Strength Training!!</li>
             <li>Sinew Strength Training!!</li>
             <li>Sinew Strength Training!!</li>
@@ -98,19 +79,18 @@ const Home = () => {
           </ul>
         </div>
       </div>
-      
+
       <div className="HPwomanDumbBellImage">
-        <div className='HPwomanDumbellText'>
-          <h3> " I'm always on the lookout for quality resources to recommend to my clients.
-            This strength training website is hands down one of the best I've come across. The variety of workout
-            plans caters to my demands, and the attention to detail in exercise explanations ensures that
-            users get the most out of every workout. It's an invaluable tool for both beginners and experienced fitness
-            enthusiasts alike."
-            </h3>
-           <h3 className='HPwomanDumbellQuote'>Emily S. - Long-time Gym Goer</h3>
-          
+        <div className="HPwomanDumbellText">
+          <h3>
+            " I'm always on the lookout for quality resources to recommend to my clients. This strength training website
+            is hands down one of the best I've come across. The variety of workout plans caters to my demands, and the
+            attention to detail in exercise explanations ensures that users get the most out of every workout. It's an
+            invaluable tool for both beginners and experienced fitness enthusiasts alike."
+          </h3>
+          <h3 className="HPwomanDumbellQuote">Emily S. - Long-time Gym Goer</h3>
         </div>
-      
+
         <img
           className="HPwomanDumbBellImage"
           ref={dynamicImageRefs[1]}
@@ -124,15 +104,14 @@ const Home = () => {
           src="/videos/weightlift.mp4" // Replace this with your video URL or local path
           type="video/mp4"
         />
-         <div className='HPwomanDumbellTextRight'>
-          <h3>"I've tried numerous fitness websites, but none compare to the effectiveness and user-friendliness
-            of this strength training platform. The workout routines are well-designed and target different muscle
-            groups effectively. Thanks to this website, I've seen incredible gains in my strength and overall fitness
-            level. Highly recommended!"
+        <div className="HPwomanDumbellTextRight">
+          <h3>
+            "I've tried numerous fitness websites, but none compare to the effectiveness and user-friendliness of this
+            strength training platform. The workout routines are well-designed and target different muscle groups
+            effectively. Thanks to this website, I've seen incredible gains in my strength and overall fitness level.
+            Highly recommended!"
           </h3>
-          <h3 className='HPwomanDumbellQuote'>Mike T. - Busy Professional and Fitness Novice</h3>
-           
-          
+          <h3 className="HPwomanDumbellQuote">Mike T. - Busy Professional and Fitness Novice</h3>
         </div>
       </div>
     </div>
