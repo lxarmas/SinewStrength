@@ -1,13 +1,6 @@
-/* HPcontainer */
-.HPcontainer {
 
-  text-align: center;
-   
-  padding: 32px;
-  color:rgb(201, 201, 201);
-  font-size: 40px;
 
-}
+
 
 /* HPimageContainer */
 .HPimageContainer {
@@ -16,15 +9,12 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 700px;
+  object-fit: cover;
+ 
+  
 }
 
-.HPlogo {
-  width: 350px;
-  height: auto;
-  transform: translateX(-2%);
-   transform: translateY(10%);
-}
+
 
 /* Slogan Containers */
 .sloganContainerLeft,
@@ -39,10 +29,10 @@
 
 .sloganContainerLeft {
   font-size: 22px;
-  left: 10%;
+
   color: #ffffff;
-  top: 40%;
-  
+  top: 60%;
+
   animation-name: coolAnimationLeft;
   animation-duration: 5s;
   animation-timing-function: ease-out;
@@ -51,26 +41,55 @@
 }
 
 .sloganContainerRight {
+ 
   font-size: 26px;
-  color: #9d9d9d;
-  left:130px;
-  top: 85%;
-  animation-name: coolAnimationRight;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
+  color: #e0e0e0;
+ 
+  top: 70%;
   opacity: 0;
-  animation-fill-mode: forwards;
+  animation: coolAnimationRight 5s ease-out forwards;
 }
+
+/* Keyframes for pop-up effect */
+@keyframes coolAnimationRight {
+  0% {
+    transform: translateY(20px) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-5px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
 
 /* HPimageWrapper */
 .HPimageWrapper {
+  display: flex;
+
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
   position: relative;
- 
+
+ height: fit-content;/* Adjust as needed */
 }
+.HPimageWrapper img {
+
+  width: 150%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 30rem;
+  
+}
+
 
 /* HPimage */
 .HPimageOne {
-  width: 80%;
+  width:100%;
   border-radius: 10px;
   margin-bottom: -5px;
   transform: translateX(10%);
@@ -94,9 +113,7 @@
 .dynamicImage {
   width: 50%;
   border-radius: 20px;
-  
-  
-  
+
 }
 
 .dynamicImage.show {
@@ -289,9 +306,60 @@
   margin-right: 18px;
   font-style: oblique;
   color:rgb(157, 157, 157)
-   
+
 }
 .HPwomanDumbellQuote{
   font-style: oblique;
   color:rgb(0, 0, 0);
+}
+.headerBackgroundImage{
+  background-color: red;
+  font-size: 1rem;
+}
+@media (max-width: 1024px) {
+  .HPcontainer {
+    padding: 28px;
+    font-size: 36px;
+  }
+
+  .HPimageWrapper img {
+    width: 80%;
+  }
+
+  .sloganContainerLeft,
+  .sloganContainerRight {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .HPcontainer {
+    padding: 24px;
+    font-size: 32px;
+  }
+
+  .HPimageWrapper img {
+    width: 90%;
+  }
+
+  .sloganContainerLeft,
+  .sloganContainerRight {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .HPcontainer {
+    padding: 16px;
+    font-size: 28px;
+  }
+
+  .HPimageWrapper img {
+    width: 100%;
+  }
+
+  .sloganContainerLeft,
+  .sloganContainerRight {
+    font-size: 16px;
+  }
 }

@@ -7847,9 +7847,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _Home_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home.css */ "./client/features/home/Home.css");
-/* harmony import */ var _assets_MyLogo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/MyLogo.png */ "./client/assets/MyLogo.png");
-/* harmony import */ var _assets_SinewStrengthAlbum_pictures_WomanTraining_jpeg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg */ "./client/assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg");
-
+/* harmony import */ var _assets_SinewStrengthAlbum_pictures_WomanTraining_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg */ "./client/assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg");
 
 
 
@@ -7888,32 +7886,20 @@ var Home = function Home() {
   }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "HPcontainer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: "headerBackgroundImage"
-  }, "Welcome to Sinew, ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
-    style: {
-      textTransform: 'uppercase'
-    }
-  }, username), "!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "HPimageContainer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "sloganContainerLeft"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: "HPsloganOne"
-  }, "Train like a champion, become unstoppable....")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "HPimageWrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "HPimageOne",
     ref: hpImageRef,
-    src: _assets_SinewStrengthAlbum_pictures_WomanTraining_jpeg__WEBPACK_IMPORTED_MODULE_4__["default"],
+    src: _assets_SinewStrengthAlbum_pictures_WomanTraining_jpeg__WEBPACK_IMPORTED_MODULE_3__["default"],
     alt: "Image Description"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "HPlogoContainer"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: _assets_MyLogo_png__WEBPACK_IMPORTED_MODULE_3__["default"],
-    alt: "logo",
-    className: "HPlogo"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "sloganContainerLeft"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "HPsloganOne"
+  }, "Train like a champion, become unstoppable....")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "sloganContainerRight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "HPsloganTwo"
@@ -10600,16 +10586,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
-.HPcontainer {
+___CSS_LOADER_EXPORT___.push([module.id, `
 
-  text-align: center;
-   
-  padding: 32px;
-  color:rgb(201, 201, 201);
-  font-size: 40px;
 
-}
 
 /* HPimageContainer */
 .HPimageContainer {
@@ -10618,15 +10597,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 700px;
+  object-fit: cover;
+ 
+  
 }
 
-.HPlogo {
-  width: 350px;
-  height: auto;
-  transform: translateX(-2%);
-   transform: translateY(10%);
-}
+
 
 /* Slogan Containers */
 .sloganContainerLeft,
@@ -10641,10 +10617,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 
 .sloganContainerLeft {
   font-size: 22px;
-  left: 10%;
+
   color: #ffffff;
-  top: 40%;
-  
+  top: 60%;
+
   animation-name: coolAnimationLeft;
   animation-duration: 5s;
   animation-timing-function: ease-out;
@@ -10653,26 +10629,55 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 }
 
 .sloganContainerRight {
+ 
   font-size: 26px;
-  color: #9d9d9d;
-  left:130px;
-  top: 85%;
-  animation-name: coolAnimationRight;
-  animation-duration: 5s;
-  animation-timing-function: ease-out;
+  color: #e0e0e0;
+ 
+  top: 70%;
   opacity: 0;
-  animation-fill-mode: forwards;
+  animation: coolAnimationRight 5s ease-out forwards;
 }
+
+/* Keyframes for pop-up effect */
+@keyframes coolAnimationRight {
+  0% {
+    transform: translateY(20px) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-5px) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
 
 /* HPimageWrapper */
 .HPimageWrapper {
+  display: flex;
+
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
   position: relative;
- 
+
+ height: fit-content;/* Adjust as needed */
 }
+.HPimageWrapper img {
+
+  width: 150%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 30rem;
+  
+}
+
 
 /* HPimage */
 .HPimageOne {
-  width: 80%;
+  width:100%;
   border-radius: 10px;
   margin-bottom: -5px;
   transform: translateX(10%);
@@ -10696,9 +10701,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
 .dynamicImage {
   width: 50%;
   border-radius: 20px;
-  
-  
-  
+
 }
 
 .dynamicImage.show {
@@ -10891,12 +10894,63 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* HPcontainer */
   margin-right: 18px;
   font-style: oblique;
   color:rgb(157, 157, 157)
-   
+
 }
 .HPwomanDumbellQuote{
   font-style: oblique;
   color:rgb(0, 0, 0);
-}`, "",{"version":3,"sources":["webpack://./client/features/home/Home.css"],"names":[],"mappings":"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","sourcesContent":["/* HPcontainer */\n.HPcontainer {\n\n  text-align: center;\n   \n  padding: 32px;\n  color:rgb(201, 201, 201);\n  font-size: 40px;\n\n}\n\n/* HPimageContainer */\n.HPimageContainer {\n\n  position: relative;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  height: 700px;\n}\n\n.HPlogo {\n  width: 350px;\n  height: auto;\n  transform: translateX(-2%);\n   transform: translateY(10%);\n}\n\n/* Slogan Containers */\n.sloganContainerLeft,\n.sloganContainerRight {\n  font-style: oblique;\n  position: absolute;\n  text-align: center;\n  padding: 5px;\n  z-index: 1;\n  display: block;\n }\n\n.sloganContainerLeft {\n  font-size: 22px;\n  left: 10%;\n  color: #ffffff;\n  top: 40%;\n  \n  animation-name: coolAnimationLeft;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n.sloganContainerRight {\n  font-size: 26px;\n  color: #9d9d9d;\n  left:130px;\n  top: 85%;\n  animation-name: coolAnimationRight;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n/* HPimageWrapper */\n.HPimageWrapper {\n  position: relative;\n \n}\n\n/* HPimage */\n.HPimageOne {\n  width: 80%;\n  border-radius: 10px;\n  margin-bottom: -5px;\n  transform: translateX(10%);\n }\n\n.HPimage.show {\n  opacity: 1;\n}\n\n/* DynamicImageContainer */\n.dynamicImageContainer {\n  position: relative;\n  padding:20px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  bottom:0px;\n}\n\n/* DynamicImage */\n.dynamicImage {\n  width: 50%;\n  border-radius: 20px;\n  \n  \n  \n}\n\n.dynamicImage.show {\n  opacity: 1;\n}\n\n/* DynamicImageTextContainer */\n.dynamicImageTextContainer {\n  position: absolute;\n  top: 40%;\n  left: 80%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n  color: #070707;\n  z-index: 2;\n}\n\n.dynamicImageTextContainer h2 {\n \n  font-size: 24px;\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.dynamicImageTextContainer h1 {\n  font-size: 36px;\n  font-weight: bold;\n}\n\n/* Animation for slogans */\n@keyframes slideInFromLeft {\n  0% {\n    transform: translateX(-50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n@keyframes slideInFromRight {\n  0% {\n    transform: translateX(50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerLeft */\n@keyframes coolAnimationLeft {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  50% {\n    transform: scale(1.2);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerRight */\n@keyframes coolAnimationRight {\n  0% {\n    transform: translateY(100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateY(-10%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n/* Apply animation to slogans */\n.HPsloganOne,\n.HPsloganTwo {\n  animation-duration: 1s;\n  animation-fill-mode: forwards;\n  opacity: 0;\n}\n\n.HPsloganOne {\n  animation-name: slideInFromLeft;\n}\n\n.HPsloganTwo {\n  animation-name: slideInFromRight;\n}\n\n/* Ticker Container */\n.tickerContainer {\n  background-color: rgb(0, 0, 0);\n  padding: 30px 0px;\n  width: 100%;\n  overflow: hidden;\n}\n\n.tickerContent {\n  display: flex;\n  align-items: center;\n}\n\n\n\n.tickerList {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  animation: ticker 20s linear infinite;\n}\n\n.tickerList li {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 35px;\n  color: rgb(255, 0, 0);\n  font-family: \"Courier New\", monospace;\n  letter-spacing: 2px;\n  text-transform: uppercase;\n  animation: glow 1s ease-in-out infinite alternate;\n}\n\n@keyframes ticker {\n  0% {\n    transform: translateX(90%);\n  }\n  100% {\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes glow {\n  0% {\n    text-shadow: 0 0 5px rgb(255, 1, 1), 0 0 10px rgb(255, 3, 3), 0 0 20px rgb(255, 4, 4), 0 0 30px rgb(255, 9, 9)\n  }\n  100% {\n    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff1e00, 0 0 30px #ff0000, 0 0 40px #ff0000;\n  }\n}\n\n\n/* HPwomanDumbBellImage */\n.HPwomanDumbBellImage {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 500px;\n}\n\n.HPwomanDumbBellImage img {\n  max-width: 100%;\n  max-height: 500px;\n  margin-right: 120px;\n}\n\n\n\n/* HPvideo */\n.HPvideo {\n  max-width: 80%; /* Adjust the max-width to make the video smaller */\n  height: 500px;\n}\n\n.HPwomanDumbellText{\n  justify-content: left;\n  align-items: center;\n  margin-right: 120px;\n   margin-left: 18px;\n    font-style: oblique;\n      color:rgb(157, 157, 157)\n}\n\n.HPwomanDumbellTextRight{\n  justify-content: right;\n  align-items: center;\n  margin-left: 120px;\n  margin-right: 18px;\n  font-style: oblique;\n  color:rgb(157, 157, 157)\n   \n}\n.HPwomanDumbellQuote{\n  font-style: oblique;\n  color:rgb(0, 0, 0);\n}"],"sourceRoot":""}]);
+}
+.headerBackgroundImage{
+  background-color: red;
+  font-size: 1rem;
+}
+@media (max-width: 1024px) {
+  .HPcontainer {
+    padding: 28px;
+    font-size: 36px;
+  }
+
+  .HPimageWrapper img {
+    width: 80%;
+  }
+
+  .sloganContainerLeft,
+  .sloganContainerRight {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .HPcontainer {
+    padding: 24px;
+    font-size: 32px;
+  }
+
+  .HPimageWrapper img {
+    width: 90%;
+  }
+
+  .sloganContainerLeft,
+  .sloganContainerRight {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .HPcontainer {
+    padding: 16px;
+    font-size: 28px;
+  }
+
+  .HPimageWrapper img {
+    width: 100%;
+  }
+
+  .sloganContainerLeft,
+  .sloganContainerRight {
+    font-size: 16px;
+  }
+}`, "",{"version":3,"sources":["webpack://./client/features/home/Home.css"],"names":[],"mappings":"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","sourcesContent":["\n\n\n\n/* HPimageContainer */\n.HPimageContainer {\n\n  position: relative;\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  object-fit: cover;\n \n  \n}\n\n\n\n/* Slogan Containers */\n.sloganContainerLeft,\n.sloganContainerRight {\n  font-style: oblique;\n  position: absolute;\n  text-align: center;\n  padding: 5px;\n  z-index: 1;\n  display: block;\n }\n\n.sloganContainerLeft {\n  font-size: 22px;\n\n  color: #ffffff;\n  top: 60%;\n\n  animation-name: coolAnimationLeft;\n  animation-duration: 5s;\n  animation-timing-function: ease-out;\n  opacity: 0;\n  animation-fill-mode: forwards;\n}\n\n.sloganContainerRight {\n \n  font-size: 26px;\n  color: #e0e0e0;\n \n  top: 70%;\n  opacity: 0;\n  animation: coolAnimationRight 5s ease-out forwards;\n}\n\n/* Keyframes for pop-up effect */\n@keyframes coolAnimationRight {\n  0% {\n    transform: translateY(20px) scale(0.8);\n    opacity: 0;\n  }\n  50% {\n    transform: translateY(-5px) scale(1.1);\n    opacity: 1;\n  }\n  100% {\n    transform: translateY(0) scale(1);\n    opacity: 1;\n  }\n}\n\n\n/* HPimageWrapper */\n.HPimageWrapper {\n  display: flex;\n\n  justify-content: center; /* Centers horizontally */\n  align-items: center;     /* Centers vertically */\n  position: relative;\n\n height: fit-content;/* Adjust as needed */\n}\n.HPimageWrapper img {\n\n  width: 150%;\n  height: 100%;\n  object-fit: cover;\n  margin-right: 30rem;\n  \n}\n\n\n/* HPimage */\n.HPimageOne {\n  width:100%;\n  border-radius: 10px;\n  margin-bottom: -5px;\n  transform: translateX(10%);\n }\n\n.HPimage.show {\n  opacity: 1;\n}\n\n/* DynamicImageContainer */\n.dynamicImageContainer {\n  position: relative;\n  padding:20px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  bottom:0px;\n}\n\n/* DynamicImage */\n.dynamicImage {\n  width: 50%;\n  border-radius: 20px;\n\n}\n\n.dynamicImage.show {\n  opacity: 1;\n}\n\n/* DynamicImageTextContainer */\n.dynamicImageTextContainer {\n  position: absolute;\n  top: 40%;\n  left: 80%;\n  transform: translate(-50%, -50%);\n  text-align: center;\n  color: #070707;\n  z-index: 2;\n}\n\n.dynamicImageTextContainer h2 {\n \n  font-size: 24px;\n  font-weight: bold;\n  margin-bottom: 10px;\n}\n\n.dynamicImageTextContainer h1 {\n  font-size: 36px;\n  font-weight: bold;\n}\n\n/* Animation for slogans */\n@keyframes slideInFromLeft {\n  0% {\n    transform: translateX(-50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n@keyframes slideInFromRight {\n  0% {\n    transform: translateX(50px);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerLeft */\n@keyframes coolAnimationLeft {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  50% {\n    transform: scale(1.2);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n\n/* Cool Animation for sloganContainerRight */\n@keyframes coolAnimationRight {\n  0% {\n    transform: translateY(100%);\n    opacity: 0;\n  }\n  50% {\n    transform: translateY(-10%);\n    opacity: 1;\n  }\n  100% {\n    transform: translateY(0);\n    opacity: 1;\n  }\n}\n\n/* Apply animation to slogans */\n.HPsloganOne,\n.HPsloganTwo {\n  animation-duration: 1s;\n  animation-fill-mode: forwards;\n  opacity: 0;\n}\n\n.HPsloganOne {\n  animation-name: slideInFromLeft;\n}\n\n.HPsloganTwo {\n  animation-name: slideInFromRight;\n}\n\n/* Ticker Container */\n.tickerContainer {\n  background-color: rgb(0, 0, 0);\n  padding: 30px 0px;\n  width: 100%;\n  overflow: hidden;\n}\n\n.tickerContent {\n  display: flex;\n  align-items: center;\n}\n\n\n\n.tickerList {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  animation: ticker 20s linear infinite;\n}\n\n.tickerList li {\n  display: inline-block;\n  margin-right: 20px;\n  font-size: 35px;\n  color: rgb(255, 0, 0);\n  font-family: \"Courier New\", monospace;\n  letter-spacing: 2px;\n  text-transform: uppercase;\n  animation: glow 1s ease-in-out infinite alternate;\n}\n\n@keyframes ticker {\n  0% {\n    transform: translateX(90%);\n  }\n  100% {\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes glow {\n  0% {\n    text-shadow: 0 0 5px rgb(255, 1, 1), 0 0 10px rgb(255, 3, 3), 0 0 20px rgb(255, 4, 4), 0 0 30px rgb(255, 9, 9)\n  }\n  100% {\n    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff1e00, 0 0 30px #ff0000, 0 0 40px #ff0000;\n  }\n}\n\n\n/* HPwomanDumbBellImage */\n.HPwomanDumbBellImage {\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 500px;\n}\n\n.HPwomanDumbBellImage img {\n  max-width: 100%;\n  max-height: 500px;\n  margin-right: 120px;\n}\n\n\n\n/* HPvideo */\n.HPvideo {\n  max-width: 80%; /* Adjust the max-width to make the video smaller */\n  height: 500px;\n}\n\n.HPwomanDumbellText{\n  justify-content: left;\n  align-items: center;\n  margin-right: 120px;\n   margin-left: 18px;\n    font-style: oblique;\n      color:rgb(157, 157, 157)\n}\n\n.HPwomanDumbellTextRight{\n  justify-content: right;\n  align-items: center;\n  margin-left: 120px;\n  margin-right: 18px;\n  font-style: oblique;\n  color:rgb(157, 157, 157)\n\n}\n.HPwomanDumbellQuote{\n  font-style: oblique;\n  color:rgb(0, 0, 0);\n}\n.headerBackgroundImage{\n  background-color: red;\n  font-size: 1rem;\n}\n@media (max-width: 1024px) {\n  .HPcontainer {\n    padding: 28px;\n    font-size: 36px;\n  }\n\n  .HPimageWrapper img {\n    width: 80%;\n  }\n\n  .sloganContainerLeft,\n  .sloganContainerRight {\n    font-size: 20px;\n  }\n}\n\n@media (max-width: 768px) {\n  .HPcontainer {\n    padding: 24px;\n    font-size: 32px;\n  }\n\n  .HPimageWrapper img {\n    width: 90%;\n  }\n\n  .sloganContainerLeft,\n  .sloganContainerRight {\n    font-size: 18px;\n  }\n}\n\n@media (max-width: 480px) {\n  .HPcontainer {\n    padding: 16px;\n    font-size: 28px;\n  }\n\n  .HPimageWrapper img {\n    width: 100%;\n  }\n\n  .sloganContainerLeft,\n  .sloganContainerRight {\n    font-size: 16px;\n  }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10923,61 +10977,124 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
-  
-   padding: 10px;
-   height: auto;
-   position: sticky;
-   top: 0;
-   z-index: 100;
+___CSS_LOADER_EXPORT___.push([module.id, `/* Theme Variables */
+:root {
+  --nav-bg: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  --nav-text: #ffffff;
+  --nav-hover: rgba(255, 255, 255, 0.15);
+  --logo-font-size: 26px;
+  --nav-font-size: 20px;
 }
 
+/* Reset and Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+  padding: 15px 20px;
+  background: var(--nav-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo {
+  font-size: var(--logo-font-size);
+  font-weight: 700;
+  color: var(--nav-text);
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
 .navbar nav {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar a {
-   font-family: sans-serif;
-   color: #0b0b0b; /* Update text color */
-   text-decoration: none;
-   transition: color 0.3s ease;
-   font-size: 22px; /* Adjust font size for a more modern look */
-   padding: 10px;
-   margin: 0 .8em;
-   display: flex; /* To use flex properties */
-   align-items: center; /* To vertically center elements */
+.navbar nav a {
+  color: var(--nav-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: var(--nav-font-size);
+  padding: 10px 15px;
+  margin: 0 0.8em;
+  border-radius: 30px;
 }
 
-/* Add a hover effect for a more interactive feel */
-.navbar a:hover {
-   background-color: #d0d0d0;
-   
-   border-radius: 48px;
+.navbar nav a:hover {
+  background: var(--nav-hover);
+  transform: translateY(-2px);
 }
 
-/* Add a class for the active link */
-.navbar a.active {
-   font-weight: bold;
+.navbar nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--nav-text);
 }
 
-/* Style the hamburger menu icon for mobile devices */
+/* Hamburger Menu Icon (Default Hidden) */
 .hamburger-menu {
-   display: none; /* Hide by default on larger screens */
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/* Add media query for mobile devices */
+.hamburger-menu span {
+  width: 25px;
+  height: 3px;
+  background: var(--nav-text);
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger transformation when active */
+.hamburger-menu.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-menu.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-   .navbar a:not(.active) {
-      display: none; /* Hide the links on smaller screens */
-   }
-
-   .hamburger-menu {
-      display: block; /* Show the hamburger menu on smaller screens */
-   }
+  /* Hide nav links by default */
+  .navbar nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: var(--nav-bg);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  /* Show nav links when active */
+  .navbar nav.active {
+    display: flex;
+  }
+  /* Display hamburger icon */
+  .hamburger-menu {
+    display: flex;
+  }
 }
-`, "",{"version":3,"sources":["webpack://./client/features/navbar/Nav.css"],"names":[],"mappings":"AAAA;;GAEG,aAAa;GACb,YAAY;GACZ,gBAAgB;GAChB,MAAM;GACN,YAAY;AACf;;AAEA;GACG,aAAa;GACb,uBAAuB;GACvB,mBAAmB;AACtB;;AAEA;GACG,uBAAuB;GACvB,cAAc,EAAE,sBAAsB;GACtC,qBAAqB;GACrB,2BAA2B;GAC3B,eAAe,EAAE,4CAA4C;GAC7D,aAAa;GACb,cAAc;GACd,aAAa,EAAE,2BAA2B;GAC1C,mBAAmB,EAAE,kCAAkC;AAC1D;;AAEA,mDAAmD;AACnD;GACG,yBAAyB;;GAEzB,mBAAmB;AACtB;;AAEA,oCAAoC;AACpC;GACG,iBAAiB;AACpB;;AAEA,qDAAqD;AACrD;GACG,aAAa,EAAE,sCAAsC;AACxD;;AAEA,uCAAuC;AACvC;GACG;MACG,aAAa,EAAE,sCAAsC;GACxD;;GAEA;MACG,cAAc,EAAE,+CAA+C;GAClE;AACH","sourcesContent":[".navbar {\n  \n   padding: 10px;\n   height: auto;\n   position: sticky;\n   top: 0;\n   z-index: 100;\n}\n\n.navbar nav {\n   display: flex;\n   justify-content: center;\n   align-items: center;\n}\n\n.navbar a {\n   font-family: sans-serif;\n   color: #0b0b0b; /* Update text color */\n   text-decoration: none;\n   transition: color 0.3s ease;\n   font-size: 22px; /* Adjust font size for a more modern look */\n   padding: 10px;\n   margin: 0 .8em;\n   display: flex; /* To use flex properties */\n   align-items: center; /* To vertically center elements */\n}\n\n/* Add a hover effect for a more interactive feel */\n.navbar a:hover {\n   background-color: #d0d0d0;\n   \n   border-radius: 48px;\n}\n\n/* Add a class for the active link */\n.navbar a.active {\n   font-weight: bold;\n}\n\n/* Style the hamburger menu icon for mobile devices */\n.hamburger-menu {\n   display: none; /* Hide by default on larger screens */\n}\n\n/* Add media query for mobile devices */\n@media (max-width: 768px) {\n   .navbar a:not(.active) {\n      display: none; /* Hide the links on smaller screens */\n   }\n\n   .hamburger-menu {\n      display: block; /* Show the hamburger menu on smaller screens */\n   }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./client/features/navbar/Nav.css"],"names":[],"mappings":"AAAA,oBAAoB;AACpB;EACE,2DAA2D;EAC3D,mBAAmB;EACnB,sCAAsC;EACtC,sBAAsB;EACtB,qBAAqB;AACvB;;AAEA,4BAA4B;AAC5B;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,iCAAiC;AACnC;;AAEA,qBAAqB;AACrB;EACE,kBAAkB;EAClB,yBAAyB;EACzB,gBAAgB;EAChB,MAAM;EACN,YAAY;EACZ,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,wCAAwC;AAC1C;;AAEA,SAAS;AACT;EACE,gCAAgC;EAChC,gBAAgB;EAChB,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA,qBAAqB;AACrB;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,sBAAsB;EACtB,qBAAqB;EACrB,yBAAyB;EACzB,+BAA+B;EAC/B,kBAAkB;EAClB,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,4BAA4B;EAC5B,2BAA2B;AAC7B;;AAEA;EACE,iBAAiB;EACjB,wCAAwC;AAC1C;;AAEA,yCAAyC;AACzC;EACE,aAAa;EACb,sBAAsB;EACtB,eAAe;EACf,+BAA+B;AACjC;;AAEA;EACE,WAAW;EACX,WAAW;EACX,2BAA2B;EAC3B,aAAa;EACb,yBAAyB;AAC3B;;AAEA,yCAAyC;AACzC;EACE,wCAAwC;AAC1C;AACA;EACE,UAAU;AACZ;AACA;EACE,0CAA0C;AAC5C;;AAEA,sBAAsB;AACtB;EACE,8BAA8B;EAC9B;IACE,aAAa;IACb,sBAAsB;IACtB,WAAW;IACX,yBAAyB;IACzB,kBAAkB;IAClB,SAAS;IACT,OAAO;IACP,8CAA8C;EAChD;EACA,+BAA+B;EAC/B;IACE,aAAa;EACf;EACA,2BAA2B;EAC3B;IACE,aAAa;EACf;AACF","sourcesContent":["/* Theme Variables */\n:root {\n  --nav-bg: linear-gradient(90deg, #0f2027, #203a43, #2c5364);\n  --nav-text: #ffffff;\n  --nav-hover: rgba(255, 255, 255, 0.15);\n  --logo-font-size: 26px;\n  --nav-font-size: 20px;\n}\n\n/* Reset and Basic Styling */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Roboto', sans-serif;\n}\n\n/* Navbar Container */\n.navbar {\n  padding: 15px 20px;\n  background: var(--nav-bg);\n  position: sticky;\n  top: 0;\n  z-index: 100;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);\n}\n\n/* Logo */\n.logo {\n  font-size: var(--logo-font-size);\n  font-weight: 700;\n  color: var(--nav-text);\n  letter-spacing: 1px;\n}\n\n/* Navigation Links */\n.navbar nav {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.navbar nav a {\n  color: var(--nav-text);\n  text-decoration: none;\n  transition: all 0.3s ease;\n  font-size: var(--nav-font-size);\n  padding: 10px 15px;\n  margin: 0 0.8em;\n  border-radius: 30px;\n}\n\n.navbar nav a:hover {\n  background: var(--nav-hover);\n  transform: translateY(-2px);\n}\n\n.navbar nav a.active {\n  font-weight: bold;\n  border-bottom: 2px solid var(--nav-text);\n}\n\n/* Hamburger Menu Icon (Default Hidden) */\n.hamburger-menu {\n  display: none;\n  flex-direction: column;\n  cursor: pointer;\n  transition: transform 0.3s ease;\n}\n\n.hamburger-menu span {\n  width: 25px;\n  height: 3px;\n  background: var(--nav-text);\n  margin: 4px 0;\n  transition: all 0.3s ease;\n}\n\n/* Hamburger transformation when active */\n.hamburger-menu.active span:nth-child(1) {\n  transform: translateY(7px) rotate(45deg);\n}\n.hamburger-menu.active span:nth-child(2) {\n  opacity: 0;\n}\n.hamburger-menu.active span:nth-child(3) {\n  transform: translateY(-7px) rotate(-45deg);\n}\n\n/* Responsive Styles */\n@media (max-width: 768px) {\n  /* Hide nav links by default */\n  .navbar nav {\n    display: none;\n    flex-direction: column;\n    width: 100%;\n    background: var(--nav-bg);\n    position: absolute;\n    top: 65px;\n    left: 0;\n    border-top: 1px solid rgba(255, 255, 255, 0.3);\n  }\n  /* Show nav links when active */\n  .navbar nav.active {\n    display: flex;\n  }\n  /* Display hamburger icon */\n  .hamburger-menu {\n    display: flex;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11658,10 +11775,56 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
- margin: 0;
+___CSS_LOADER_EXPORT___.push([module.id, `/* Global Reset & Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-}`, "",{"version":3,"sources":["webpack://./client/index.css"],"names":[],"mappings":"AAAA;CACC,SAAS;;AAEV","sourcesContent":["body {\n margin: 0;\n\n}"],"sourceRoot":""}]);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: sans-serif;
+}
+
+/* Ensure images scale with their container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fluid Container for Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Base Typography */
+body {
+  font-size: 16px;
+}
+
+/* Global Responsive Typography & Layout Adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+`, "",{"version":3,"sources":["webpack://./client/index.css"],"names":[],"mappings":"AAAA,8BAA8B;AAC9B;;;EAGE,sBAAsB;AACxB;;AAEA;;EAEE,SAAS;EACT,UAAU;EACV,WAAW;EACX,kBAAkB,EAAE,iCAAiC;EACrD,uBAAuB;AACzB;;AAEA,6CAA6C;AAC7C;EACE,eAAe;EACf,YAAY;AACd;;AAEA,+BAA+B;AAC/B;EACE,UAAU;EACV,iBAAiB;EACjB,cAAc;AAChB;;AAEA,oBAAoB;AACpB;EACE,eAAe;AACjB;;AAEA,sDAAsD;AACtD;EACE;IACE,eAAe;EACjB;EACA;IACE,UAAU;EACZ;AACF;;AAEA;EACE;IACE,eAAe;EACjB;AACF","sourcesContent":["/* Global Reset & Box Sizing */\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  overflow-x: hidden; /* Prevent horizontal scrolling */\n  font-family: sans-serif;\n}\n\n/* Ensure images scale with their container */\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\n/* Fluid Container for Layout */\n.container {\n  width: 90%;\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n/* Base Typography */\nbody {\n  font-size: 16px;\n}\n\n/* Global Responsive Typography & Layout Adjustments */\n@media (max-width: 768px) {\n  body {\n    font-size: 14px;\n  }\n  .container {\n    width: 95%;\n  }\n}\n\n@media (max-width: 480px) {\n  body {\n    font-size: 12px;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -1,64 +1,55 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import './Home.css';
-import logo from '../../assets/MyLogo.png';
+
 import pictureOne from '../../assets/SinewStrengthAlbum/pictures/WomanTraining.jpeg';
 
 const Home = () => {
-  const username = useSelector((state) => state.auth.me.username);
-  const hpImageRef = useRef(null);
-  const dynamicImageRefs = [useRef(null), useRef(null)];
-  const videoRef = useRef(null);
+  const username = useSelector( ( state ) => state.auth.me.username );
+  const hpImageRef = useRef( null );
+  const dynamicImageRefs = [useRef( null ), useRef( null )];
+  const videoRef = useRef( null );
 
-  useEffect(() => {
+  useEffect( () => {
     const handleScroll = () => {
-      const isVisible = (element) => element.getBoundingClientRect().top < window.innerHeight;
+      const isVisible = ( element ) => element.getBoundingClientRect().top < window.innerHeight;
 
-      if (isVisible(hpImageRef.current)) {
-        hpImageRef.current.classList.add('show');
+      if ( isVisible( hpImageRef.current ) ) {
+        hpImageRef.current.classList.add( 'show' );
       }
 
-      dynamicImageRefs.forEach((ref) => {
-        if (isVisible(ref.current)) {
-          ref.current.classList.add('show');
+      dynamicImageRefs.forEach( ( ref ) => {
+        if ( isVisible( ref.current ) ) {
+          ref.current.classList.add( 'show' );
         }
-      });
+      } );
 
       const video = videoRef.current;
-      if (isVisible(video)) {
+      if ( isVisible( video ) ) {
         video.play();
       } else {
         video.pause();
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener( 'scroll', handleScroll );
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener( 'scroll', handleScroll );
     };
-  }, []);
+  }, [] );
 
   return (
     <div>
       <div className="HPcontainer">
-        <h3 className="headerBackgroundImage">
-      
-          Welcome to Sinew, <span style={{ textTransform: 'uppercase' }}>{username}</span>!
-        </h3>
       </div>
 
       <div className="HPimageContainer">
-        <div className="sloganContainerLeft">
-          <h2 className="HPsloganOne">Train like a champion, become unstoppable....</h2>
-        </div>
-
         <div className="HPimageWrapper">
           <img className="HPimageOne" ref={hpImageRef} src={pictureOne} alt="Image Description" />
         </div>
-
-        <div className="HPlogoContainer">
-          <img src={logo} alt="logo" className="HPlogo" />
+        <div className="sloganContainerLeft">
+          <h2 className="HPsloganOne">Train like a champion, become unstoppable....</h2>
         </div>
 
         <div className="sloganContainerRight">

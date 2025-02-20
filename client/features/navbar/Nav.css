@@ -1,54 +1,117 @@
+/* Theme Variables */
+:root {
+  --nav-bg: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  --nav-text: #ffffff;
+  --nav-hover: rgba(255, 255, 255, 0.15);
+  --logo-font-size: 26px;
+  --nav-font-size: 20px;
+}
+
+/* Reset and Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Container */
 .navbar {
-  
-   padding: 10px;
-   height: auto;
-   position: sticky;
-   top: 0;
-   z-index: 100;
+  padding: 15px 20px;
+  background: var(--nav-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* Logo */
+.logo {
+  font-size: var(--logo-font-size);
+  font-weight: 700;
+  color: var(--nav-text);
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
 .navbar nav {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar a {
-   font-family: sans-serif;
-   color: #0b0b0b; /* Update text color */
-   text-decoration: none;
-   transition: color 0.3s ease;
-   font-size: 22px; /* Adjust font size for a more modern look */
-   padding: 10px;
-   margin: 0 .8em;
-   display: flex; /* To use flex properties */
-   align-items: center; /* To vertically center elements */
+.navbar nav a {
+  color: var(--nav-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: var(--nav-font-size);
+  padding: 10px 15px;
+  margin: 0 0.8em;
+  border-radius: 30px;
 }
 
-/* Add a hover effect for a more interactive feel */
-.navbar a:hover {
-   background-color: #d0d0d0;
-   
-   border-radius: 48px;
+.navbar nav a:hover {
+  background: var(--nav-hover);
+  transform: translateY(-2px);
 }
 
-/* Add a class for the active link */
-.navbar a.active {
-   font-weight: bold;
+.navbar nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--nav-text);
 }
 
-/* Style the hamburger menu icon for mobile devices */
+/* Hamburger Menu Icon (Default Hidden) */
 .hamburger-menu {
-   display: none; /* Hide by default on larger screens */
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-/* Add media query for mobile devices */
-@media (max-width: 768px) {
-   .navbar a:not(.active) {
-      display: none; /* Hide the links on smaller screens */
-   }
+.hamburger-menu span {
+  width: 25px;
+  height: 3px;
+  background: var(--nav-text);
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
 
-   .hamburger-menu {
-      display: block; /* Show the hamburger menu on smaller screens */
-   }
+/* Hamburger transformation when active */
+.hamburger-menu.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-menu.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Hide nav links by default */
+  .navbar nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: var(--nav-bg);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  /* Show nav links when active */
+  .navbar nav.active {
+    display: flex;
+  }
+  /* Display hamburger icon */
+  .hamburger-menu {
+    display: flex;
+  }
 }

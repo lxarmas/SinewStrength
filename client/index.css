@@ -1,4 +1,49 @@
-body {
- margin: 0;
+/* Global Reset & Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: sans-serif;
+}
+
+/* Ensure images scale with their container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fluid Container for Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Base Typography */
+body {
+  font-size: 16px;
+}
+
+/* Global Responsive Typography & Layout Adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
 }
