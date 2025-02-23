@@ -1,23 +1,79 @@
+/* User List Container */
 .users-list {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 20px;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0;
+  list-style-type: none;
 }
 
+/* User List Items */
 .users-list-item {
-   width: 80%;
-   padding: 10px;
-   margin-bottom: 10px;
-   border: 1px solid #282c34;
-   background-color: #545c6d;
-   border-radius: 5px;
-   display: flex;
-   justify-content: space-between;
-   color: white;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #333;
 }
 
 .users-list-item:hover {
-   background-color: #30dfb9;
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+/* User Details (Left Section) */
+.user-details {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* User Actions (Right Section) */
+.user-actions button {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-actions button:hover {
+  background-color: #004d40;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .users-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-actions {
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .user-actions button {
+    width: 100%;
+  }
 }
